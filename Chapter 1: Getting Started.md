@@ -10,7 +10,7 @@
     (b) True
     (c) True
     (d) True
-    (e) True
+    (e) False
     (f) True
     (g) True
     (h) True
@@ -35,4 +35,9 @@
     (l) Output Function
     (m) Input Function
     
-## [E]    
+## [E] 
+
+    (a) Statement Terminator is missing, and it couldn't be figured out whether the expression is (a+b)*(b-35) or a+(b*b)-35         because of unavailability of parentheses.
+    (b) Nesting of comments is not allowed.
+    (c) "&" Operator is Missing.
+    (d) Statement terminator operator ";" is missing in integer declaration and scanf & printf functions.
