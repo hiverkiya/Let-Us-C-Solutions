@@ -5,7 +5,11 @@
 ## [B] 
     
     1. REASON:- No special symbol other than underscore is allowed in variable naming.
-	B'day $hello  #HASH _main() total% %name% stack-queue			 
+	 B'day $hello  #HASH _main() total% %name% stack-queue	
+    2. REASON:- Keyword cannot be used as a variable.
+    	int
+    3. REASON:- Variable name should start with an alphabet.
+    	1st
 
 ## [C]
     
