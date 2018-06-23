@@ -2,7 +2,10 @@
 
 ## [A]
   
-## [B]  
+## [B] 
+    
+    1. REASON:- No special symbol other than underscore is allowed in variable naming.
+	B'day $hello  #HASH _main() total% %name% stack-queue			 
 
 ## [C]
     
@@ -37,7 +40,7 @@
     
 ## [E] 
 
-    (a) Statement Terminator is missing, and it couldn't be figured out whether the expression is (a+b)*(b-35) or a+(b*b)-35         because of unavailability of parentheses.
+    (a) Statement Terminator is missing, and it couldn't be figured out whether the expression is (a+b)*(b-35) or a+(b*b)-35 because of unavailability of parentheses.
     (b) Nesting of comments is not allowed.
     (c) "&" Operator is Missing.
     (d) Statement terminator operator ";" is missing in integer declaration and scanf & printf functions.
