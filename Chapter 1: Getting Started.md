@@ -54,36 +54,64 @@
    (c) 
     
     #include<stdio.h>
+   
     int main()
+   
     {
-  	   printf("Enter marks of student\n");
+  
+    printf("Enter marks of student\n");
+   
     float array[5],aggregate=0,percentage;
+   
     int i;
+    
     for(i=0;i<5;i++)
+    
     {
-        scanf("%f",&array[i]);
-        aggregate+=array[i];
+    
+    scanf("%f",&array[i]);
+    
+    aggregate+=array[i];
+    
     }
+    
     printf("Aggregate Marks of Student are :- %f.\n",aggregate);
+    
     percentage=aggregate/500*100;
+    
     printf("Percentage of Students is %f.\n",percentage);
+    
     return 0;
+    
     }
     
    (e) 
    
     #define PI 3.14159265
+    
     #include<stdio.h>
+    
     int main()
+    
     {
-	printf("Enter the length and breadth of rectangle\n");
-	float length,breadth;
-	scanf("%f %f",&length,&breadth);
-	printf("Enter the radius of circle\n");
-	float radius,area=0;
-	scanf("%f",&radius);
-	printf("Area of Rectangle is %f and Perimeter is %f.\n",length*breadth,2*(length+breadth));
-	printf("Area of Circle is %f and Circumference is %f.\n",PI*radius*radius,2*PI*radius);
-	return 0;
+
+    printf("Enter the length and breadth of rectangle\n");
+	
+    float length,breadth;
+	
+    scanf("%f %f",&length,&breadth);
+	
+    printf("Enter the radius of circle\n");
+	
+    float radius,area=0;
+	
+    scanf("%f",&radius);
+    
+    printf("Area of Rectangle is %f and Perimeter is %f.\n",length*breadth,2*(length+breadth));
+    
+    printf("Area of Circle is %f and Circumference is %f.\n",PI*radius*radius,2*PI*radius);
+	
+    return 0;
+    
     }
 	
