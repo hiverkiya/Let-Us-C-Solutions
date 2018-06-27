@@ -32,7 +32,7 @@
 
 ## [E]
 
-    (1) 
+   (1) 
     
      #include <stdio.h>
       int fact (int);
@@ -57,7 +57,7 @@
         return result;
       }
       
-      (2)
+   (2)
       
         #include<stdio.h>
     int main()
