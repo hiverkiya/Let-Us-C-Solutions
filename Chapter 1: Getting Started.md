@@ -51,6 +51,36 @@
     
 ## [F]
 
+   (a)
+   
+   	#include<stdio.h>
+	int main()
+	{
+  	  float bs,gs;
+  	  printf("Enter basic salary of Rakesh.\n");
+  	  scanf("%f",&bs);
+   	 printf("Gross salary of Rakesh is %f.\n",(bs-(0.4*bs)-(0.2*bs)));
+  	  return 0;
+	}
+
+   (b)
+   
+   	#include<stdio.h>
+	int main()
+	{ float meters,feet,inches,centi_m,km;
+  	  printf("Enter the distance in km\n");
+   	  scanf("%f",&km);
+   	  meters=km*1000;
+   	  centi_m=meters*100;
+   	  feet=3.28084*meters;
+   	  inches=12*feet;
+   	  printf("The distance in meters = %f\n",meters);
+   	  printf("The distance in centimeters = %f\n",centi_m);
+   	  printf("The distance in feet = %f\n",feet);
+   	  printf("The distance in inches = %f\n",inches);
+   	  return 0;
+        }
+
    (c) 
     
     #include<stdio.h>
@@ -85,6 +115,18 @@
     
     }
     
+   (d)
+   
+    #include<stdio.h> 
+    int main()
+    {
+     float temp_in_c,temp_in_f;
+     printf("Enter the temperature in Fahrenheit\n");
+     scanf("%f",&temp_in_f);
+     printf("Temperature in Celsius = %f.",(temp_in_f-32)/1.8);
+     return 0;
+    }
+    
    (e) 
    
     #define PI 3.14159265
@@ -114,4 +156,22 @@
     return 0;
     
     }
+	
+   (f)
+   
+    #include <stdio.h>
+     int main()
+    {   
+     int length=1189,breadth=841,temp,i;
+     for(i=0;i<=8;i++)
+     {
+      printf("The size of A(%d) sheet = %d mm x %d mm.\n",i,length,breadth);
+      temp=length;
+      length=breadth;
+      breadth=temp/2;
+     }
+     return 0;
+    }
+
+	
 	
