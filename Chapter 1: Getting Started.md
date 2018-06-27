@@ -25,7 +25,7 @@
     (b) True
     (c) True
     (d) True
-    (e) False
+    (e) True
     (f) True
     (g) True
     (h) True
