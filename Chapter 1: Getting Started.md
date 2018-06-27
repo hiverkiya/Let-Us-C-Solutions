@@ -1,6 +1,14 @@
 # Chapter-1 Getting Started
 
 ## [A]
+	
+   REASON:- A character constant is a constant which uses single quotation around characters.
+       
+    Invalid:- '3.15' eLearning' 'Quest'
+  
+   REASON:- No Comma/Space in integer constant & No exponentiation operator available.
+   
+    Invalid:- "35,550" "2^3" "4 6 5 2"
   
 ## [B] 
     
