@@ -286,7 +286,7 @@
 	
 	chr > 98 && chr < 123 ? printf("Lower case alphabet."):printf("Not a lower case alphabet.");
 	return 0;
-      }
+         }
       
 (2)
 
@@ -301,7 +301,7 @@
 	
 	chr < 123 && chr > 97 || chr > 64 && chr < 92 ? printf("Not a special symbol."):printf("Special symbol.");
 	return 0;
-}
+      }
 
 
    
