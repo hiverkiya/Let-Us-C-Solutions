@@ -284,7 +284,7 @@
 	printf("Enter a character : ");
 	scanf("%c", &ch);
 	
-	chr > 98 && chr < 123 ? printf("Lower case alphabet."):printf("Not a lower case alphabet.");
+	ch > 98 && ch < 123 ? printf("Lower case alphabet."):printf("Not a lower case alphabet.");
 	return 0;
          }
       
@@ -299,9 +299,50 @@
 	printf("Enter a character : ");
 	scanf("%c", &chr);
 	
-	chr < 123 && chr > 97 || chr > 64 && chr < 92 ? printf("Not a special symbol."):printf("Special symbol.");
+	ch < 123 && ch > 97 || chr > 64 && chr < 92 ? printf("Not a special symbol."):printf("Special symbol.");
 	return 0;
       }
 
+(b)
 
+       #include<stdio.h>
+       int main()
+        {
+	int year;
+	
+	printf("Enter a year : ");
+	scanf("%d", &year);
+	
+	year % 4 ? printf("%d is a not a leap year.", year):printf("%d is a leap year.", year);
+
+	return 0;
+           }
    
+(c)
+   
+        #include<stdio.h>
+          int main()
+          {
+	int a,b,c;
+	
+	printf("Enter three numbers : ");
+	scanf("%d %d %d", &a,&b,&c);
+	
+	a>b&&a>c?printf("%d is the greatest.", a):(b>a&&b>c?printf("%d is the greatest.", b):printf("%d is the greatest.", c));
+	return 0;
+          }
+	  
+(d)
+
+(e)
+
+      #include<stdio.h>
+      int main()
+      {
+       float sal;
+       printf("Enter the salary");
+       scanf("%d",&sal);
+       sal>=25000 && sal<=40000 ?printf("Manager\n"):(sal>=15000 && sal<25000?printf("Accountant\n");:printf("Clerk"));
+       return 0;
+       }
+
