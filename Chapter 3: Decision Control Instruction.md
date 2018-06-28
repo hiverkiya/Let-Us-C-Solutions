@@ -1,21 +1,23 @@
+# [Chapter 3: Decision Control Instruction] Solutions
+
 ## [A]
     
     (a) 0 200
     (b) 300 200
-    (c) NO OUTPUT
+    (c) 10 20
     (d) x and y are equal
     (e) x=10 y=10 z=0 
     (f) C is WOW
 
 ## [B]
 
-    (a) If will be always true as we are assigning value of a to b,so condition checking becomes unnecessary.
-    (b) There is no need to insert extra braces inside if block.
+    (a) NO ERROR.
+    (b) NO ERROR.
     (c) NO ERROR.
-    (d) There is no syntax "then" related to if in C Programmming Language.
+    (d) There is no keyword "then" related to if in C Programmming Language & no variable defined here in program as well.
     (e) lvalue required as left operand of assignment.
     (f) There should be a space between else and if, as there is no "elseif" syntax in C,"else if" exists.
-    (g) "&" Operator is missing.
+    (g) "&" Operator is missing before variables "a" and "b".
     
 ##  [C]
 
@@ -27,11 +29,11 @@
       float sp,cp;
       printf("Enter Cost Price and Selling Price\n");
       scanf("%f %f",&cp,&sp);
-      if(sp>cp)
+      if(sp-cp>0)
       {
          printf("Profit incurred is %f.",sp-cp);
       }
-      if(cp>sp)
+      if(sp-cp<0)
         {
           printf("Loss incurred is %f",cp-sp);
          }
@@ -257,7 +259,7 @@
     scanf("%f %f",&x2,&y2);
     printf("Enter coordinates (x3,y3)\n");
     scanf("%f %f",&x3,&y3);
-    if((y2-y1)/(x2-x1)==(y3-y1)/(x3-x1))
+    if((y2-y1)/(x2-x1)==(y3-y1)/(x3-x1))        
     {
         printf("Point lies on straight line");
     }
