@@ -119,7 +119,7 @@
     {
     printf("\nThe triangle is equilateral");
     } 
-    else if((x==z) || (y==z) || (x==y))
+    else if((x==z) && (x!=y) || (y==z) && (y!=x) || (x==y) && (x!=y))
     {
     printf("\nThe triangle is isoseles");
     }
@@ -156,40 +156,152 @@
     #include<stdio.h>
     int main()
     {
-    int r,g,b;
-    float c,m,y,k,w1,w2,w3,w_largest;
-    printf("Enter the valies of RGB ranging between 0-255 = ");
-    scanf("%d %d %d",r,g,b;
-    if(r==0 && g==0 && b==0)
-    {
-    printf("Cyan = 0\n");
-    printf("Magenta = 0\n");
-    printf("Yellow = 0\n");
-    printf("Black = 1\n");
-    }
-    else
-    {
-    w1=r/255;
-    w2=g/255;
-    w3=b/255;
-    if(w1>w2 && w1>w3)
-    w_largest=w1;
-    else if(w2>w1 && w2>w3)
-    w_largest=w2;
-    else
-    w_largest=w3;
-    c=((w_largest-(r/255))/w_largest);
-    printf("Cyan = %f\n",c);
-    m=((w_largest-(g/255))/w_largest);
-    printf("Magenta = %f\n",m);
-    y=((w_largest-(b/255))/w_largest);
-    printf("Yellow = %f\n",y);
-    k=w_largest-1;
-    printf("Black = %f\n",k);
-    }
-    return 0;
-    }
-    
+	  float r, g, b, c, m, y, k, w = 0;
+	
+	printf("\nEnter the color values of R, G and B : ");
+	scanf("%f %f %f", &r, &g, &b);
+	
+	r /= 255;
+	g /= 255;
+	b /= 255;
+	
+	if(w < r)
+		w = r;
+	
+	if(w < g)
+		w = g;
+	
+	if(w < b)
+		w = b;
+	
+	
+	c = (w - r) / w;
+	m = (w - g) / w;
+	y = (w - b) / w;
+	k = 1 - w;
+	
+	printf("\nC : %f\nM : %f\nY : %f\nK : %f", c,m,y,k);
+	return 0;
+}
 
+(h)
+
+    #include<stdio.h>
+     int main()
+    {
+     int d,m;
+	
+	printf("\nEnter the data and month of birth : ");
+	scanf("%d %d", &d, &m);
+	
+	printf("\nYour Zodiac is : ");
+	
+	if(m == 12 && d >= 22 || m == 1 && d <= 19)
+		printf("Capricorn.");
+	
+	if(m == 1 && d >= 20 || m == 2 && d <= 17)
+		printf("Aquaries.");
+		
+	if(m == 2 && d >= 18 || m == 3 && d <= 19)
+		printf("Pisces");
+	
+	if(m == 3 && d >= 20 || m == 4 && d <= 19)
+		printf("Aries");
+		
+	if(m == 4 && d >= 20 || m == 5 && d <= 20)
+		printf("Taurus");
+		
+	if(m == 5 && d >= 21 || m == 6 && d <= 20)
+		printf("Gemini");
+		
+	if(m == 6 && d >= 21 || m == 7 && d <= 22)
+		printf("cancer");
+		
+	if(m == 7 && d >= 23 || m == 8 && d <= 22)
+		printf("Leo");
+		
+	if(m == 8 && d >= 23 || m == 9 && d <= 22)
+		printf("Virgo");
+		
+	if(m == 9 && d >= 23 || m == 10 && d <=22)
+		printf("Libra");
+		
+	if(m == 10 && d >= 23 || m == 11 && d <= 21)
+		printf("Scorpio");
+		
+	if(m == 11 && d >= 22 || m == 12 && d <=21)
+		printf("Sagittarius.");
+	return 0;
+}
+
+(i)
+
+      #include<stdio.h>
+      int main()
+      {
+	  float w, h, bmi;
+	
+	printf("\nEnter you wight (in kg) and height (in m) : ");
+	scanf("%f %f", &w, &h);
+	
+	bmi = w / (h * h);
+	
+	printf("\nYour BMI category is : ");
+	
+	if(bmi < 15)
+		printf("Starvation");
+		
+	if(bmi >= 15.1 && bmi <= 17.5)
+		printf("Anorexic");
+		
+	if(bmi >= 17.6 && bmi <= 18.5)
+		printf("Underweight");
+		
+	if(bmi >= 18.6 && bmi <= 24.9)
+		printf("Ideal");
+		
+	if(bmi >= 25 && bmi <= 25.9)
+		printf("Overweight");
+		
+	if(bmi >= 30 && bmi <= 30.9)
+		printf("Obese.");
+		
+	if(bmi >= 40)
+		printf("Morbidly Obese");
+	return 0;
+    }
     
+## [E]
+
+(a)
+(1)      
+        
+        #include<stdio.h>
+        int main()
+        {
+	     char ch;
+	
+	printf("Enter a character : ");
+	scanf("%c", &ch);
+	
+	chr > 98 && chr < 123 ? printf("Lower case alphabet."):printf("Not a lower case alphabet.");
+	return 0;
+      }
+      
+(2)
+
+
+     #include<stdio.h>
+     int main()
+     {
+	   char chr;
+	
+	printf("Enter a character : ");
+	scanf("%c", &chr);
+	
+	chr < 123 && chr > 97 || chr > 64 && chr < 92 ? printf("Not a special symbol."):printf("Special symbol.");
+	return 0;
+}
+
+
    
