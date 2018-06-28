@@ -58,7 +58,7 @@
      return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>;
     #include<conio.h>;
@@ -191,7 +191,7 @@
     return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>
     #include<conio.h>
@@ -246,7 +246,7 @@
     return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>
     #include<conio.h>
@@ -299,7 +299,7 @@
     return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>
     #include<conio.h>
@@ -338,7 +338,7 @@
     return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>
     #include<conio.h>
@@ -385,7 +385,7 @@
     return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>
     #include<conio.h>
@@ -441,7 +441,7 @@
      return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>
     #include<conio.h>
@@ -489,7 +489,7 @@
     return 0;
     }
     
-    OR
+   OR
     
     #include<stdio.h>
     #include<conio.h>
