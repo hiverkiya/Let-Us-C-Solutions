@@ -29,16 +29,16 @@
     
 ## [C]
 
-    (a) 
-    (b) 
-    (c)
+    (a) True
+    (b) False
+    (c) False
     (d) False
-    (e) True
+    (e) False
     (f) False
     (g) False
     (h) False
     (i) False
-    (j) True
+    (j) False
     (k) True
     (l) True
-    (m)
+    (m) False
