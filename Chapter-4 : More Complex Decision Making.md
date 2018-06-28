@@ -13,20 +13,19 @@
          
 ## [B]
 
-    (a) Dean of students affairs
+  (a) Dean of students affairs
   
-    (b) w=1 x=0 y=1 z=1
+  (b) w=1 x=0 y=1 z=1
   
-    (c) biggest=45
+  (c) biggest=45
   
-    (d) -1 1
+  (d) -1 1
   
-    (e) 1
+  (e) 1
   
-    (f) Compile error
+  (f) Compile error
   
 ## [C] 
-
 ## [D]
 
 (a)  
@@ -85,5 +84,112 @@
           printf("Grade is 5");
           return 0;
           }
-   
+          
+(d)
+
+    #include<stdio.h>
+    int main()
+    {
+    int s1,s2,s3,largest;
+    scanf("%d %d %d",&s1,&s2,&s3);
+    if(s1>s2 && s1>s3)
+    largest=s1;
+    else if(s2>s1 && s2>s3)
+    largest=s2;
+    else
+    largest=s3;
+    if((s1+s2)>largest|| (s2+s3)>largest || (s1+s3)>largest)
+    printf("Triangle is valid");
+    else 
+    printf("Triangle is not valid");
+    return 0;
+    }
+    
+    
+(e)
+
+    #include<stdio.h>
+    int main()
+    {
+    int x,y,z;
+    scanf("%d %d %d",&x,&y,&z);
+    if(x*x+y*y==z*z)
+    printf("The triangle is right angle");
+    else if((x==y) && (y==z))
+    {
+    printf("\nThe triangle is equilateral");
+    } 
+    else if((x==z) || (y==z) || (x==y))
+    {
+    printf("\nThe triangle is isoseles");
+    }
+    else
+    {
+    printf("\nThe triangle is scalene");
+    }
+    return 0;
+    }
+    
+(f)
+  
+  
+    #inlcude<stdio.h>
+    int main()
+    {
+    int weigh;
+    scanf("%d",&weigh);
+    if(weigh<115)
+    printf("Flyweight");
+    else if(weigh>=115 && weigh<=121)
+    printf("Bantamweight");
+    else if(weigh>=122 && weigh<=153)
+    printf("Featherweight");
+    else if(weigh>=154 && weigh<=189)
+    printf("Middleweight");
+    else
+    printf("Heavyweight");
+    return 0;
+    }
+    
+(g)
+
+    #include<stdio.h>
+    int main()
+    {
+    int r,g,b;
+    float c,m,y,k,w1,w2,w3,w_largest;
+    printf("Enter the valies of RGB ranging between 0-255 = ");
+    scanf("%d %d %d",r,g,b;
+    if(r==0 && g==0 && b==0)
+    {
+    printf("Cyan = 0\n");
+    printf("Magenta = 0\n");
+    printf("Yellow = 0\n");
+    printf("Black = 1\n");
+    }
+    else
+    {
+    w1=r/255;
+    w2=g/255;
+    w3=b/255;
+    if(w1>w2 && w1>w3)
+    w_largest=w1;
+    else if(w2>w1 && w2>w3)
+    w_largest=w2;
+    else
+    w_largest=w3;
+    c=((w_largest-(r/255))/w_largest);
+    printf("Cyan = %f\n",c);
+    m=((w_largest-(g/255))/w_largest);
+    printf("Magenta = %f\n",m);
+    y=((w_largest-(b/255))/w_largest);
+    printf("Yellow = %f\n",y);
+    k=w_largest-1;
+    printf("Black = %f\n",k);
+    }
+    return 0;
+    }
+    
+
+    
    
