@@ -13,19 +13,20 @@
          
 ## [B]
 
-  (a) Dean of students affairs
+    (a) Dean of students affairs
   
-  (b) w=1 x=0 y=1 z=1
+    (b) w=1 x=0 y=1 z=1
   
-  (c) biggest=45
+    (c) biggest=45
   
-  (d) -1 1
+    (d) -1 1
   
-  (e) 1
+    (e) 1
   
-  (f) Compile error
+    (f) Compile error
   
 ## [C] 
+
 ## [D]
 
 (a)  
