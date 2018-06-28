@@ -27,4 +27,18 @@
     (d) Format Specifier %lf %lf" should be used.
     (e) NO ERROR.
     
-    
+## [C]
+
+    (a) 
+    (b) 
+    (c)
+    (d) False
+    (e) True
+    (f) False
+    (g) False
+    (h) False
+    (i) False
+    (j) True
+    (k) True
+    (l) True
+    (m)
