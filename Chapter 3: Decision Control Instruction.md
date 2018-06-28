@@ -56,7 +56,9 @@
      return 0;
     }
 (c)
+
 (d)
+
 (e)
 
     #include<stdio.h>
@@ -86,7 +88,7 @@
     printf("Reverse and Original Number are not Equal");
     }
     return 0;
-   }
+    }
 (f)
 
     #include<math.h>
@@ -143,6 +145,9 @@
     return 0;
     }
 (i) 
+
 (j)
+
 (k)
+
 (l)
