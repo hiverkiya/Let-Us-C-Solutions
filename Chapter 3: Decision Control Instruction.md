@@ -146,8 +146,46 @@
     }
 (i) 
 
+    #include <stdio.h>
+    int main()
+    {
+    int l,b;
+    printf("Enter length and breadth of rectangle\n");
+    scanf("%d %d",&l,&b);
+    if((l*b)>(2*(l+b)))
+    {
+        printf("Area is Greater than perimeter\n");
+    }
+    else
+    {
+        printf("Area is not Greater than perimeter\n");
+    }
+    return 0;
+    }
+
 (j)
 
 (k)
 
 (l)
+
+    #include<stdio.h>
+    int main()
+    {
+     float x,y;
+     printf("Enter Coordinates\n");
+     scanf("%f %f",&x,&y);
+     if(x==0.0&&y==0.0)
+    {
+        printf("Point lies on origin\n");
+    }
+     else if (x==0.0&&y>0.0)
+    {
+        printf("Point lies on y-axis\n");
+    }
+     else if(y==0.0&& x>0.0)
+    {
+        printf("Point lies on x-axis\n");
+    }
+    return 0;
+    }
