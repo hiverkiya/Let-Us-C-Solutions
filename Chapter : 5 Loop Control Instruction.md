@@ -106,4 +106,84 @@
            }
            return 0;
            }
+	   
+   (f)
+   
+   (g)
+         
+	 #include<stdio.h>
+	 int main()
+	 {
+	 int num,pos=0,neg=0,zero=0,choice;
+	  do
+	  {
+	    scanf("%d",&num);
+	    if(num==0)
+	    zero++;
+	    else if(n<0)
+	    neg++;
+	    else if(n>0)
+	    pos++;
+	    printf("Do you want to enter another number? (Enter 1 for yes & 0 for no)");
+	    scanf("%d",&choice);
+	   }while(choice);
+	   printf("Zeroes = %d\n",zero);
+	   printf("Negatives = %d\n",neg);
+	   printf("Positives = %d\n",pos);
+	   return 0;
+	   }
 
+   (h)
+   
+        #include<stdio.h>
+	int main()
+	{
+	  int num,rem,oct=0,rev=0,rem1;
+	  scanf("%d",&num);
+	  while(num)
+	  {
+	    rem=num%8;
+	    oct=10*oct+rem;
+	    num/=8;
+	  }
+	  while(oct)
+	  {
+	   rem1=oct%10;
+	   rev=rev*10+rem1;
+	   oct/=10;
+	   }
+	     printf("%d is octal equivalent",rev);
+	    return 0;
+	    }
+	    
+   (i)
+   
+        #include<stdio.h>
+        int main()
+        {
+	int i,num,max,min, N, range;
+	
+	printf("Enter how many number you want to enter : ");
+	scanf("%d", &N);
+	
+	printf("Enter the number : ");
+	scanf("%d", &num);
+	
+	max=min=num;
+	
+	for( i = 1; i < N; i++)
+	{
+		printf("Enter the number : ");
+		scanf("%d", &num);
+		if(num>max)
+			max=num;
+		if(num<min)
+			min=num;
+	}
+	range = max - min;
+	
+	printf("\n%d is the range of the data.", range);
+	return 0;
+     }
+            
+	 
