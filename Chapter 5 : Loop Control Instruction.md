@@ -155,7 +155,17 @@
 	     printf("%d is octal equivalent",rev);
 	    return 0;
 	    }
-	    
+	
+ OR
+ 	
+	#include<stdio.h>
+	int main()
+	{   int number;
+    printf("Enter Number\n");
+    scanf("%d",&number);
+    printf("Octal equivalent is %o",number);
+    return 0;
+	}
    (i)
    
         #include<stdio.h>
