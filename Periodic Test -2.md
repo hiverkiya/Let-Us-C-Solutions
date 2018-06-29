@@ -21,6 +21,24 @@
 ## [D]
 
    (1)
+      
+    #include<stdio.h>
+    int fun(int,int,int,int);
+    int main()
+    {
+    printf("Enter four integers\n");
+    int a,b,c,d;
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    fun(a,b,c,d);
+    return 0;
+    }
+    int fun(int a,int b,int c,int d)
+    {
+    printf("Sum is %d.\n",a+b+c+d);
+    printf("Product is %d.\n",a*b*c*d);
+    printf("Average is %f.\n",(float)(a+b+c+d)/4.0);
+    return 0;
+    }
    (2)
    (3)
      
@@ -38,7 +56,7 @@
     scanf("%f",&height);
     printf("Volume of cone is %f.\n",PI*radius*radius*(height/3.0));
     return 0;
-   }
+    }
   
   (4)
   
@@ -55,7 +73,7 @@
     printf("Size of double: %ld bytes\n",sizeof(doubleType));
     printf("Size of char: %ld byte\n",sizeof(charType));
     return 0;
-   }
+    }
    
 
        
