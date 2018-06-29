@@ -101,7 +101,19 @@
     return 0;
     }
 
-(c)
+(c
+
+    #include<math.h>
+    #include<stdio.h>
+    int main()
+    {
+    float side1,side2,side3,s_p;
+    printf("Enter sides of triangle\n");
+    scanf("%f %f %f",&side1,&side2,&side3);
+    s_p=(side3+side2+side1)/2.0;
+    printf("Area of triangle is %f",sqrt(s_p*(s_p-side1)*(s_p-side2)*(s_p-side3)));
+    return 0;
+    }
 
 (d)
   
