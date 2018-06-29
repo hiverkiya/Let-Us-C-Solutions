@@ -61,6 +61,32 @@
     return 0;
     }
    (2)
+  
+    int func(int);
+    #include <stdio.h>
+
+    int main()
+    {   int number;
+    printf("Enter Number\n");
+    scanf("%d",&number);
+    func(number);
+    return 0;
+    }
+    int func(int num)
+    {
+    int counter_var;
+    for(counter_var=2;counter_var<=num;counter_var++)
+    {
+        if(num%counter_var==0)
+        {
+            printf("%d\n",counter_var);
+            func(num/counter_var);
+            break;
+        }
+    }
+    return 0;
+    }
+
     
    (3)
      
