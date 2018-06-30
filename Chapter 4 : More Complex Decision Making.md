@@ -13,19 +13,31 @@
          
 ## [B]
 
-  (a) Dean of students affairs
+    (a) Dean of students affairs
   
-  (b) w=1 x=0 y=1 z=1
+    (b) w=1 x=0 y=1 z=1
   
-  (c) biggest=45
+    (c) biggest=45
   
-  (d) -1 1
+    (d) -1 1
+   
+    (e) 1
   
-  (e) 1
-  
-  (f) Compile error
+    (f) Compile error
   
 ## [C] 
+
+    (a) NO ERROR.
+    (b) NO ERROR.
+    (c) Wrong use of "&&" Operators.
+    (d) NO ERROR.
+    (e) "else" used without previous "if" as first "if" is terminated with ";"
+    (f) NO ERROR.
+    (g) NO ERROR.However,result will be j>=65?9: 
+    (h) lvalue required as left operand of assignment
+    (i) Wrong use of ternary operator "? then :".
+    (j) There is no use of ";" after printf().
+
 ## [D]
 
 (a)  
@@ -232,7 +244,7 @@
 	if(m == 11 && d >= 22 || m == 12 && d <=21)
 		printf("Sagittarius.");
 	return 0;
-}
+	}
 
 (i)
 
@@ -274,7 +286,8 @@
 ## [E]
 
 (a)
-(1)      
+	
+	(1)      
         
         #include<stdio.h>
         int main()
@@ -318,6 +331,35 @@
 	return 0;
            }
    
+   OR
+   
+   	#include <stdio.h>
+
+	int main()
+	{
+ 	 int year;
+
+	printf("Enter a year: ");
+	scanf("%d",&year);
+
+	if(year%4 == 0)
+	{
+	    if( year%100 == 0)
+ 	   {
+        // year is divisible by 400, hence the year is a leap year
+        if ( year%400 == 0)
+            printf("%d is a leap year.", year);
+        else
+            printf("%d is not a leap year.", year);
+    }
+    else
+        printf("%d is a leap year.", year );
+	}
+	else
+ 	   printf("%d is not a leap year.", year);
+
+	return 0;
+	}
 (c)
    
         #include<stdio.h>
@@ -332,7 +374,28 @@
 	return 0;
           }
 	  
-(d)
+(d)	
+
+	#include<stdio.h>
+	#include<math.h>
+	int main()
+	{
+    float theta;
+    printf("Enter angle in degrees\n");
+    scanf("%f",&theta);
+    theta=0.0174533*theta;
+    if((sin(theta)*sin(theta)+cos(theta)*cos(theta))==1)
+    {
+        printf("\"sin^2+cos^2=1\" is true");
+    }
+    else
+    {
+        printf("\"sin^2+cos^2=1\" is not true");
+    }
+
+    return 0;
+	}
+	
 
 (e)
 
