@@ -18,5 +18,9 @@
       (b)  temp cannot appean in constant expression. We can never have a variable in case statement, but the temp is there.
       (c)  Here 'a' is an float variable and we cannot test floats in switch statements.
       (d)  'a' and 'b' are not constants used in case statement.
+      
+## [C]
+
+
      
          
