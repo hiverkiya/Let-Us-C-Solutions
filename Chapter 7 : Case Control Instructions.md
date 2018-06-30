@@ -82,7 +82,7 @@
             int class,fail;
             printf("Enter the class = ");
             scanf("%d",&class);
-            print("Enter the number of subjects student got failed = ");
+            printf("Enter the number of subjects student got failed = ");
             scanf("%d",&fail);
             switch(class)
             {
@@ -121,7 +121,7 @@
                    printf("You've got grace of 3 marks per subject");
                    break;
                    default:
-                   printf("You didn't got any grace"):
+                   printf("You didn't got any grace");
                    break;
                    }
                    break;
