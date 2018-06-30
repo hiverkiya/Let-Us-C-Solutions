@@ -119,7 +119,7 @@
         void prime(int n)
         {
           int i,j,isPrime=1;
-          for(i2;i<=n;i++)
+          for(i=2;i<=n;i++)
           {
             if(n%i==0)
             {  
