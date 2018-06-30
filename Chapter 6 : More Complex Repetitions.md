@@ -15,7 +15,7 @@
       (d)  Initialization, execution of body, testing.
       (e)  3.
       (f)  Continue;
-      (g)  Infinte times.
+      (g)  Infinite times.
       (h)  The program will produce the output x = 10 y = 10.
            The ; after the if (x != y) would NOT produce an error.
       (i)  All things that can be done using a for loop can also be done using a while loop.
