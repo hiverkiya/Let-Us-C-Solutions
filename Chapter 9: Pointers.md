@@ -3,8 +3,11 @@
 ## [A]
 
   (a) 5 2
+  
   (b) 25 4
+  
   (c) 1006 1006 1006
+  
       13.5 13.5 13.5 13.5 13.5
 ## [B]
 
@@ -12,11 +15,14 @@
       1. pass() cannot return a value as its return type is void.
       2. we cannot assign pass() to other variable as its return type is void
       3. We cannot define variables inbetween function name and its body.
+  
   (b) Error: Invalid conversion fro int to int*. Cannot pass address
       in the function whose argument accepts integer.
+  
   (c)  Error:
        1. Can't assign a function returning void, to other variable.
        2. m is not declared in the argument declaration feild of function.
+  
   (d) Error:
       1. Can't assign a function returning void, to other variable.
       2. function() cannot return anything with return type void. 
