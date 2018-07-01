@@ -3,17 +3,20 @@
 ## [A]
 
    (a) 3. a message from programmer to the preprocessor
+      
    (b) #define SQR(X) ( X * X ) 
+   
    (c)
    
         1. False
-        2. True
+        2. False
         3. True
         4. False
         5. False
         6. False
         
    (d) We can include any number of files we want to include in a program.
+   
    (e)  In the first statement, we can give any path of the
 file to be included. While the name given in the second statement
 looks for the file in the default set of directories.
