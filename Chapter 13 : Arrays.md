@@ -230,5 +230,23 @@
 	   0
       (e)  3 2 15
       
+## [F]
+
+      (a)  No Error.
+      (b)  No Error.
+      (c)  j is not an pointer. It cannot save address.
+      (d)  No Error.
+      (e)  i is undeclared.
+      
+## [G]
+
+      (a)  2 possible system malfunction.
+      (b)  Address of 0th element.
+      (c)  Unused elements will be filled with zero's or garbage value.
+      (d)  Nothing, it's done all the time.
+      (e)  Address of the first element of the array.
+      (f)  To manipulate parts of an array.
+      (g)  An undetermined value.
+      
 	  
 	
