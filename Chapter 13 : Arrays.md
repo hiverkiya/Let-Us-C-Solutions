@@ -213,5 +213,22 @@
 	   }
 	   return 0;
 	   }
+	   
+## [E]
+
+      (a)  Error: There will be a comma before variable in printf function.
+      (b)  Error: There will be a comma before variable in printf function.
+      (c)  7
+           9
+           11
+           13
+           15
+      (d)  0
+           0
+	   0
+	   0
+	   0
+      (e)  3 2 15
+      
 	  
 	
