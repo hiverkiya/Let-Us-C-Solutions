@@ -15,7 +15,7 @@
       (d)  Initialization, execution of body, testing.
       (e)  3.
       (f)  Continue;
-      (g)  Infinte times.
+      (g)  Infinite times.
       (h)  The program will produce the output x = 10 y = 10.
            The ; after the if (x != y) would NOT produce an error.
       (i)  All things that can be done using a for loop can also be done using a while loop.
@@ -103,6 +103,20 @@
      }
      
 (e)
+
+	#include<stdio.h>
+	#include<stdlib.h>
+	int main()
+	{	
+	int year=0,inv,alt;
+	while(alt>inv)
+	{
+	year++;
+	alt=120*year;
+	inv=(1000*year)-4000;
+	}
+	printf("The minimum year is %d",year);
+	}
 
 (f)
 
@@ -219,8 +233,145 @@
 	return 0;
        }
        
+(l)
+
+	#include<stdio.h>
+	#include<conio.h>
+	#include<math.h>
+
+	int main()
+	{
+	int num, i, j, k, l;
+	for (num = 1; num < 5000; num++)
+	{
+		for (i = 1; i < num; i++)
+		{
+			if (num < i*i*i)
+				break;
+			for (j = i + 1; j < num; j++)
+			{
+				if (num < j*j*j)
+					break;
+				for (k = i + 1; k < num; k++)
+				{
+					if (k*k*k > i*i*i + j*j*j)
+						break;
+					for (l = k + 1; l < num; l++)
+					{
+						if (num < k*k*k + l*l*l)
+							break;
+						if ((num == i*i*i + j*j*j) && (num == k*k*k + l*l*l))
+						{
+							printf("\n%d^3 + %d^3 = %d^3 + %d^3 = num : %d",i, j, k, l, num);
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+	getch();
+	return 0;
+	}
+(m)
+
+	#include<stdio.h>
+	#include<conio.h>
+	int main()
+	{
+	int hr;
+	for(hr = 0; hr < 24; hr++)
+	{
+		if(hr == 0)
+			printf("\n12 Midnight");
+		if(hr > 0 && hr < 12)
+			printf("\n%d AM", hr);
+		if(hr == 12)
+			printf("\n%d Noon.", hr);
+		if(hr > 12 && hr < 24)
+			printf("\n%d PM.", hr-12);
+	}
+	getch();
+	return 0;
+	}
+
+(n) Floyd's Triangle
+
+	#include<stdio.h>
+	int main()
+	{
+	 int num,r,c,sp,i=1;
+	 printf("Enter any number : ");
+	 scanf("%d", &num);
+		 for(r=1; r<=num; r++)
+ 	{
+	 	 for(sp=1; sp<=num-r; sp++)
+ 	   printf(" ");
+	  for(c=1; c<=r; c++,i++)
+    printf("%d ",i);  
+ 	 printf("\n");
+	 }
+ 	return 0;
+	}
+
+(o)
+	
+	void main()
+	{
+	int i,j,k;
+	for(i=7;i>=1;i--)
+	{
+	for(j=1;j<=7;j++)
+	{
+	if(j<=i)
+	printf("%c",'A' + j-1);
+	else
+	printf(" ");
+	}
+	for(j=6;j>=1;j--)
+	{
+	if(j<=i)
+	printf("%c",'A' + j-1);
+	else
+	printf(" ");
+	} 
+	printf("\n");
+		}
+	}	
 
 
+	
+(p)
+
+Pascal’s triangle is a triangular array of the binomial coefficients.
+
+	#include <stdio.h>
+	int main()
+	{
+    int rows, coef = 1, space, i, j;
+
+    printf("Enter number of rows: ");
+    scanf("%d",&rows);
+
+    for(i=0; i<rows; i++)
+    {
+        for(space=1; space <= rows-i; space++)
+            printf("  ");
+
+        for(j=0; j <= i; j++)
+        {
+            if (j==0 || i==0)
+                coef = 1;
+            else
+                coef = coef*(i-j+1)/j;
+
+            printf("%4d", coef);
+        }
+        printf("\n");
+    }
+
+    return 0;
+	}
      
 	  
 	  

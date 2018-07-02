@@ -77,9 +77,86 @@
          d=pow(a,b);
          return d;
        }
-       
+     
+ OR 	
+ 	
+	#include<stdio.h>
+       #include<math.h>
+       int power(int,int);
+       int main()
+       {
+         int a,b,ans;
+         scanf("%d %d",&a,&b);
+         ans=power(a,b);
+         printf("%d",ans);
+        return 0;
+       }
+ 
+ 	int power(int x, int y)
+	{
+	int num = 1, i;
+	for (i = 1; i <= y; i++)
+		num = num*x;
+	return(num);
+	}
 (c)
+    
+        #include<stdio.h>
+    #include<conio.h>
 
+    void rom(int);
+    void print(int, char);
+
+    int main()
+    {
+	int yer;
+
+	printf("Enter the year : ");
+	scanf("%d", &yer);
+	printf("\nRoman equivalent of %d is : ", yer);
+	rom(yer);
+
+	getch();
+	return 0;
+    }
+
+    void rom(int yer)
+    {
+	int v, x, l, c, d, m;
+
+	m = yer / 1000;
+	print(m, 'm');
+	yer %= 1000;
+
+	d = yer / 500;
+	print(d, 'd');
+	yer %= 500;
+
+	c = yer / 100;
+	print(c, 'c');
+	yer %= 100;
+
+	l = yer / 50;
+	print(l, 'l');
+	yer %= 50;
+
+	x = yer / 10;
+	print(x, 'x');
+	yer %= 10;
+
+	v = yer / 5;
+	print(v, 'v');
+	yer %= 5;
+
+	print(yer, 'i');
+    }
+
+    void print(int a, char c)
+    {
+	int i;
+	for (i = 0; i < a; i++)
+		printf("%c", c);
+    }
 (d)
 
          #include<stdio.h>
@@ -138,3 +215,55 @@
            } 
            return 0;
          }
+	 
+OR
+
+	#include<stdio.h>
+	#include<conio.h>
+	int check_prime(int);
+	void pf(int);
+	int main()
+	{
+	int num;
+	printf("Enter a number : ");
+	scanf("%d", &num);
+	pf(num);
+	_getch();
+	return 0;
+	}
+	void pf(int num)
+	{
+	int i;
+	for (i = 2; num != 1; i++) //loop for obtaining the numbers.
+	{
+		if (num%i != 0)// If the number is not a factor
+			continue;
+		else
+		{
+        	//If the number is prime, so check if it is prime
+			if(check_prime(i) == 1)
+			{
+				while (num%i == 0)
+				{
+					printf("%d, ", i);
+					num /= i;
+				}
+			}
+		}
+	}
+	}
+
+	//returns 1 if prime, otherwise 0.
+	int check_prime(int num)
+	{
+	int i = 2;
+	while(i < num)
+	{
+		if(i%num == 0)
+			return 0;
+		i++;
+	}
+	if(i == num)
+		return 1;
+	}
+
