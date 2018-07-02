@@ -141,6 +141,7 @@
 	int main()
 	 {
 	   int i,j,isPrime;
+	   int a[100];
 	   for(i=0;i<100;i++)
 	    a[i]=i+1;
 	    for(i=0;i<100;i++)
@@ -158,4 +159,31 @@
 		 printf("%d\n",a[i]);
 		}
 		return 0;
-	      }	
+	   }
+	   
+(d)
+
+       #include<stdio.h>
+       int main()
+       {
+         int i,pos,neg,even,odd;
+	 int a[25];
+	 for(i=0;i<25;i++)
+	 scanf("%d",&a[i]);
+	 for(i=0;i<25;i++)
+	 {
+	   if(a[i]<0)
+	    neg++;
+	    else if(a[i]>0)
+	    pos++;
+	    else if(a[i]%2==0)
+	    even++;
+	    else if(a[i]%2!=0)
+	    odd++;
+	  }
+	  printf("Negatives = %d\n",neg);
+	  printf("Positives = %d\n",pos);
+	  printf("Even = %d\n",even);
+	  printf("Odd = %d\n",odd);
+	  return 0;
+	  }
