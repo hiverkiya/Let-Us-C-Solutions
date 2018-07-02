@@ -210,6 +210,8 @@
 	   for(i=0;i<n;i++)
 	   {
 	     printf("%d\n",a[i]);
-	    }
+	   }
+	   return 0;
+	   }
 	  
 	
