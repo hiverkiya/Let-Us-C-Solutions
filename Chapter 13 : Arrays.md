@@ -375,6 +375,13 @@
 	      3 3
 	      5 5
 	      1 1
+	      
+## [K]
+
+         (a)  missing subscript in initialization
+	 (b)  missing subscript in initialization
+	
+	  
 	 
 
 
