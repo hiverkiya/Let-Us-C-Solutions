@@ -307,6 +307,86 @@
 	   return 0;
 	   }
 	   
+(c)
+
+          #include<stdio.h>
+          int main()
+          {
+	    int i;
+	    int a[25];
+	    int *ptr;
+	    for(i=0;i<25;i++)
+	   {
+	    scanf("%d",&a[i]);
+	   }
+	    ptr=&a;
+	    for(i=0;i<25;i++)
+	  {
+		if(*ptr>a[i])
+		*ptr=a[i];
+	  }
+	  printf("%d",*ptr);
+	return 0;
+         }
+	 
+(d) 
+
+         #include<stdio.h>
+	 int modify(int *);
+	 int main()
+	 {
+	   int i;
+	   int a[10]={1,2,3,4,5,6,7,8,9,10};
+	   modify(a);
+	  for(i=0;i<10;i++)
+	   {
+	     printf("%d\n",a[i]);
+	   }
+	   return 0;
+	 }
+	   int modify(int *a)
+	   {
+	     int i;
+	     for(i=0;i<10;i++)
+	     {
+	      a[i]=a[i]*3;
+	      }
+	      return a;
+	  }  
+	  
+## [j]
+
+         (a)  [Address of 1st 1d Array] [Garbage Value] 1
+	 (b)  2
+              4
+	      3
+	      6
+	      8
+	      5
+	      3
+	      5
+	      1
+	 (c)  2 2
+              4 4
+              3 3
+	      6 6
+	      8 8 
+	      5 5
+	      3 3
+	      5 5
+	      1 1
+	 
+
+
+       
+
+          
+	   
+
+       
+
+      
+	   
 
 
           
