@@ -1,4 +1,4 @@
-# Chapter-13 Multidimensional Arrays
+# Chapter-14 Multidimensional Arrays
 ## [A]
 
         (a)  [Address of 1st 1d Array] [Garbage Value] 1
