@@ -240,13 +240,13 @@
       
 ## [G]
 
-      (a)  2 possible system malfunction.
-      (b)  Address of 0th element.
+      (a)  Other data maybe overwritten.
+      (b)  Address of 0th element or base address.
       (c)  Unused elements will be filled with zero's or garbage value.
-      (d)  Nothing, it's done all the time.
+      (d)  Other data maybe overwritten.
       (e)  Address of the first element of the array.
       (f)  To manipulate parts of an array.
-      (g)  An undetermined value.
+      (g)  0
       
 ## [H]
 
