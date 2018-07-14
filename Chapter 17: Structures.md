@@ -86,24 +86,24 @@
       
       (a) 
       #include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
-struct studata
-{
+	#include<conio.h>
+	#include<Windows.h>
+	struct studata
+	{
 	int roll;
 	char name[50];
 	char depart[50];
 	char course[20];
 	int yoj;
-}nos[450] = { 03, "Kishor", "IT", "B.tech", 2014,
-10, "Mohammad Siraj Alam", "Computer Science", "B.Tech", 2014,
-53, "Deepak", "Computer Applications", "BCA", 2013,
-13, "Karan", "Mechanical", "Diploma", 2013,
-1, "Aakash", "Tool and Die", "Diploma", 2012,
-2, "Ramesh", "IT", "B.tech", 2014
-};
-void student_in_year(int year)
-{
+	}nos[450] = { 03, "Kishor", "IT", "B.tech", 2014,
+	10, "Mohammad Siraj Alam", "Computer Science", "B.Tech", 2014,
+	53, "Deepak", "Computer Applications", "BCA", 2013,
+	13, "Karan", "Mechanical", "Diploma", 2013,
+	1, "Aakash", "Tool and Die", "Diploma", 2012,
+	2, "Ramesh", "IT", "B.tech", 2014
+	};
+	void student_in_year(int year)
+	{
 	int i;
 	printf("\n\t\tYear of joining : %d\n\n", year);
 	for (i = 0; i <= 450; i++)
@@ -117,9 +117,9 @@ void student_in_year(int year)
 			printf("\nCourse : %s\n", nos[i].course);
 		}
 	}
-}
-void student_data(int enroll)
-{
+	}
+	void student_data(int enroll)
+	{
 	int i;
 	printf("\nRoll number : %d", enroll);
 	for (i = 0; i <= 450; i++)
@@ -132,9 +132,9 @@ void student_data(int enroll)
 			printf("\nYear of joining : %d\n", nos[i].yoj);
 		}
 	}
-}
-int main()
-{
+	}
+	int main()
+	{
 	int yoj, roll;
 	printf("\nEnter year of joining of the students : ");
 	scanf("%d", &yoj);
@@ -146,32 +146,33 @@ int main()
 	student_data(roll);
 	_getch();
 	return 0;
-}
+	}
 (b)
-#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
 
-/*Function to perform withdrawal or deposition*/
-void action(int, int, int);
+	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
 
-/*Print the balance below 100 Rs.*/
-void below100();
+	/*Function to perform withdrawal or deposition*/
+	void action(int, int, int);
 
-struct acc_holder
-{
+	/*Print the balance below 100 Rs.*/
+	void below100();
+
+	struct acc_holder
+	{
 	long int acc_num;
 	char name[30];
 	int bal;
-} sbi[200] = { 1, "Siraj", 1000000,
-2, "Azad", 1233044,
-3, "Deepak", 99,
-4, "Rihan", 33,
-5, "Rahul Khowal", 200000
-};
+	} sbi[200] = { 1, "Siraj", 1000000,
+	2, "Azad", 1233044,
+	3, "Deepak", 99,
+	4, "Rihan", 33,
+	5, "Rahul Khowal", 200000
+	};
 
-int main()
-{
+	int main()
+	{
 	int accnum, amount, code;
 	printf("\nEnter your account number : ");
 	scanf("%d", &accnum);
@@ -194,10 +195,10 @@ int main()
 	below100();
 	_getch();
 	return 0;
-}
+	}
 
-void below100()
-{
+	void below100()
+	{
 	int i;
 	for (i = 0; i < 200; i++)
 	{
@@ -207,10 +208,10 @@ void below100()
 			printf("\nAccount Number : %d\n\n", sbi[i].acc_num);
 		}
 	}
-}
+	}
 
-void action(int accnum, int amount, int code)
-{
+	void action(int accnum, int amount, int code)
+	{
 	int i;
 	for (i = 0; i < 200; i++)
 		if (sbi[i].acc_num == accnum)
@@ -234,31 +235,32 @@ void action(int accnum, int amount, int code)
 		printf("\nYour new account balance is : %d", sbi[i].bal);
 	}
 
-}
+	}
 (c)
-#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
 
-void eng_info(char*, char*);
+	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
 
-struct engine
-{
+	void eng_info(char*, char*);
+
+	struct engine
+	{
 	char serial[4];
 	int yom;
 	char mat[50];
 	int quantity;
-}
-maruti[10] = { "AA0", 2005, "Iron", 20,
-"BB1", 2007, "Steel", 13,
-"BB2", 1992, "Aluminium", 57,
-"CC1", 2005, "Stainless Steel", 7,
-"CC6", 2007, "Steel", 34,
-"CC7", 2010, "Steel", 14
-};
+	}
+	maruti[10] = { "AA0", 2005, "Iron", 20,
+	"BB1", 2007, "Steel", 13,
+	"BB2", 1992, "Aluminium", 57,
+	"CC1", 2005, "Stainless Steel", 7,
+	"CC6", 2007, "Steel", 34,
+	"CC7", 2010, "Steel", 14
+	};
 
-int main()
-{
+	int main()
+	{
 	char from[5], to[5];
 	printf("\nEnter the serial number, from where you want to start the list : ");
 	scanf("%s", from);
@@ -268,11 +270,11 @@ int main()
 	eng_info(from, to);
 	_getch();
 	return 0;
-}
+	}
 
-void eng_info(char *from, char *to)
-{
-	char first_letter;
+	void eng_info(char *from, char *to)
+	{
+		char first_letter;
 	int last_digit;
 	int i;
 	printf("\n\t\tEngines Information\n");
@@ -295,31 +297,32 @@ void eng_info(char *from, char *to)
 			return;
 		}
 	}
-}
+	}
 (d)
-#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#define Max 20
 
-int compare(const void * a, const void * b);
+	#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#define Max 20
 
-struct cricketers
-{
+	int compare(const void * a, const void * b);
+
+	struct cricketers
+	{
 	int avrun;
 	char name[30];
 	int age;
 	int notm;
-}india[Max] = {
+	}india[Max] = {
 	122, "Sachin Tendulkar", 30, 67,
 	97, "Virendra Sehwag", 35, 56,
 	66, "Irfan Pathan", 32, 45,
 	153, "Yusuf Pathan", 36, 21,
 	101, "Yuvaraj Singh", 32, 45,
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	int i;
 	qsort(india, 5, sizeof(struct cricketers), compare);
 
@@ -340,33 +343,34 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+	}
 
-int compare(const void * a, const void * b)
-{
+	int compare(const void * a, const void * b)
+	{
 	return (*(int*)a - *(int*)b);
-}
+	}
 (e)
-#include<stdio.h>
-#include<conio.h>
 
-void printinfo(struct employee k);
+	#include<stdio.h>
+	#include<conio.h>
 
-struct employee
-{
+	void printinfo(struct employee k);
+
+	struct employee
+	{
 	int code;
 	char name[30];
 	int doj[3];
-}hcl[50] = {
+	}hcl[50] = {
 
 	001, "Shahnawaz", 13, 1,2006,
 	004, "Amit Puri", 21, 6,2008,
 	102, "Irfan Moin", 12, 5, 2012,
 	131, "Shabnam", 16, 1, 2014
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	int i, d[3];
 	printf("\nEnter the current date (dd mm yyyy) : ");
 	scanf("%d%d%d", &d[0], &d[1], &d[2]);
@@ -389,43 +393,44 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+	}
 
-void printinfo(struct employee e)
-{
+	void printinfo(struct employee e)
+	{
 	printf("\nCode : %d", e.code);
 	printf("\nName : %s", e.name);
 	printf("\nDate of joining : %d-%d-%d\n", e.doj[0], e.doj[1], e.doj[2]);
-}
+	}
 (f)
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<Windows.h>
 
-/*Count total number of books in the library*/
-int count();
+	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<Windows.h>
 
-void display(int);
+	/*Count total number of books in the library*/
+	int count();
 
-/*If the author name is same so the function strcmp returns a zero*/
-void giv_author(char*);
-void adbuk();
+	void display(int);
 
-/*Appears the title of the specified book*/
-void which1(int);
+	/*If the author name is same so the function strcmp returns a zero*/
+		void giv_author(char*);
+	void adbuk();
 
-/*Displays all the books serially accession number*/
-void albuk();
+	/*Appears the title of the specified book*/
+	void which1(int);
 
-struct library
-{
+	/*Displays all the books serially accession number*/
+	void albuk();
+
+	struct library
+	{
 	int an;/*Accession number*/
 	char title[50];
 	char author[30];
 	int price;
 	int flag;/*flag = 0 : Issued and,flag =  1: not issued*/
-}geclib[50] = {
+	}geclib[50] = {
 	1, "Let Us C", "Yashavant Kanethkar", 258, 1,
 	2, "Data Structure Through C", "Yashavant Kanethkar", 300, 1,
 	3, "Let Us C++", "Yashavant Kanethkar", 220, 1,
@@ -433,10 +438,10 @@ struct library
 	5, "The Two Towers", "J. R. R. Tolkien", 560, 0,
 	6, "The Hobbit", "J. R. R. Tolkien", 550, 1,
 	7, "The Fellowship of the Ring", "J. R. R. Tolkien", 550, 0
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	int ans = 1, an;
 	char auth[30];
 	while (ans != 7)
@@ -495,18 +500,18 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+	}
 
-int count()
-{
+	int count()
+	{
 	int i = 0;
 	while (geclib[i].an)
 		i++;
 	return i;
-}
+	}
 
-void display(int i)
-{
+	void display(int i)
+	{
 	i--;/*To use i as index*/
 	printf("\n\n\n");
 	printf("\nAccession Number : %d", geclib[i].an);
@@ -517,10 +522,10 @@ void display(int i)
 		printf("\nStatus : Issued");
 	else
 		printf("\nStatus : Available");/*Flag : 1*/
-}
-
-void giv_author(char *author)
-{
+	}
+	
+	void giv_author(char *author)
+	{
 	int i = 0;
 	printf("\nBooks of \"%s\" are following : \n\n", author);
 	while (geclib[i].an)
@@ -529,10 +534,10 @@ void giv_author(char *author)
 			display(geclib[i].an);
 		i++;
 	}
-}
+	}
 
-void adbuk()
-{
+	void adbuk()
+	{
 	int next = count();
 	geclib[next].an = next + 1;
 
@@ -546,10 +551,10 @@ void adbuk()
 	scanf("%d", &geclib[next].price);
 	geclib[next].flag = 1;
 	system("cls");
-}
+	}
 
-void which1(int an)
-{
+	void which1(int an)
+	{
 	int i = 0;
 	while (geclib[i].an)
 	{
@@ -560,37 +565,38 @@ void which1(int an)
 		}
 	}
 	printf("No any book found found\n");
-}
+	}
 
-void albuk()
-{
+	void albuk()
+	{
 	int i = 0;
 	while (geclib[i].an)
 	{
 		display(i + 1);
 		i++;
 	}
-}
+	}
 (g)
-#include<stdio.h>
-#include<conio.h>
-struct dmy
-{
+
+	#include<stdio.h>
+	#include<conio.h>
+	struct dmy
+	{
 	int date;
 	int month;
 	int year;
-};
+	};
 
-int datcmp(struct dmy a, struct dmy b)
-{
+	int datcmp(struct dmy a, struct dmy b)
+	{
 	if (a.date == b.date && a.month == b.month && a.year == b.year)
 		return 0;
 	else
 		return 1;
-}
+	}
 
-int main()
-{
+	int main()
+	{
 	struct dmy a, b;
 	int flag;
 	printf("\nEnter the first date (dd mm yyyy) : ");
@@ -604,27 +610,28 @@ int main()
 		printf("\nThe dates are same\n");
 	_getch();
 	return 0;
-}
+	}
 (h)
-#include<stdio.h>
-#include<conio.h>
-#include<malloc.h>
-#include<stdlib.h>
-#include<Windows.h>
-#define GetSize (struct node*)malloc(sizeof(struct node))
 
-void insert(struct node**, int);
-void del(struct node**, int);
-void display(struct node*);
+	#include<stdio.h>
+	#include<conio.h>
+	#include<malloc.h>
+	#include<stdlib.h>
+	#include<Windows.h>
+	#define GetSize (struct node*)malloc(sizeof(struct node))
 
-struct node
-{
+	void insert(struct node**, int);
+	void del(struct node**, int);
+	void display(struct node*);
+
+	struct node
+	{
 	int data;
 	struct node* next;
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	char ans = 'y';
 	int num, exit = 1, action;
 	struct node *start = NULL;
@@ -673,10 +680,10 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+	}
 
-void insert(struct node **start, int num)
-{
+	void insert(struct node **start, int num)
+	{
 	struct node *help = NULL, *curr = NULL;
 	help = GetSize;
 	help->data = num;/*This is our new node.*/
@@ -692,10 +699,10 @@ void insert(struct node **start, int num)
 	for (curr = *start; curr->next != NULL; curr = curr->next);
 
 	curr->next = help;
-}
+	}
 
-void del(struct node **start, int num)
-{
+	void del(struct node **start, int num)
+	{
 	struct node *curr = *start, *pre = NULL;
 
 	/*Finding the data to be deleted */
@@ -721,35 +728,36 @@ void del(struct node **start, int num)
 		pre->next = curr->next;
 
 	free(curr);/*Deletion*/
-}
+	}
 
-void display(struct node *start)
-{
+	void display(struct node *start)
+	{
 	struct node *i = NULL;
 	printf("\nYour list\n");
 	for (i = start; i != NULL; i = i->next)
 		printf("%d\t", i->data);
-}
+	}
 (i)
-#include<stdio.h>
-#include<conio.h>
-#include<malloc.h>
-#include<stdlib.h>
-#include<Windows.h>
 
-#define GetSize (struct node*)malloc(sizeof(struct node))
+	#include<stdio.h>
+	#include<conio.h>
+	#include<malloc.h>
+	#include<stdlib.h>
+	#include<Windows.h>
 
-void push(struct node**, int);
-int pop(struct node**);
+	#define GetSize (struct node*)malloc(sizeof(struct node))
 
-struct node
-{
+	void push(struct node**, int);
+	int pop(struct node**);
+
+	struct node
+	{
 	int data;
 	struct node* next;
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	char ans = 'y';
 	int num, exit = 1, action;
 	struct node *top = NULL;
@@ -801,11 +809,11 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+	}	
 
-/*Push means adding an element in the stack*/
-void push(struct node **top, int num)
-{
+	/*Push means adding an element in the stack*/
+	void push(struct node **top, int num)
+	{
 	struct node *temp = NULL, *help = NULL;
 	help = GetSize;
 
@@ -820,11 +828,11 @@ void push(struct node **top, int num)
 
 	/*Last added element is always the top element.*/
 	*top = help;
-}
+	}
 
-/*Pop means isolating the top element from the stacks.*/
-int pop(struct node **top)
-{
+	/*Pop means isolating the top element from the stacks.*/
+	int pop(struct node **top)
+	{
 	struct node *temp = GetSize;
 	int num;
 	if (*top == NULL)
@@ -834,29 +842,30 @@ int pop(struct node **top)
 	*top = (*top)->next;
 	free(temp);
 	return num;
-}
+	}
 (j)
-#include<stdio.h>
-#include<conio.h>
-#include<malloc.h>
-#include<stdlib.h>
-#include<Windows.h>
 
-#define GetSize (struct node*)malloc(sizeof(struct node))
+	#include<stdio.h>
+	#include<conio.h>
+	#include<malloc.h>
+	#include<stdlib.h>
+	#include<Windows.h>
 
-void add(struct node**, struct node**, int);
-int del(struct node**, struct node**);
-void display(struct node*);
+	#define GetSize (struct node*)malloc(sizeof(struct node))
 
-struct node
-{
+	void add(struct node**, struct node**, int);
+	int del(struct node**, struct node**);
+	void display(struct node*);
+
+	struct node
+	{
 	int data;
 	struct node* next;
-};
+	};
 
-int main()
-{
-	char ans = 'y';
+	int main()
+	{
+		char ans = 'y';
 	int num, exit = 1, action;
 	struct node *start = NULL, *end = NULL;
 	printf("\nHello all, this program is of queue using linked list, ");
@@ -912,10 +921,10 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+	}
 
-void add(struct node **start, struct node **end, int num)
-{
+	void add(struct node **start, struct node **end, int num)
+	{
 	struct node *help = NULL;
 	help = GetSize;
 	help->data = num;
@@ -928,10 +937,10 @@ void add(struct node **start, struct node **end, int num)
 	}
 	(*end)->next = help;
 	*end = help;
-}
-
-int del(struct node **start, struct node **end)
-{
+	}
+	
+	int del(struct node **start, struct node **end)
+	{
 	struct node *temp;
 	int num;
 	temp = GetSize;
@@ -944,38 +953,38 @@ int del(struct node **start, struct node **end)
 
 	free(temp);
 	return num;
-}
+	}
 
-void display(struct node *start)
-{
-	struct node *a = start;
+	void display(struct node *start)
+	{
+		struct node *a = start;
 	while (a != NULL)
 	{
 		printf("%d\t", a->data);
 		a = a->next;
 	}
-}
+	}
 (k)
-#include<stdio.h>
-#include<conio.h>
-#include<malloc.h>
-#include<stdlib.h>
-#include<Windows.h>
+	#include<stdio.h>
+	#include<conio.h>
+	#include<malloc.h>
+	#include<stdlib.h>
+	#include<Windows.h>
 
-#define GetSize (struct node*)malloc(sizeof(struct node))
+	#define GetSize (struct node*)malloc(sizeof(struct node))
 
-void insert(struct node**, int);
-void del(struct node**, int);
-void display(struct node*);
+	void insert(struct node**, int);
+	void del(struct node**, int);
+	void display(struct node*);
 
-struct node
-{
+	struct node
+	{
 	int data;
 	struct node* next;
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	char ans = 'y';
 	int num, exit = 1, action;
 	struct node *start = NULL;
@@ -1027,10 +1036,10 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+	}
 
-void insert(struct node **start, int num)
-{
+	void insert(struct node **start, int num)
+	{
 	struct node *help = NULL, *curr = NULL, *pre = NULL;
 	help = GetSize;
 	help->data = num;/*This is our new node.*/
@@ -1061,10 +1070,10 @@ void insert(struct node **start, int num)
 		help->next = curr;
 	}
 
-}
-
-void del(struct node **start, int num)
-{
+	}
+	
+	void del(struct node **start, int num)
+	{
 	struct node *curr = *start, *pre = NULL;
 	while (curr->data != num)
 	{
@@ -1083,21 +1092,22 @@ void del(struct node **start, int num)
 	else
 		pre->next = curr->next;
 	free(curr);
-}
+	}
 
-void display(struct node *start)
-{
+	void display(struct node *start)
+	{
 	struct node *i = NULL;
 	printf("\nYour list\n");
 	for (i = start; i != NULL; i = i->next)
 		printf("%d\t", i->data);
-}
+	}
 (l)
-#include<stdio.h>
-#include<conio.h>
 
-int main()
-{
+	#include<stdio.h>
+	#include<conio.h>
+
+	int main()
+	{
 	int wind;
 	char cat;
 	printf("\nEnter the speed of the wind (in miles/hour) : ");
@@ -1117,19 +1127,20 @@ int main()
 	printf("\nThe wind speed belongs to the Hurricane Category '%c'", cat);
 	_getch();
 	return 0;
-}
+	}
 (m)
-#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
-struct marks
-{
+
+	#include<stdio.h>
+	#include<conio.h>
+	#include<windows.h>
+	struct marks
+	{
 	int j[3];
 	int tot;
-};
+	};
 
-int main()
-{
+		int main()
+	{
 	struct marks player[5];
 	int i, j, max = 0;
 	for (i = 0; i < 5; i++)
@@ -1154,6 +1165,6 @@ int main()
 			return 0;
 		}
 	}
-}
+	}
 
       
