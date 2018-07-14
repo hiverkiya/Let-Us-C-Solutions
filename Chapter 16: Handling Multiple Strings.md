@@ -14,17 +14,19 @@
     
 ## [B] 
     
-    (a) #include<stdio.h>
-#include<conio.h>
-#include<malloc.h>
-#include<string.h>
-#define LINE 6/*If the number of lines are increased
- so no need to change anything in the program just change
- LINE macro here.*/
-#pragma warning (disable : C4267)
+    (a) 
+    	
+	#include<stdio.h>
+	#include<conio.h>
+	#include<malloc.h>
+	#include<string.h>
+	#define LINE 6/*If the number of lines are increased
+	 so no need to change anything in the program just change
+	 LINE macro here.*/
+	#pragma warning (disable : C4267)
 
-void ser_rep(char **str, char *old, char *news)
-{
+	void ser_rep(char **str, char *old, char *news)
+	{
 	int i, j, k, m, c;
 	j = k = m = i = c = 0;
 	char ans[10][100], *p;
@@ -73,9 +75,9 @@ void ser_rep(char **str, char *old, char *news)
 		strcpy(p, ans[i]);
 		str[i] = p;
 	}
-}
-int main()
-{
+	}
+	int main()
+	{
 	char *str[] = {
 		"We will teach you how to...",
 		"Move a mountain",
@@ -94,23 +96,24 @@ int main()
 		puts(str[i]);
 	_getch();
 	return 0;
-}
+	}
 (b)
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<malloc.h>
-#include<Windows.h>
 
-void swap(char *a, char *b)
-{
+	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<malloc.h>
+	#include<Windows.h>
+
+	void swap(char *a, char *b)
+	{
 	char temp[20];
 	strcpy(temp, a);
 	strcpy(a, b);
 	strcpy(b, temp);
-}
-void sort_names(char** name_list, int tot_names)
-{
+	}
+	void sort_names(char** name_list, int tot_names)
+	{
 	int i, j, k = 0;
 	for (i = 0; i < tot_names; i++)
 	{
@@ -123,9 +126,9 @@ void sort_names(char** name_list, int tot_names)
 				swap(name_list[j], name_list[i]);
 		}
 	}
-}
-int main()
-{
+	}
+	int main()
+	{
 	char *nam_list[10], *p, name[20], ans = 'y';
 	int i = 0, j = 0, a, b;
 	while (ans == 'y')
@@ -148,16 +151,17 @@ int main()
 		puts(nam_list[j]);
 	_getch();
 	return 0;
-}
+	}
 (c)
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<malloc.h>
-#include<Windows.h>
 
-int main()
-{
+	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<malloc.h>
+	#include<Windows.h>
+
+	int main()
+	{
 	char *s[] = {
 		"To err is human",
 		"But to really mess up things...",
@@ -185,19 +189,20 @@ int main()
 
 	_getch();
 	return 0;
-}
+	}
 (d)
-#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
 
-#define VS /*Uncomment this if using Visual Studio*/
-//#define TC /*Uncomment this if using Turbo C++*/
+	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
 
-#define LEAP (!(yr%4))/*Checing for leap year*/
+	#define VS /*Uncomment this if using Visual Studio*/
+	//#define TC /*Uncomment this if using Turbo C++*/
 
-int main()
-{
+	#define LEAP (!(yr%4))/*Checing for leap year*/
+
+	int main()
+	{
 	int j = 1, a = 7, i, x = 1, nod;
 	int year, yr, month, m, mon, curr, next = 0;
 
@@ -215,12 +220,12 @@ int main()
 	scanf("%d", &month);
 
 
-#ifdef VS
+	#ifdef VS
 	system("cls");/*clearing screen in visula studio.*/
-#endif
-#ifdef TC
+	#endif
+	#ifdef TC
 	clrscr();
-#endif
+	#endif
 
 
 	for (yr = 1900; yr <= year; yr++)/*Traversing years*/
@@ -319,478 +324,481 @@ int main()
 	}
 	_getch();
 	return 0;
-}
-(e)#include<stdio.h>
-#include<conio.h>
-#include<dos.h>
+	}
+(e)
 
-/*********************************/
-/* function to tackle arrow keys */
-/*********************************/
+	#include<stdio.h>
+	#include<conio.h>
+	#include<dos.h>
 
-getkey() {
+	/*********************************/
+	/* function to tackle arrow keys */
+	/*********************************/
 
-union REGS i,o;
+	getkey() {
 
-while(!kbhit());
+	union REGS i,o;
 
-i.h.ah=0;
-int86 (22,&i,&o);
+	while(!kbhit());
 
-return (o.h.ah);
+	i.h.ah=0;
+	int86 (22,&i,&o);
 
-}
+	return (o.h.ah);
 
-void main() {
+	}
 
-
-int x,y,i,lastday,key;
-int month,year,a;
-void box();
-
-clrscr();
-
-printf("Enter month: ");
-scanf("%d",&month);
-
-printf("\n\nEnter year: ");
-scanf("%d",&year);
-
-/***********************************************/
-/*   starting the program with a condition     */
-/***********************************************/
+	void main() {
 
 
-if(month<=12 && month>=1 && year>=1900 && year<=2045)  {
+	int x,y,i,lastday,key;
+	int month,year,a;
+	void box();
 
-do {
+	clrscr();
 
+	printf("Enter month: ");
+	scanf("%d",&month);
 
-/* if up arrow key is hit */
+	printf("\n\nEnter year: ");
+	scanf("%d",&year);
 
-
-if(key==72) {
-
-if(year+1 > 2045) {
-}
-else {
-year=year+1;  /* increment of year */
-}
-
-}
+	/***********************************************/
+	/*   starting the program with a condition     */
+	/***********************************************/
 
 
-/* if down arrow key is hit */
+	if(month<=12 && month>=1 && year>=1900 && year<=2045)  {
 
-if(key==80) {
-
-if(year-1 < 1900) {
-}
-else {
-year=year-1;  /* decrement of year */
-}
-
-}
+	do {
 
 
-/* if left arrow key is hit */
-
-if(key==75) {
-
-if(month-1 < 1){
-}
-else {
-month=month-1;  /* decrement of month */
-}
-
-}
+	/* if up arrow key is hit */
 
 
-/* if right arrow key is hit */
+	if(key==72) {
 
-if(key==77) {
+	if(year+1 > 2045) {
+	}
+	else {
+	year=year+1;  /* increment of year */
+	}
 
-if(month+1 > 12){
-}
-
-else {
-month=month+1;   /* increment of month */
-}
-
-}
-
-x=49,y=9,i=1;             /* calender printing objects */
+	}
 
 
-x = dayfinder(month,year);    /* calculating first day of the month */
+	/* if down arrow key is hit */
 
-lastday = totaldays(month,year);    /* calculating total days of the month*/
+	if(key==80) {
 
+	if(year-1 < 1900) {
+	}
+	else {
+	year=year-1;  /* decrement of year */
+	}
 
-clrscr();
-
-box(month,year);       /* drawing boxes and headings of calender */
-
-
-/*************************/
-/* printing the calender */
-/*************************/
+	}
 
 
-while(i<=lastday) {
+	/* if left arrow key is hit */
 
-gotoxy(x,y);
+	if(key==75) {
 
-printf("%2d",i);
+	if(month-1 < 1){
+	}
+	else {
+	month=month-1;  /* decrement of month */
+	}
 
-i++;
-x+=5;
+	}
 
-if(x>52) {    /* if the position of 7 days is covered, again print from
+
+	/* if right arrow key is hit */
+
+	if(key==77) {
+
+	if(month+1 > 12){
+	}
+
+	else {
+	month=month+1;   /* increment of month */
+	}
+
+		}
+
+	x=49,y=9,i=1;             /* calender printing objects */
+
+
+	x = dayfinder(month,year);    /* calculating first day of the month */
+
+	lastday = totaldays(month,year);    /* calculating total days of the month*/
+
+
+	clrscr();
+
+	box(month,year);       /* drawing boxes and headings of calender */
+
+
+	/*************************/
+	/* printing the calender */
+	/*************************/
+
+
+	while(i<=lastday) {
+
+	gotoxy(x,y);
+
+	printf("%2d",i);
+
+	i++;
+	x+=5;
+
+	if(x>52) {    /* if the position of 7 days is covered, again print from
     beginning from a new line */
 
-x=22;
-y+=2;
+	x=22;
+	y+=2;
 
- }
-}
+	 }
+	}
 
-gotoxy(1,1);  /* moving cursor away from calender */
+	gotoxy(1,1);  /* moving cursor away from calender */
 
-key=getkey();     /* taking the arrow key input */
+	key=getkey();     /* taking the arrow key input */
 
-} while(key==72 || key==75 || key==77 || key==80);
+	} while(key==72 || key==75 || key==77 || key==80);
 
-}
+	}
 
-else
-printf("Error! invalid input\n");
+	else
+	printf("Error! invalid input\n");
 
 
-getch();
+	getch();
 
-}
-/*********************** main ends ************************/
+		}
+	/*********************** main ends ************************/
 
 
-/**********************************************************/
-/* function to find first day of the given month and year */
-/**********************************************************/
+	/**********************************************************/
+	/* function to find first day of the given month and year */
+	/**********************************************************/
 
-int dayfinder(int month, int year)
+	int dayfinder(int month, int year)
 
-{
+	{
 
-int a,day=1;
+	int a,day=1;
 
-/* this is a general purpose formula to calculate first day */
+	/* this is a general purpose formula to calculate first day */
 
-a=(14-month)/12;
-year=year-a;
-month=month+12*a-2;
+	a=(14-month)/12;
+	year=year-a;
+	month=month+12*a-2;
 
-day=(day+year+(year/4)-(year/100)+(year/400)+((31*month)/12)) % 7;
+	day=(day+year+(year/4)-(year/100)+(year/400)+((31*month)/12)) % 7;
 
 
-/* determining the position to print the first day in the calender */
+	/* determining the position to print the first day in the calender */
 
-if(day==0)
-day=22;
+	if(day==0)
+	day=22;
 
-else if(day==1)
-day=27;
+	else if(day==1)
+	day=27;
 
-else if(day==2)
-day=32;
+	else if(day==2)
+	day=32;
 
-else if(day==3)
-day=37;
+	else if(day==3)
+	day=37;
+	
+	else if(day==4)
+	day=42;
 
-else if(day==4)
-day=42;
+	else if(day==5)
+	day=47;
 
-else if(day==5)
-day=47;
+	else if(day==6)
+	day=52;
 
-else if(day==6)
-day=52;
+	return (day);  /* return the position */
 
-return (day);  /* return the position */
+	}
 
-}
+	/********************************************************/
+	/* function to draw the boxes, headings of the calender */
+	/********************************************************/
 
-/********************************************************/
-/* function to draw the boxes, headings of the calender */
-/********************************************************/
 
+	void box(int m,int y) {
 
-void box(int m,int y) {
 
+	int i,j,k,l;
 
-int i,j,k,l;
+	/*************/
+	/* inner box */
+	/*************/
 
-/*************/
-/* inner box */
-/*************/
+	/* corners of inner box */
 
-/* corners of inner box */
+	gotoxy(20,3);
+	printf("%c",218);
+	
+	gotoxy(55,3);
+	printf("%c",191);
 
-gotoxy(20,3);
-printf("%c",218);
+	gotoxy(55,21);
+	printf("%c",217);
 
-gotoxy(55,3);
-printf("%c",191);
+	gotoxy(20,21);
+	printf("%c",192);
 
-gotoxy(55,21);
-printf("%c",217);
+	/* boundries of inner box */
 
-gotoxy(20,21);
-printf("%c",192);
+	for(j=4;j<=20;j++) {
 
-/* boundries of inner box */
+	gotoxy(20,j);
+	printf("%c",179);
+	
+	gotoxy(55,j);
+	printf("%c",179);
 
-for(j=4;j<=20;j++) {
+	}
 
-gotoxy(20,j);
-printf("%c",179);
 
-gotoxy(55,j);
-printf("%c",179);
+	for(i=21;i<=54;i++) {
 
-}
+	gotoxy(i,3);
+	printf("%c",196);
 
+	gotoxy(i,21);
+	printf("%c",196);
 
-for(i=21;i<=54;i++) {
+	}
 
-gotoxy(i,3);
-printf("%c",196);
+	/*************/
+	/* outer box */
+	/*************/
 
-gotoxy(i,21);
-printf("%c",196);
+	/* corners of outer box */
 
-}
+	gotoxy(17,1);
+	printf("%c",218);
 
-/*************/
-/* outer box */
-/*************/
+	gotoxy(17,23);
+	printf("%c",192);
 
-/* corners of outer box */
+	gotoxy(58,1);
+	printf("%c",191);
 
-gotoxy(17,1);
-printf("%c",218);
+	gotoxy(58,23);
+	printf("%c",217);
 
-gotoxy(17,23);
-printf("%c",192);
+	/* boundries of outer box */
 
-gotoxy(58,1);
-printf("%c",191);
+	for(k=2;k<=22;k++) {
 
-gotoxy(58,23);
-printf("%c",217);
+	gotoxy(17,k);
+	printf("%c",179);
 
-/* boundries of outer box */
+	gotoxy(58,k);
+	printf("%c",179);
 
-for(k=2;k<=22;k++) {
+	}
 
-gotoxy(17,k);
-printf("%c",179);
 
-gotoxy(58,k);
-printf("%c",179);
+	for(l=18;l<=57;l++) {
 
-}
+	gotoxy(l,1);
+	printf("%c",196);
 
+	gotoxy(l,23);
+	printf("%c",196);
 
-for(l=18;l<=57;l++) {
+	}
 
-gotoxy(l,1);
-printf("%c",196);
+	/********************************************/
+	/* writing heading on appropriate positions */
+	/********************************************/
 
-gotoxy(l,23);
-printf("%c",196);
 
-}
+	gotoxy(22,6);
+	printf("Sun");
+	
+	gotoxy(27,6);
+	printf("Mon");
 
-/********************************************/
-/* writing heading on appropriate positions */
-/********************************************/
+	gotoxy(32,6);
+	printf("Tue");
 
+	gotoxy(37,6);
+	printf("Wed");
 
-gotoxy(22,6);
-printf("Sun");
+	gotoxy(42,6);
+	printf("Thu");
 
-gotoxy(27,6);
-printf("Mon");
+	gotoxy(47,6);
+	printf("Fri");
 
-gotoxy(32,6);
-printf("Tue");
+	gotoxy(52,6);
+	printf("Sat");
 
-gotoxy(37,6);
-printf("Wed");
 
-gotoxy(42,6);
-printf("Thu");
+	gotoxy(32,4);
 
-gotoxy(47,6);
-printf("Fri");
+	if(m==1)
+	printf("January %d",y);
 
-gotoxy(52,6);
-printf("Sat");
+	if(m==2)
+	printf("February %d",y);
 
+	if(m==3)
+	printf("March %d",y);
 
-gotoxy(32,4);
+	if(m==4)
+	printf("April %d",y);
 
-if(m==1)
-printf("January %d",y);
+	if(m==5)
+	printf("May %d",y);
 
-if(m==2)
-printf("February %d",y);
+	if(m==6)
+	printf("June %d",y);
 
-if(m==3)
-printf("March %d",y);
+	if(m==7)
+	printf("July %d",y);
 
-if(m==4)
-printf("April %d",y);
+	if(m==8)
+	printf("August %d",y);
 
-if(m==5)
-printf("May %d",y);
+	if(m==9)
+	printf("September %d",y);
 
-if(m==6)
-printf("June %d",y);
+	if(m==10)
+	printf("October %d",y);
 
-if(m==7)
-printf("July %d",y);
+	if(m==11)
+	printf("November %d",y);
 
-if(m==8)
-printf("August %d",y);
+	if(m==12)
+	printf("December %d",y);
 
-if(m==9)
-printf("September %d",y);
 
-if(m==10)
-printf("October %d",y);
+	/*************************/
+	/* printing instructions */
+	/*************************/
 
-if(m==11)
-printf("November %d",y);
+	gotoxy(60,16);
+	printf("%c : Next year",30);
 
-if(m==12)
-printf("December %d",y);
+	gotoxy(60,18);
+	printf("%c : Previous year",31);
 
+	gotoxy(60,20);
+	printf("%c : Next month",16);
 
-/*************************/
-/* printing instructions */
-/*************************/
+	gotoxy(60,22);
+	printf("%c : Previous month",17);
 
-gotoxy(60,16);
-printf("%c : Next year",30);
 
-gotoxy(60,18);
-printf("%c : Previous year",31);
+	}
 
-gotoxy(60,20);
-printf("%c : Next month",16);
+	/***************************************************/
+	/* function to determine total days of given month */
+	/***************************************************/
 
-gotoxy(60,22);
-printf("%c : Previous month",17);
+	int totaldays(int m,int y) {
 
+	int days;
 
-}
+	/* for january */
 
-/***************************************************/
-/* function to determine total days of given month */
-/***************************************************/
+	if(m==1)
+	days=31;
 
-int totaldays(int m,int y) {
+	/* for february */
 
-int days;
+	if(m==2) {
 
-/* for january */
+	if(y%4==0)
+	days=29;
 
-if(m==1)
-days=31;
+	else
+	days=28;
 
-/* for february */
+	}
+	/* for march */
 
-if(m==2) {
+	if(m==3)
+	days=31;
 
-if(y%4==0)
-days=29;
+	/* for april */
 
-else
-days=28;
+	if(m==4)
+	days=30;
 
-}
-/* for march */
+	/* for may */
 
-if(m==3)
-days=31;
+	if(m==5)
+	days=31;
 
-/* for april */
+	/* for june */
 
-if(m==4)
-days=30;
+	if(m==6)
+	days=30;
+	
+	/* for july */
 
-/* for may */
+	if(m==7)
+	days=31;
 
-if(m==5)
-days=31;
+	/* for august */
 
-/* for june */
+	if(m==8)
+	days=31;
 
-if(m==6)
-days=30;
+	/* for september */
 
-/* for july */
+	if(m==9)
+	days=30;
 
-if(m==7)
-days=31;
+	/* for october */
 
-/* for august */
+	if(m==10)
+	days=31;
 
-if(m==8)
-days=31;
+	/* for november */
 
-/* for september */
+	if(m==11)
+	days=30;
+	
+	/* for december */
 
-if(m==9)
-days=30;
+	if(m==12)
+	days=31;
 
-/* for october */
 
-if(m==10)
-days=31;
-
-/* for november */
-
-if(m==11)
-days=30;
-
-/* for december */
-
-if(m==12)
-days=31;
-
-
-return days;
-}
+	return days;
+	}
 (f)
-#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
 
-//#define DEVC /*Uncomment this if using DevC++*/
-#define VS /*Uncomment this if using Visual Studio*/
-//#define TC /*Uncomment this if using Turbo C++*/
+	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
 
-#define LEAP (!(yr%4))/*Checing for leap year*/
-#define UpArrowKey 72
-#define DownArrowKey 80
-#define LeftArrowKey 75
-#define RightArrowKey 77
-#define EscapeKey 27
+	//#define DEVC /*Uncomment this if using DevC++*/
+	#define VS /*Uncomment this if using Visual Studio*/
+	//#define TC /*Uncomment this if using Turbo C++*/
 
-int getkey()
-{
+	#define LEAP (!(yr%4))/*Checing for leap year*/
+	#define UpArrowKey 72
+	#define DownArrowKey 80
+	#define LeftArrowKey 75
+	#define RightArrowKey 77
+	#define EscapeKey 27
+
+	int getkey()
+	{
 	int ch;
 	ch = _getch();
 	if (ch == 0)
@@ -799,9 +807,9 @@ int getkey()
 		return ch;
 	}
 	return ch;
-}
-void short_cal(int year, int month)
-{
+	}
+	void short_cal(int year, int month)
+	{
 	system("cls");
 	int j = 1, a = 7, i, x = 1, nod;
 	int yr, m, mon, curr, next = 0;
@@ -895,10 +903,10 @@ void short_cal(int year, int month)
 		if (x>nod)
 			break;
 	}
-}
+	}
 
-int main()
-{
+	int main()
+	{
 	int year, month, key = 0;
 
 
@@ -913,15 +921,15 @@ int main()
 	scanf("%d", &month);
 
 
-#ifdef DEVC
-	system("cls");/*clearing screen in DevC++.*/
-#endif
-#ifdef VS
-	system("cls");/*clearing screen in Visual Studio.*/
-#endif
-#ifdef TC
-	clrscr();/*clearing screen in TurboC++.*/
-#endif
+	#ifdef DEVC
+		system("cls");/*clearing screen in DevC++.*/
+	#endif
+	#ifdef VS
+		system("cls");/*clearing screen in Visual Studio.*/
+	#endif
+	#ifdef TC
+		clrscr();/*clearing screen in TurboC++.*/
+	#endif
 
 	short_cal(year, month);
 	while (key != 27)
@@ -961,25 +969,26 @@ int main()
 
 	_getch();
 	return 0;
-}
+	}
 (g)
-#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
-#define Vowel line[i] == 'A' || line[i] == 'a' || line[i] == 'E' || line[i] == 'e' \
- || line[i] == 'I' || line[i] == 'i' || line[i] == 'O' || line[i] == 'o' || \
- line[i] == 'U' || line[i] == 'u'
+
+	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
+	#define Vowel line[i] == 'A' || line[i] == 'a' || line[i] == 'E' || line[i] == 'e' \
+	 || line[i] == 'I' || line[i] == 'i' || line[i] == 'O' || line[i] == 'o' || \
+ 	line[i] == 'U' || line[i] == 'u'
  
-void del_vow(char *line)
-{
+	void del_vow(char *line)
+	{
 	int i, j;
 	for (i = 0; line[i] != '\0'; i++)
 		if (Vowel)
 			for (j = i; line[j] != '\0'; j++)
 				line[j] = line[j + 1];
-}
-int main()
-{
+	}
+	int main()
+	{
 	char line[80];
 	puts("Enter the line");
 	gets_s(line);
@@ -988,27 +997,28 @@ int main()
 	puts(line);
 	_getch();
 	return 0;
-}
+	}
 (h)
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
 
-#define Space 32
-#define (line[i] == 't' || line[i] == 'T') && (line[i + 1] == 'h' || \
-line[i + 1] == 'H') && (line[i + 2] == 'E' || line[i + 2] == 'e') && \
-(line[i + 3] == Space || line[i + 3] == '\0'
+	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
 
-void del_the(char *line)
-{
+	#define Space 32
+	#define (line[i] == 't' || line[i] == 'T') && (line[i + 1] == 'h' || \
+	line[i + 1] == 'H') && (line[i + 2] == 'E' || line[i + 2] == 'e') && \
+	(line[i + 3] == Space || line[i + 3] == '\0'
+
+	void del_the(char *line)
+	{
 	int i, j;
 	for (i = 0; line[i] != '\0'; i++)
 		if ()/*if The is encounter*/
 			for (j = i; line[j] != '\0'; j++)
 				line[j] = line[j + 4];/*The word is skipped and other words are saved in the string*/
-}
-int main()
-{
+	}
+	int main()
+	{
 	char line[80];
 	puts("Enter the line");
 	gets_s(line);
@@ -1017,18 +1027,19 @@ int main()
 	puts(line);
 	_getch();
 	return 0;
-}
+	}
 (i)
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<Windows.h>
-#include<malloc.h>
 
-#define Space 32/*ASCII v*/
+	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<Windows.h>
+	#include<malloc.h>
 
-char* last_name(char *line)/*It will return char pointer*/
-{
+	#define Space 32/*ASCII v*/
+
+	char* last_name(char *line)/*It will return char pointer*/
+	{
 	char temp[20], *p;
 	int i, j, l = 0;
 	for (i = j = 0; line[i] != '\0'; i++)
@@ -1053,10 +1064,10 @@ char* last_name(char *line)/*It will return char pointer*/
 	p = (char*)malloc(sizeof(strlen(temp) + 1));/*p getting size*/
 	strcpy(p, temp);/*ading content on p*/
 	return p;/*assigning p to the name[i] in man function as this function returns char pointer*/
-}
+	}
 
-int main()
-{
+	int main()
+	{
 	char *name[10];
 	int i = 0, j;
 	char ans = 'y', *p, naam[30];
@@ -1083,17 +1094,18 @@ int main()
 		puts(name[j]);
 	_getch();
 	return 0;
-}
+	}
 (j) 
-#include<stdio.h>
-#include<conio.h>
 
-#define VowelisOccur str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E' \
+	#include<stdio.h>
+	#include<conio.h>
+
+	#define VowelisOccur str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E' \
 	|| str[i] == 'i' || str[i] == 'I' || str[i] == 'o' || str[i] == 'O' || str[i] == 'u' \
 	|| str[i] == 'U'
 
-int find_vows(char * str)
-{
+	int find_vows(char * str)
+	{
 	int i, count = 0;
 	printf("\nVowels in successions : ");
 	for (i = 0; str[i] != '\0'; i++)
@@ -1109,29 +1121,30 @@ int find_vows(char * str)
 		}
 	}
 	return count;
-}
-int main()
-{
-	char str[100], tot_vow;
+	}
+	int main()
+	{
+		char str[100], tot_vow;
 	printf("Enter the string : ");
 	gets_s(str);
 	tot_vow = find_vows(str);
 	printf("\n\nTotal number of vowels in successions are : %d\n", tot_vow);
 	_getch();
 	return 0;
-}
+	}
 (k)
-#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
-#include<malloc.h>
 
-#define EndofNumber 13
-#define LastElement i+2
+	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
+	#include<malloc.h>
+
+	#define EndofNumber 13
+	#define LastElement i+2
 
 
-void rev_arr(int *arr)
-{
+	void rev_arr(int *arr)
+	{
 	int temp[12], i, max, j;
 	for (i = 0; arr[i] != EndofNumber; i++);/*Counting the total number of elemeents excpet the last EndofNumber*/
 	max = i - 1;/*Max is the total number of elements, as the counting starts from 0 so we subtract 1 from it*/
@@ -1140,9 +1153,9 @@ void rev_arr(int *arr)
 		temp[j] = arr[i];/*temp starting from the last*/
 	for (i = 0; i <= max; i++)
 		arr[i] = temp[i];/*reversing the */
-}
-int main()
-{
+	}
+	int main()
+	{
 	int num, a = 0, arr[12], i;
 	char word[90];
 	printf("\nEnter the number (max. 9 digits) : ");
@@ -1258,40 +1271,41 @@ int main()
 	printf("\n");
 	_getch();
 	return 0;
-}
+	}
 (l)
-#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
+
+	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
 
 
-#define VisualStudio //If using Visual Studio so delete its comment and make above two macro comments
-//#define TurboC //If using Turbo C so delete its comment and make above two macro comments
-//#define DevC //If using Dev C so delete its comment and make above two macro comments
+	#define VisualStudio //If using Visual Studio so delete its comment and make above two macro comments
+	//#define TurboC //If using Turbo C so delete its comment and make above two macro comments
+	//#define DevC //If using Dev C so delete its comment and make above two macro comments
 
-#define EndofNumber 13/*For Terminating the array just like strings do*/
+	#define EndofNumber 13/*For Terminating the array just like strings do*/
 
-int arr[10], x = 0, one_i = 0, two_i = 0, three_i = 0, four_i = 0, five_i = 0, six_i = 0, seven_i = 0, eight_i = 0, nine_i = 0, zero_i = 0;
-/*These variales are used in the multiple functions so I defined them globally*/
+	int arr[10], x = 0, one_i = 0, two_i = 0, three_i = 0, four_i = 0, five_i = 0, six_i = 0, seven_i = 0, eight_i = 0, nine_i = 0, zero_i = 0;
+	/*These variales are used in the multiple functions so I defined them globally*/
 
-/*These functions contains the pattern of # makes numbers*/
-void one();
-void two();
-void three();
-void four();
-void five();
-void six();
-void seven();
-void eight();
-void nine();
-void zero();
+	/*These functions contains the pattern of # makes numbers*/
+	void one();
+	void two();
+	void three();
+	void four();
+	void five();
+	void six();
+	void seven();
+	void eight();
+	void nine();
+	void zero();
 
-void jumpto();/*This functions calls the functions which is the next number*/
+	void jumpto();/*This functions calls the functions which is the next number*/
 
-void rev_arr(int*);/*It will reverse the array*/
+	void rev_arr(int*);/*It will reverse the array*/
 
-void rev_arr(int *array)
-{
+	void rev_arr(int *array)
+	{
 	int temp[12], i, max, j;
 	for (i = 0; array[i] != EndofNumber; i++);/*Counting the total number of elemeents excpet the last EndofNumber*/
 	max = i - 1;/*Max is the total number of elements, as the counting starts from 0 so we subtract 1 from it*/
@@ -1300,10 +1314,10 @@ void rev_arr(int *array)
 		temp[j] = array[i];/*temp starting from the last*/
 	for (i = 0; i <= max; i++)
 		array[i] = temp[i];/*reversing the */
-}
+	}
 
-void jumpto()
-{
+	void jumpto()
+	{
 	if (arr[x] == 0)
 		zero();
 	else if (arr[x] == 1)
@@ -1349,10 +1363,10 @@ void jumpto()
 
 	}
 	return;
-}
+	}
 
-void one()
-{
+	void one()
+	{
 	int j, k;
 	for (; one_i < 8; one_i++)
 	{
@@ -1369,9 +1383,9 @@ void one()
 		printf("\t");
 		jumpto();
 	}
-}
-void two()
-{
+	}
+	void two()
+	{
 	int j, k;
 	for (; two_i <= 7; two_i++)
 	{
@@ -1387,9 +1401,9 @@ void two()
 		printf("\t");
 		jumpto();
 	}
-}
-void three()
-{
+	}
+	void three()
+	{
 	int j, k;
 	for (; three_i < 8; three_i++)
 	{
@@ -1405,9 +1419,9 @@ void three()
 		printf("\t");
 		jumpto();
 	}
-}
-void four()
-{
+	}
+	void four()
+	{
 	int j, k;
 	for (; four_i < 8; four_i++)
 	{
@@ -1427,9 +1441,9 @@ void four()
 		printf("\t");
 		jumpto();
 	}
-}
-void five()
-{
+	}
+	void five()
+	{
 	int j, k;
 	for (; five_i < 8; five_i++)
 	{
@@ -1445,9 +1459,9 @@ void five()
 		printf("\t");
 		jumpto();
 	}
-}
-void six()
-{
+	}
+	void six()
+	{
 	int j, k;
 	for (; five_i < 8; five_i++)
 	{
@@ -1465,9 +1479,9 @@ void six()
 		printf("\t");
 		jumpto();
 	}
-}
-void seven()
-{
+	}
+	void seven()
+	{
 	for (; seven_i < 8; seven_i++)
 	{
 		if (seven_i != 0)
@@ -1480,9 +1494,9 @@ void seven()
 		printf("\t");
 		jumpto();
 	}
-}
-void eight()
-{
+	}
+		void eight()
+	{
 	for (; eight_i < 8; eight_i++)
 	{
 		if (eight_i == 0 || eight_i == 3 || eight_i == 7)
@@ -1493,9 +1507,9 @@ void eight()
 		printf("\t");
 		jumpto();
 	}
-}
-void nine()
-{
+	}
+	void nine()
+	{
 	int j, k;
 	for (; eight_i < 8; eight_i++)
 	{
@@ -1516,9 +1530,9 @@ void nine()
 		jumpto();
 	}
 
-}
-void zero()
-{
+	}
+	void zero()
+	{
 	for (; nine_i < 8; nine_i++)
 	{
 		if (nine_i == 0 || nine_i == 7)
@@ -1529,10 +1543,10 @@ void zero()
 		printf("\t");
 		jumpto();
 	}
-}
+	}
 
-int main()
-{
+	int main()
+	{
 	int num, i;
 	printf("\nEnter a five digit number : ");
 	scanf("%d", &num);
@@ -1545,21 +1559,21 @@ int main()
 	rev_arr(arr);/*Reversing the array again as the number saved in it is already in reverse mode*/
 
 
-#ifdef TurboC
+	#ifdef TurboC
 	clrscr();
-#endif
-#ifdef VisualStudio
+	#endif
+	#ifdef VisualStudio
 	system("cls");
-#endif
-#ifdef DevC
+	#endif
+	#ifdef DevC
 	system("cls");
-#endif
+	#endif
 
 	printf("\n\n\n");
 	jumpto();
 	_getch();
 	return 0;
-}
+	}
 
 
 
