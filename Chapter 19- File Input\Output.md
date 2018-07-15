@@ -111,11 +111,13 @@
     "wb+".
 # [C]
 
-	(a)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-int main()
-{
+	(a)
+	
+		#include<stdio.h>
+		#include<conio.h>
+		#include<stdlib.h>
+		int main()
+	{
 	FILE *fp;
 	int i = 1;
 	char ch;
@@ -148,12 +150,14 @@ int main()
 	fclose(fp);
 	_getch();
 	return 0;
-}
-	(b)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-int main()
-{
+		}
+	(b)
+	
+		#include<stdio.h>
+		#include<conio.h>
+		#include<stdlib.h>
+		int main()
+	{
 	FILE *f1, *f2;
 	char ch, buffer[10];
 
@@ -192,17 +196,19 @@ int main()
 	fclose(f2);
 	_getch();
 	return 0;
-}
-	(c)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
+		}
+	(c)
+	
+		#include<stdio.h>
+		#include<conio.h>
+		#include<stdlib.h>
+		#include<string.h>
 
-void sort_names(char**, int);
-void swap(char*, char*);
+		void sort_names(char**, int);
+		void swap(char*, char*);
 
-int main()
-{
+		int main()
+		{
 	char ch = 'i', *help[30], name[50], *p;
 	int i, j, tot_names;
 	FILE *fp;
@@ -243,18 +249,18 @@ int main()
 	fclose(fp);
 	_getch();
 	return 0;
-}
+		}
 
-void swap(char *a, char *b)
-{
+		void swap(char *a, char *b)
+		{
 	char temp[20];
 	strcpy(temp, a);
 	strcpy(a, b);
 	strcpy(b, temp);
-}
+		}
 
-void sort_names(char** name_list, int tot_names)
-{
+		void sort_names(char** name_list, int tot_names)
+		{
 	int i, j, k = 0;
 
 	for (i = 0; i <= tot_names; i++)
@@ -269,12 +275,14 @@ void sort_names(char** name_list, int tot_names)
 				swap(name_list[j], name_list[i]);
 		}
 	}
-}
-	(d)#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-int main()
-{
+		}
+	(d)
+	
+		#include<stdio.h>
+		#include<conio.h>
+		#include<string.h>
+		int main()
+	{
 	char str[50];
 	FILE *f1, *f2;
 	f1 = fopen("File (d)1.txt", "r");
@@ -286,12 +294,14 @@ int main()
 	}
 	_getch();
 	return 0;
-}
-	(e)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-int main()
-{
+		}
+	(e)
+	
+		#include<stdio.h>
+		#include<conio.h>
+		#include<stdlib.h>
+		int main()
+	{
 	FILE *f1, *f2, *fp;
 	char ch1 = 'a', ch2 = 'a';
 	f1 = fopen("File (e)1.txt", "r");
@@ -348,18 +358,20 @@ int main()
 	printf("\nTask completed.\nExiting . . . \n");
 	_getch();
 	return 0;
-}
-	(f)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<Windows.h>
+		}
+(f)
+	
+	#include<stdio.h>
+		#include<conio.h>
+		#include<stdlib.h>
+		#include<Windows.h>
 
-void getkey();
-void gotoxy(short, short);
-void box(short, short, short, short);
+		void getkey();
+		void gotoxy(short, short);
+		void box(short, short, short, short);
 
-int main()
-{
+		int main()
+		{
 	box(0, 1, 79, 23);
 	FILE *fp;
 	char str[85];
@@ -402,23 +414,23 @@ int main()
 	printf("File Ends\n");
 	_getch();
 	return 0;
-}
+		}
 
-void getkey()
-{
+		void getkey()
+		{
 	char ch;
 	ch = _getch();
 	if (ch == 0)
-		ch = _getch();
-}
-void gotoxy(short col, short row)
-{
+				ch = _getch();
+		}
+		void gotoxy(short col, short row)
+		{
 	HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 	COORD position = { col,row };
 	SetConsoleCursorPosition(h, position);
-}
-void box(short x1, short y1, short x2, short y2)
-{
+		}
+		void box(short x1, short y1, short x2, short y2)
+	{
 	int i;
 	gotoxy(0, 1);
 	printf("%c", 218);/*Making upper-left corener*/
@@ -444,19 +456,19 @@ void box(short x1, short y1, short x2, short y2)
 		gotoxy(x2, i);
 		printf("%c", 179); //This will make right side of the box
 	}
-}
+		}
 	(g)
 	
 		#include<stdio.h>
-#include<conio.h>
-#include<ctype.h>
+		#include<conio.h>
+		#include<ctype.h>
 
-void encode(FILE*, FILE*);
-void decode(FILE*, FILE*);
-void display(FILE*);
+		void encode(FILE*, FILE*);
+	void decode(FILE*, FILE*);
+		void display(FILE*);
 
-int main()
-{
+	int main()
+	{
 	FILE *sf, *df;
 	/*Source File*/
 	sf = fopen("File (g)1.txt", "r");
@@ -478,10 +490,10 @@ int main()
 
 	_getch();
 	return 0;
-}
+	}
 
-void encode(FILE *sf, FILE *df)
-{
+	void encode(FILE *sf, FILE *df)
+	{
 	char ch;
 	while (1)
 	{
@@ -631,11 +643,11 @@ void encode(FILE *sf, FILE *df)
 		}
 		else
 			fputc(ch, df);
+		}
 	}
-}
 
-void decode(FILE *ef, FILE *df)
-{
+	void decode(FILE *ef, FILE *df)
+	{
 	char ch;
 	while (1)
 	{
@@ -815,41 +827,43 @@ void decode(FILE *ef, FILE *df)
 			fputc(ch, ef);
 		}
 	}
-}
+	}
 
-void display(FILE *fp)
-{
+	void display(FILE *fp)
+	{
 	char str[50];
 	while (fgets(str, 49, fp) != NULL)
 		printf("%s", str);
 	puts("\n\n");
 	_getch();
-}
-	(h)#include<stdio.h>
-#include<Windows.h>
-#include<string.h>
-#include<conio.h>
+	}
+	(h)
+	
+		#include<stdio.h>
+	#include<Windows.h>
+	#include<string.h>
+	#include<conio.h>
 
-void display(char*);
-void add_info(int, char*, float);
-void transaction(int, char, float);
+	void display(char*);
+	void add_info(int, char*, float);
+	void transaction(int, char, float);
 
-struct customer
-{
+	struct customer
+	{
 	int accno;
 	char name[30];
 	float balance;
-};
+	};
 
-struct trans
-{
+	struct trans
+	{
 	int accno;
 	char trans_type;
 	float amount;
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	add_info(1, "Siraj", 1000);
 	puts("\n\t\tBefore Transaction");
 	display("customer.dat");
@@ -858,10 +872,10 @@ int main()
 	display("customer.dat");
 	_getch();
 	return 0;
-}
+	}
 
-void display(char *file)
-{
+	void display(char *file)
+	{
 	FILE *fp;
 	struct customer holder;
 	fp = fopen(file, "rb");
@@ -872,10 +886,10 @@ void display(char *file)
 		printf("\t%f\n", holder.balance);
 	}
 	fclose(fp);
-}
+	}
 
-void add_info(int accno, char *name, float bal)
-{
+	void add_info(int accno, char *name, float bal)
+	{
 	FILE *fp;
 	struct customer holder;
 	fp = fopen("customer.dat", "rb+");
@@ -887,10 +901,10 @@ void add_info(int accno, char *name, float bal)
 	holder.balance = bal;
 	fwrite(&holder, sizeof(holder), 1, fp);
 	fclose(fp);
-}
+	}
 
-void transaction(int accno, char ttype, float amount)
-{
+	void transaction(int accno, char ttype, float amount)
+	{
 	FILE *fp, *temp;
 	struct customer holder;
 	fp = fopen("customer.dat", "rb");
@@ -933,35 +947,37 @@ void transaction(int accno, char ttype, float amount)
 	fclose(temp);
 	remove("customer.dat");
 	rename("temp.dat", "customer.dat");
-}
-	(i)#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<Windows.h>
+	}
+	(i)
+	
+		#include<stdio.h>
+		#include<conio.h>
+		#include<string.h>
+			#include<Windows.h>
 
-struct date
-{
+		struct date
+		{
 	int d, m, y;
-};
+	};
 
-struct employee
-{
+	struct employee
+	{
 	char empcode[6];
 	char empname[20];
 	struct date join_date;
 	float salary;
-};
+	};
 
-/*To display list in way they are actually saved in disk.*/
-void display(char*);
-/*To make file before sorting them*/
-void add_info(char*, char*, struct date, float);
-/*Sort by date of joining*/
-void sortbydoj(char*);
-void swap(struct employee*, struct employee*);
+	/*To display list in way they are actually saved in disk.*/
+	void display(char*);
+	/*To make file before sorting them*/
+	void add_info(char*, char*, struct date, float);
+	/*Sort by date of joining*/
+	void sortbydoj(char*);
+	void swap(struct employee*, struct employee*);
 
-int main()
-{
+	int main()
+	{
 	struct date d = {13, 1, 1995};
 	add_info("EMP01","Siraj", d,  50000.00);
 	d.d = 17; d.m = 5; d.y = 1994;
@@ -977,11 +993,11 @@ int main()
 	sortbydoj("Record.dat");
 	_getch();
 	return 0;
-}
+	}
 
 
-void display(char *file)
-{
+	void display(char *file)
+	{
 	FILE *fp;
 	struct employee e;
 	fp = fopen(file, "rb");
@@ -995,10 +1011,10 @@ void display(char *file)
 		printf("\t%f\n", e.salary);
 	}
 	fclose(fp);
-}
+	}
 
-void add_info(char *code, char *name, struct date doj, float salary)
-{
+	void add_info(char *code, char *name, struct date doj, float salary)
+	{
 	FILE *fp;
 	fp = fopen("Record.dat", "rb+");
 	if (fp == NULL)
@@ -1011,18 +1027,18 @@ void add_info(char *code, char *name, struct date doj, float salary)
 	fseek(fp, 0, SEEK_END);
 	fwrite(&e, sizeof(e), 1, fp);
 	fclose(fp);
-}
+	}
 
-void swap(struct employee *a, struct employee *b)
-{
+	void swap(struct employee *a, struct employee *b)
+	{
 	struct employee temp;
 	temp = *a;
 	*a = *b;
 	*b = temp;
-}
+	}
 
-void sortbydoj(char *file)
-{
+	void sortbydoj(char *file)
+	{
 	int i = 0, j, count;
 	FILE *fp1;
 	struct employee e[100], temp;
@@ -1073,33 +1089,35 @@ void sortbydoj(char *file)
 		printf("\t%2.2f\n", e[i].salary);
 
 	}
-}
-	(j)#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
-#include<stdlib.h>
+	}
+	(j)
+	
+			#include<stdio.h>
+	#include<conio.h>
+	#include<windows.h>
+	#include<stdlib.h>
 
-void add_info(struct blood);
-void display(char*);
-void lessthen25(char*);
+	void add_info(struct blood);
+	void display(char*);
+	void lessthen25(char*);
 
-struct blood
-{
+	struct blood
+	{
 	char name[20];
 	char address[40];
 	int age;
 	int blood_type;
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	lessthen25("Blood Donors Record.txt");
 	_getch();
 	return 0;
-}
+	}
 
-void add_info(struct blood data)
-{
+	void add_info(struct blood data)
+	{
 	FILE *fp;
 	fp = fopen("Blood Donors Record.txt", "r+");
 	if (fp == NULL)
@@ -1110,20 +1128,20 @@ void add_info(struct blood data)
 	fprintf(fp, "%-2d ", data.age);
 	fprintf(fp, "%d\n", data.blood_type);
 	fclose(fp);
-}
+	}
 
-void display(char *file)
-{
+	void display(char *file)
+	{
 	FILE *fp;
 	fp = fopen(file, "r");
 	char str[20];
 	while (fgets(str, 19, fp) != NULL)
 		printf("%s", str);
 	fclose(fp);
-}
+	}
 
-void lessthen25(char *file)
-{
+	void lessthen25(char *file)
+	{
 	FILE *fp;
 	struct blood data;
 	int age;
@@ -1136,26 +1154,28 @@ void lessthen25(char *file)
 			printf("%s", str);
 	}
 	fclose(fp);
-}
-	(k)#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<stdlib.h>
-#include<Windows.h>
+	}
+	(k)
+	
+		#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<stdlib.h>
+	#include<Windows.h>
 
-void add_info(char*, char*);
-void display(char*);
-void disbys(int, char*);
+	void add_info(char*, char*);
+	void display(char*);
+	void disbys(int, char*);
 
-int main()
-{
+	int main()
+	{
 	disbys(1, "Students.txt");
 	_getch();
 	return 0;
-}
+	}
 
-void add_info(char *name, char *file)
-{
+	void add_info(char *name, char *file)
+	{
 	FILE *fp;
 	fp = fopen(file, "r+");
 	if (fp == NULL)
@@ -1164,10 +1184,10 @@ void add_info(char *name, char *file)
 	fputs(name, fp);
 	putc('\n', fp);
 	fclose(fp);
-}
+	}
 
-void display(char *file)
-{
+	void display(char *file)
+	{
 	FILE *fp;
 	char name[30];
 	fp = fopen(file, "r");
@@ -1180,10 +1200,10 @@ void display(char *file)
 	while (fscanf(fp, "%s", name) != -1)
 		puts(name);
 	fclose(fp);
-}
+	}
 
-void disbys(int num, char *file)
-{
+	void disbys(int num, char *file)
+	{
 	FILE *fp;
 	int i;
 	char name[30];
@@ -1225,25 +1245,27 @@ void disbys(int num, char *file)
 		if (name[0] == 'S' || name[0] == 's')
 			puts(name);
 	fclose(fp);
-}
-	(l)#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<Windows.h>
-#include<stdlib.h>
-
-struct data
-{
+	}
+	(l)
+	
+		#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<Windows.h>
+	#include<stdlib.h>
+	
+	struct data
+	{
 	int rollno;
 	char name[20];
-};
+	};
 
-void add_info(int, char*);
-void display(char*);
-void update_list(char*);
+	void add_info(int, char*);
+	void display(char*);
+	void update_list(char*);
 
-int main()
-{
+	int main()
+	{
 	add_info(1, "Azad Ansari");
 	add_info(2, "Deepak Mathpal");
 	add_info(3, "Rahul Khowal");
@@ -1257,10 +1279,10 @@ int main()
 	display("New List.dat");
 	_getch();
 	return 0;
-}
+	}
 
-void add_info(int rollno, char *name)
-{
+	void add_info(int rollno, char *name)
+	{
 	struct data e;
 	FILE *fp;
 	fp = fopen("Students.dat", "rb+");
@@ -1271,10 +1293,10 @@ void add_info(int rollno, char *name)
 	fseek(fp, 0, SEEK_END);
 	fwrite(&e, sizeof(e), 1, fp);
 	fclose(fp);
-}
+	}
 
-void display(char *fname)/* Display the MASTER FILE*/
-{
+	void display(char *fname)/* Display the MASTER FILE*/
+	{
 	FILE *fp;
 	struct data e;
 	fp = fopen(fname, "rb");
@@ -1286,10 +1308,10 @@ void display(char *fname)/* Display the MASTER FILE*/
 	}
 	while (fread(&e, sizeof(e), 1, fp) == 1)
 		printf("%2d\t%-10s\n", e.rollno, e.name);
-}
+	}
 
-void update_list(char *tfile)
-{
+	void update_list(char *tfile)
+	{
 	FILE *tf, *mf, *uf;
 	char code, name[20];
 	int rollno, i;
@@ -1358,23 +1380,25 @@ void update_list(char *tfile)
 	fclose(uf);
 	fclose(mf);
 	fclose(tf);
-}
-	(m)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<Windows.h>
+	}
+(m)
+	
+		#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#include<string.h>
+	#include<Windows.h>
 
-struct empo
-{
+	struct empo
+	{
 	int eid;
 	char name[20];
 	char sex;
 	int salary;
-};
+	};
 
-int main()
-{
+	int main()
+	{
 	addemp(1, "Kishor Dass", 'M', 100);
 	addemp(2, "Amit Kumar Mandal", 'M', 200);
 	addemp(3, "Prakash Babu Sharma", 'M', 300);
@@ -1387,10 +1411,10 @@ int main()
 	disemp();
 	_getch();
 	return 0;
-}
+	}
 
-void addemp(int eid, char *name, char sex, int salary)
-{
+	void addemp(int eid, char *name, char sex, int salary)
+	{
 	struct empo help;
 	FILE *fp;
 	fp = fopen("Emp.txt", "rb+");
@@ -1403,10 +1427,10 @@ void addemp(int eid, char *name, char sex, int salary)
 	help.salary = salary;
 	fwrite(&help, sizeof(help), 1, fp);
 	fclose(fp);
-}
+	}
 
-void change_sal(int id, int new_salary)
-{
+	void change_sal(int id, int new_salary)
+	{
 	struct empo help;
 	int size = sizeof(help);
 	FILE *fp;
@@ -1425,10 +1449,10 @@ void change_sal(int id, int new_salary)
 	}
 	fclose(fp);
 
-}
+	}	
 
-void delemp(int id)
-{
+	void delemp(int id)
+	{
 	struct empo help;
 	int size = sizeof(help);
 	FILE *fp;
@@ -1446,10 +1470,10 @@ void delemp(int id)
 		}
 	}
 	fclose(fp);
-}
+	}
 
-void disemp()
-{
+	void disemp()
+	{
 	struct empo help;
 	FILE *fp;
 	fp = fopen("Emp.txt", "rb");
@@ -1466,29 +1490,31 @@ void disemp()
 		printf("\t%d\n", help.salary);
 	}
 	fclose(fp);
-}
-	(n)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<Windows.h>
+	}
+(n)
+	
+		#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#include<string.h>
+	#include<Windows.h>
 
-#define FOUND (strcmp(word, "a") == 0 || strcmp(word, "an") == 0\
-|| strcmp(word, "the") == 0 || strcmp(word, "A") == 0\
-|| strcmp(word, "An") == 0 || strcmp(word, "The") == 0)
+	#define FOUND (strcmp(word, "a") == 0 || strcmp(word, "an") == 0\
+	|| strcmp(word, "the") == 0 || strcmp(word, "A") == 0\
+	|| strcmp(word, "An") == 0 || strcmp(word, "The") == 0)
 
-void delart(char*);
+	void delart(char*);
 
-int main()
+	int main()
 
-{
+	{
 	delart("Temp.txt");
 	_getch();
 	return 0;
-}
+	}
 
-void delart(char *file)
-{
+	void delart(char *file)
+	{
 	FILE *fp, *nf;
 	int i;
 	char word[20];
@@ -1524,25 +1550,27 @@ void delart(char *file)
 			in the word[0]*/
 		}
 	}
-}
-	(o)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<Windows.h>
+	}
+(o)
+	
+		#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#include<string.h>
+	#include<Windows.h>
 
-struct employee
-{
+	struct employee
+	{
 	int empno;
 	char name[30];
 	int basic, grade;
-};
+	};
 
-void addemp(int, char*, int, int, char*);
-void display(FILE*);
-void miss(FILE*);
-int main()
-{
+	void addemp(int, char*, int, int, char*);
+	void display(FILE*);
+	void miss(FILE*);
+	int main()
+	{
 	FILE *fp;
 	addemp(1,"Kishor Dass", 100,  1, "File (o).txt");
  	addemp(2,"Amit Kumar Mandal", 101,2, "File (o).txt");
@@ -1561,10 +1589,10 @@ int main()
 	_getch();
 	fclose(fp);
 	return 0;
-}
+	}
 
-void addemp(int eid, char *name, int bas, int grad, char *file)
-{
+	void addemp(int eid, char *name, int bas, int grad, char *file)
+	{
 	FILE *fp;
 	struct employee dat;
 	fp = fopen(file, "rb+");
@@ -1584,10 +1612,10 @@ void addemp(int eid, char *name, int bas, int grad, char *file)
 	fseek(fp, 0, SEEK_END);
 	fwrite(&dat, sizeof(dat), 1, fp);
 	fclose(fp);
-}
+	}
 
-void display(FILE *fp)
-{
+	void display(FILE *fp)
+	{
 	struct employee dat;
 	while (fread(&dat, sizeof(dat), 1, fp) == 1)
 	{
@@ -1596,10 +1624,10 @@ void display(FILE *fp)
 		printf("\t % 4d", dat.basic);
 		printf("\t % 3d\n", dat.grade);
 	}
-}
+	}
 
-void miss(FILE *fp)
-{
+	void miss(FILE *fp)
+	{
 	int i = 1;
 	struct employee dat;
 	rewind(fp);
@@ -1613,21 +1641,23 @@ void miss(FILE *fp)
 		}
 		i++;
 	}
-}
-	(p)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<Windows.h>
+	}
+(p)
+	
+		#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#include<string.h>
+	#include<Windows.h>
 
-#define EndOfWord word[i] == ' ' || word[i] == ','\
- || word[i] == '.' || word[i] == '\n'
+	#define EndOfWord word[i] == ' ' || word[i] == ','\
+	 || word[i] == '.' || word[i] == '\n'
 
-int count_word(FILE*);
-void count_4_words(FILE*);
+	int count_word(FILE*);
+	void count_4_words(FILE*);
 
-int main()
-{
+	int main()
+	{
 	FILE *fp;
 	fp = fopen("File (p).txt", "r");
 	if (fp == NULL)
@@ -1643,10 +1673,10 @@ int main()
 	count_4_words(fp);
 	_getch();
 	return 0;
-}
+	}
 
-int count_word(FILE *fp)
-{
+	int count_word(FILE *fp)
+	{
 	int i, count = 0;
 	char word[20];
 	for (i = 0; 1; i++)
@@ -1670,10 +1700,10 @@ int count_word(FILE *fp)
 	}
 	return count;
 	fclose(fp);
-}
+	}
 
-void count_4_words(FILE *fp)
-{
+	void count_4_words(FILE *fp)
+	{
 	int i, count = 0;
 	char word[20];
 	if (fp == NULL)
@@ -1707,21 +1737,23 @@ void count_4_words(FILE *fp)
 		}
 	}
 	fclose(fp);
-}
-	(q)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<Windows.h>
+	}
+(q)
 
-#define EndOfWord word[i][j] == ' ' || word[i][j] == ','\
- || word[i][j] == '.' || word[i][j] == '\n'
+	#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#include<string.h>
+	#include<Windows.h>
 
-void swap(char*, char*);
-void list(FILE *);
+	#define EndOfWord word[i][j] == ' ' || word[i][j] == ','\
+	 || word[i][j] == '.' || word[i][j] == '\n'
 
-int main()
-{
+	void swap(char*, char*);
+	void list(FILE *);
+
+	int main()
+	{
 	FILE *fp;
 	fp = fopen("File (q).txt", "r");
 	if (fp == NULL)
@@ -1732,18 +1764,18 @@ int main()
 	list(fp);
 	_getch();
 	return 0;
-}
+	}
 
-void swap(char *one, char *two)
-{
+	void swap(char *one, char *two)
+	{
 	char three[20];
 	strcpy(three, one);
 	strcpy(one, two);
 	strcpy(two, three);
-}
+	}
 
-void list(FILE *fp)
-{
+	void list(FILE *fp)
+	{
 	char word[30][20];
 	int i = 0, j, count = 0, k1 = 0, k2 = 0;
 	/* 'count' is used to count total number of words in the list,
@@ -1823,16 +1855,18 @@ void list(FILE *fp)
 	for (i = 0; i < count; i++)
 		printf("\n%-2d : %s", i + 1, word[i]);
 	fclose(fp);
-}
-	(r)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
+	}
+(r)
+	
+	#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#include<string.h>
 
-void frev(FILE*);
+	void frev(FILE*);
 
-int main()
-{
+	int main()
+	{
 	FILE *fp;
 	fp = fopen("File (r).txt", "r");
 	if (fp == NULL)
@@ -1844,10 +1878,10 @@ int main()
 	fclose(fp);
 	_getch();
 	return 0;
-}
+	}
 
-void frev(FILE *fp)
-{
+	void frev(FILE *fp)
+	{
 	char word[11];
 	int i;
 	for (i = 0; 1; i++)
@@ -1868,17 +1902,19 @@ void frev(FILE *fp)
 			i = -1;
 		}
 	}
-}
-	(s)#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<Windows.h>
+	}
+(s)
+	
+	#include<stdio.h>
+	#include<conio.h>
+	#include<stdlib.h>
+	#include<string.h>
+	#include<Windows.h>
 
-void pagebreak(FILE *fp);
+	void pagebreak(FILE *fp);
 
-int main()
-{
+	int main()
+	{
 	FILE *fp;
 	fp = fopen("NOTE.txt", "r");
 	if (fp == NULL)
@@ -1890,10 +1926,10 @@ int main()
 	fclose(fp);
 	_getch();
 	return 0;
-}
+	}
 
-void pagebreak(FILE *fp)
-{
+		void pagebreak(FILE *fp)
+	{
 	/*Dot counts the numebr of lines*/
 	int dot = 0;
 	char ch;
@@ -1921,4 +1957,5 @@ void pagebreak(FILE *fp)
 		}
 
 	}
-}
+	}
+	
