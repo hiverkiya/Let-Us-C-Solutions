@@ -1,13 +1,13 @@
-#Periodic Test :3
+# [Periodic Test -3] Solutions
 ## [A]
 
-   (1) Base Address
-   (2) Index and Size
-   (3) number
-   (4) 0
-   (5) different
+      (1) Base Address
+      (2) Index and Size
+      (3) number
+      (4) 0
+      (5) different
    
-##[B]
+## [B]
     
     (1) False
     (2) True
@@ -15,7 +15,7 @@
     (4) True
     (5) True
     
-##[C] 
+## [C] 
 
     (1) It Overwrite the next elements present in the memory.
     (2) When we want to know information about every element in an array .This can just only be done with help of structures.
