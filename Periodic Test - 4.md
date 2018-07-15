@@ -1,12 +1,12 @@
-# Periodic Test :3
+# [Periodic Test-3] Solutions
 
 ## [A]
    
-   (1) Hexadecimal values
-   (2) Integers
-   (3) Signal Handler
-   (4) sigprocmask;
-   (5) Complement
+     (1) Hexadecimal values
+     (2) Integers
+     (3) Signal Handler
+     (4) sigprocmask;
+     (5) Complement
    
 ## [B]
     
@@ -17,7 +17,7 @@
     (5) True
     
     
-##[C]
+## [C]
     
     (1)
     
@@ -48,9 +48,6 @@ main()
     }
     printf("nResult:%d",result);
 }
-
-
-
 
 (2)
 
@@ -87,14 +84,9 @@ printf("no of word=%d\n",word);
 getch();
 }
 
-
-
 (3)
 
-
-
-
-
+SIMILAR CODE AVAILABLE IN CHAPTER RELATED TO THIS TOPIC.
 
 (4)
  
