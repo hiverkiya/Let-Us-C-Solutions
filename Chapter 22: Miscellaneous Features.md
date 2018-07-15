@@ -2,30 +2,32 @@
 
 ## [A]
   
-  (a) 0 1 2
-  (b) 1.0
-  (c) 4
+    (a) 0 1 2
+    (b) 1.0
+    (c) 4
 
 ## [B]
 
-  (a) No Error
-  (b) There are two methods to invoke a function,
+    (a) No Error
+    (b) There are two methods to invoke a function,
 	(*func)();
 	func();
-  (c) No Error
+    (c) No Error
 
 ## [C]
 
-  (a)#include<stdio.h>
-#include<conio.h>
+  (a)
+  
+   	#include<stdio.h>
+	#include<conio.h>
 
-float one(int, int);
-float two(int, int);
-float three(int, int);
-float four(int, int);
+	float one(int, int);
+	float two(int, int);
+	float three(int, int);
+	float four(int, int);
 
-int main()
-{
+	int main()
+	{
 	float(*ptr[4])(int, int);
 	float a, b, c, d;
 	ptr[0] = one;
@@ -40,44 +42,46 @@ int main()
 	printf("c : %f\td : %f\n", c, d);
 	_getch();
 	return 0;
-}
-float one(int a, int b)
-{
+	}
+	float one(int a, int b)
+	{
 	float r;
 	r = (float)a / b;
 
 	return r;
-}
-float two(int x, int y)
-{
+	}
+	float two(int x, int y)
+	{
 	float ans;
 	ans = (float)x / y;
 	return ans;
-}
-float three(int i, int j)
-{
+	}
+	float three(int i, int j)
+	{
 	float a;
 	a = (float)i / j;
 	return a;
-}
-float four(int m, int n)
-{
+	}
+	float four(int m, int n)
+	{
 	return ((float)m / n);
-}
-  (b)#include<stdio.h>
-#include<conio.h>
-#include<stdarg.h>
+	}
+  (b)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<stdarg.h>
 
-void type(int, ...);
+	void type(int, ...);
 
-int main()
-{
+	int main()
+	{	
 	type(5, 4, 6, 3, 6, 7);
 	return 0;
-}
+	}
 
-void type(int point, ...)
-{
+	void type(int point, ...)
+	{
 	if (point < 1)
 	{
 		printf("Nothing can be draw.");
@@ -106,25 +110,27 @@ void type(int point, ...)
 	default:
 		printf("A polygon can be drawn.\n");
 	}
-}
-  (c)#include<stdio.h>
-#include<conio.h>
-#include<stdarg.h>
-#include<Windows.h>
+	}
+  (c)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<stdarg.h>
+	#include<Windows.h>
 
-#define MAX 5
+	#define MAX 5
 
-typedef struct date
-{
+	typedef struct date
+	{
 	unsigned d : 5;
 	unsigned m : 4;
 	unsigned y : 12;
-}EMP;
+	}EMP;
 
-void swap(EMP*, EMP*);
+	void swap(EMP*, EMP*);
 
-int main()
-{
+	int main()
+	{
 
 	int i, j;
 	EMP e[10], a[10];
@@ -163,22 +169,24 @@ int main()
 	}
 	_getch();
 	return 0;
-}
-void swap(EMP *a, EMP *b)
-{
+	}
+	void swap(EMP *a, EMP *b)
+	{
 	EMP c;
 	c = *a;
 	*a = *b;
 	*b = c;
-}
-  (d)#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
+	}
+  (d)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
 
-#define MAX 2
+	#define MAX 2
 
-int main()
-{
+	int main()
+	{
 	enum sex { male, female };
 	enum level { major, minor };
 	typedef struct people
@@ -215,4 +223,4 @@ int main()
 	}
 	_getch();
 	return 0;
-}
+     }
