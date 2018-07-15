@@ -31,5 +31,7 @@
         scanf("%[^\n]s,stringname) in some compliers while others accept normally scanf("%s",stringname).
         gets(stringname).
         
-        
+## [D]
+
+      SOLVED ALREADY IN PREVIOUS CHAPTERS OR SIMLILAR CODES ARE AVAILABLE.
         
