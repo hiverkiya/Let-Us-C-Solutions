@@ -2,33 +2,39 @@
 
 ## [A]
   
-      (a)	Let the file name is �prog.c� so its executable file will be �prog.exe�. Now,
-type this command in the command prompt
-(1) - To copy the content of one file into another.
-prog.exe > File1.txt < File2.txt
-Input from file1 and put output in file 2
+      (a)	
+        Let the file name is �prog.c� so its executable file will be �prog.exe�. Now,
+	type this command in the command prompt
+	(1) - To copy the content of one file into another.
+	prog.exe > File1.txt < File2.txt
+	Input from file1 and put output in file 2
 
-(2) � To create a new file and add some text to it.
-prog.exe < NewFile.txt
-Input from keyboard and output in the file specified.
+	(2)
+	 To create a new file and add some text to it.
+	prog.exe < NewFile.txt
+	Input from keyboard and output in the file specified.
 
-(3) � To display contents of an existing file.
-prog.exe > File1.txt
-Input from the file1 and output in the screen
+	(3) To display contents of an existing file.
+	prog.exe > File1.txt
+	Input from the file1 and output in the screen
+    
     (b) False,True,True
+    
     (c) Syntax error in second argument
 
 ## [B]
-    (a) #include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<stdlib.h>
+    (a)
+    
+ 	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<stdlib.h>
 
-#define EndOfWord word[i] == ' ' || word[i] == ',' \
-|| word[i] == '\n' || word[i] == '.'
+	#define EndOfWord word[i] == ' ' || word[i] == ',' \
+	|| word[i] == '\n' || word[i] == '.'
 
-int main(int ac, char *av[])
-{
+	int main(int ac, char *av[])
+	{
 	FILE *fp, *temp;
 	int i, j;
 	char word[10], ch;
@@ -66,15 +72,16 @@ int main(int ac, char *av[])
 	remove(av[3]);
 	rename("temp.txt", av[3]);
 	return 0;
-}
+	}
 (b)
-#include<stdio.h>
-#include<conio.h>
-#include<string.h>
-#include<stdlib.h>
 
-int main(int ac, char *av[])
-{
+	#include<stdio.h>
+	#include<conio.h>
+	#include<string.h>
+	#include<stdlib.h>
+
+	int main(int ac, char *av[])
+	{
 	int i, a, b;
 	a = b = 0;
 	if (ac != 4)
@@ -137,4 +144,4 @@ int main(int ac, char *av[])
 	}
 	_getch();
 	return 0;
-}
+	}
