@@ -209,7 +209,7 @@
 		printf("\nYou aren't eligible for champions trophy.\n");
 	_getch();
 	return 0;
-  }
+  		}
 
     int bintodec(int *num)
     {
@@ -393,42 +393,46 @@
 
   (a)
   
-  0101 1010
-   5       A
+  		0101 1010
+   		5       A
 
-1100 0011
-    C      3
+		1100 0011
+  		  C      3
 
-1010 1010 0111 0101
-   A     A        7       5
+		1010 1010 0111 0101
+  		 A     A        7       5
 
-1111 0000 0101 1010
-   F        0      5         A 
-  (b)que: a = a|3
-ans: a |= 3
+		1111 0000 0101 1010
+  		 F        0      5         A 
+  (b)
+  
+  	que: a = a|3
+	ans: a |= 3
 
-que: a = a & 0x48
-ans: a &= 0x48
+	que: a = a & 0x48
+	ans: a &= 0x48
 
-que: b = b^0x22
-ans: b ^= 0x22
+	que: b = b^0x22
+	ans: b ^= 0x22
 
-que: c = c << 2
-ans: c <<= 2
+	que: c = c << 2
+	ans: c <<= 2
 
-que: d = d >> 4
-ans: d >>= 4
-  (c)#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
-#include<math.h>
+	que: d = d >> 4
+	ans: d >>= 4
+  (c)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
+	#include<math.h>
 
-#define _BV(x) 1<<x
+	#define _BV(x) 1<<x
 
-int checkbits(int, int, int);
+	int checkbits(int, int, int);
 
-int main()
-{
+	int main()
+	{
 	int status;
 	status = checkbits(14, 3, 3);
 	if (status)
@@ -437,10 +441,10 @@ int main()
 		printf("Required bits are OFF\n");
 	_getch();
 	return 0;
-}
+	}
 
-int checkbits(int x, int p, int n)
-{
+	int checkbits(int x, int p, int n)
+	{
 	unsigned int andmask = 0;
 	int i, j;
 	for (i = 0, j = p; i < n; i++, j--)
@@ -449,18 +453,20 @@ int checkbits(int x, int p, int n)
 		return 1;
 	else
 		return 0;
-}
-  (d)#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
-#include<math.h>
+	}
+  (d)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<windows.h>
+	#include<math.h>
 
-#define _BV(x) 1<<x
+	#define _BV(x) 1<<x
 
-int checkbits(unsigned char num);
+	int checkbits(unsigned char num);
 
-int main()
-{
+	int main()
+	{
 	int status;
 	status = checkbits(200);
 	if (status)
@@ -469,32 +475,34 @@ int main()
 		printf("Required bits are OFF\n");
 	_getch();
 	return 0;
-}
+	}
 
-int checkbits(unsigned char num)
-{
+	int checkbits(unsigned char num)
+	{
 	unsigned char andmask;
 	andmask = _BV(7) | _BV(6) | _BV(3);
 	if ((num & andmask) == andmask)
 		return 1;
 	else
 		return 0;
-}
-  (e)#include<stdio.h>
-#include<conio.h>
-#include<Windows.h>
-#include<math.h>
+	}
+  (e)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<Windows.h>
+	#include<math.h>
 
-#define _bv(x) 1<<x
-#define _ls(x,y) x<<y
-#define _rs(x,y) x>>y
+	#define _bv(x) 1<<x
+	#define _ls(x,y) x<<y
+	#define _rs(x,y) x>>y
 
-typedef unsigned short int Store;
+	typedef unsigned short int Store;
 
-void bitexchange(Store*);
+	void bitexchange(Store*);
 
-int main()
-{
+	int main()
+	{
 	Store num;
 	printf("Enter number : ");
 	scanf("%hu", &num);
@@ -505,10 +513,10 @@ int main()
 	printf("num : %u\n", num);
 	_getch();
 	return 0;
-}
+	}
 
-void bitexchange(Store *num)
-{
+	void bitexchange(Store *num)
+	{
 	unsigned char left, right;
 
 	//	First byte (8-bits) goes to left side.
@@ -519,22 +527,24 @@ void bitexchange(Store *num)
 
 	*num = 0;
 	*num = right | left;
-}
-  (f)#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
-#include<math.h>
+	}
+  (f)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<windows.h>
+	#include<math.h>
 
-#define _bv(x) 1<<x
-#define _ls(x,y) x<<y
-#define _rs(x,y) x>>y
+	#define _bv(x) 1<<x
+	#define _ls(x,y) x<<y
+	#define _rs(x,y) x>>y
 
-typedef unsigned char Bit;
+	typedef unsigned char Bit;
 
-void bitexchange(Bit*);
+	void bitexchange(Bit*);
 
-int main()
-{
+	int main()
+	{
 	Bit num;
 	printf("\nEnter the number : ");
 	scanf("%hhd", &num);
@@ -545,56 +555,60 @@ int main()
 	printf("\nnum : %d\n", num);
 	_getch();
 	return 0;
-}
+	}
 
-void bitexchange(Bit *num)
-{
+	void bitexchange(Bit *num)
+		{
 	Bit left, right;
 	left = _ls(*num, 4);
 	right = _rs(*num, 4);
 	*num = 0;
 	*num = right | left;
-}
-  (g)#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
-#include<math.h>
+	}
+  (g)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<windows.h>
+	#include<math.h>
 
-#define _BV(x) 1<<x
+	#define _BV(x) 1<<x
 
-typedef unsigned char Bit;
+	typedef unsigned char Bit;
 
-void oddbiton(Bit*);
+	void oddbiton(Bit*);
 
-int main()
-{
+	int main()
+	{
 	Bit num;
 	printf("Enter the number : ");
 	scanf("%hhd", &num);
 	oddbiton(&num);
 	_getch();
 	return 0;
-}
+	}
 
-void oddbiton(Bit *num)
-{
+	void oddbiton(Bit *num)
+	{
 	Bit andmask = 0;
 	int i;
 	for (i = 1; i < 8; i += 2)
 		andmask |= _BV(i);
 	*num |= andmask;
-}
-  (h)#include<stdio.h>
-#include<conio.h>
-#include<windows.h>
-#include<math.h>
+	}
+  (h)
+  
+  	#include<stdio.h>
+	#include<conio.h>
+	#include<windows.h>
+	#include<math.h>
 
-#define _BV(x) 1<<x
-#define _ls(x,y) x<<y
-#define _rs(x,y) x>>y
+	#define _BV(x) 1<<x
+	#define _ls(x,y) x<<y
+	#define _rs(x,y) x>>y
 
-int main()
-{
+	int main()
+	{
 	unsigned char num, andmask = 0;
 	printf("Enter the number : ");
 	scanf("%hhd", &num);
@@ -602,14 +616,16 @@ int main()
 	num &= andmask;
 	_getch();
 	return 0;
-}
-  (i)#include<stdio.h>
-#include<conio.h>
+	}
+  (i)
+  
+  	#include<stdio.h>
+	#include<conio.h>
 
-#define _BV(x) 1<<x
+	#define _BV(x) 1<<x
 
-int main()
-{
+	int main()
+	{
 	unsigned char num, andmask = 0;
 	printf("Enter the number : ");
 	scanf("%hhd", &num);
@@ -617,27 +633,27 @@ int main()
 	num |= andmask;
 	_getch();
 	return 0;
-}
+	}
   (j)
   
-#include<stdio.h>
-#include<conio.h>
+	#include<stdio.h>
+	#include<conio.h>
 
-#define _BV(x) 1<<x
+	#define _BV(x) 1<<x
 
-void showbits(unsigned char);
+	void showbits(unsigned char);
 
-int main()
-{
+	int main()
+	{
 	int i;
 	i = 10;
 	showbits(i);
 	_getch();
 	return 0;
-}
+	}
 
-void showbits(unsigned char num)
-{
+	void showbits(unsigned char num)
+	{
 	int i;
 	unsigned char andmask;
 	for (i = 7; i >= 0; i--)
@@ -645,5 +661,5 @@ void showbits(unsigned char num)
 		andmask = _BV(i);
 		((andmask&num) == 0) ? printf("0") : printf("1");
 	}
-}
+	}
   
