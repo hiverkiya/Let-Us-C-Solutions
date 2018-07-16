@@ -19,12 +19,11 @@
     
 ## [C]
     
-    (1)
+    THESE QUESTION'S ANSWERS ARE EASILY AVAILABLE ON INTERNET.
     
     
     
-    
-##[D]
+## [D]
 
   (1)
   
