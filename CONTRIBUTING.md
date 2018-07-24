@@ -5,4 +5,6 @@
 * Make sure your code runs while keeping a possibility that alternative results couldbe obtained in case of different inputs.
 * Code should produce the exact output or a similar output for reference.
 * In case of complex program do mention it's source for better understanding.
+* You are responsible for the quality of your code.
+* Variables shouldn’t be cryptic,try to use meaningful variable names.Things in your code should explain what they do in their names.
 * 
