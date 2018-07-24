@@ -7,4 +7,5 @@
 * In case of complex program do mention it's source for better understanding.
 * You are responsible for the quality of your code.
 * Variables shouldn’t be cryptic,try to use meaningful variable names.Things in your code should explain what they do in their names.
-* 
+* Delete Unnecessary Code.
+* Try to use comments as much as you can to explain the intent of code or algorithm used (if any).
