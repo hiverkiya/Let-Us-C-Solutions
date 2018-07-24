@@ -2,11 +2,11 @@
 
 ## [A]
 
-   (a) 3. a message from programmer to the preprocessor
+    (a) 3. a message from programmer to the preprocessor
       
-   (b) #define SQR(X) ( X * X ) 
+    (b) #define SQR(X) ( X * X ) 
    
-   (c)
+    (c)
    
         1. False
         2. False
@@ -15,21 +15,27 @@
         5. False
         6. False
         
-   (d) We can include any number of files we want to include in a program.
+    (d) We can include any number of files we want to include in a program.
    
-   (e)  In the first statement, we can give any path of the
-file to be included. While the name given in the second statement
-looks for the file in the default set of directories.
-   (f) All are true.
-   (g)  #elseif
-   (h) 1. Before the compilation of program.
-   (i) 1. Before the compilation of program.
+    (e)  In the first statement, we can give any path of the
+	file to be included. While the name given in the second statement
+	looks for the file in the default set of directories.
+   
+    (f) All are true.
+   
+    (g)  #elseif
+   
+    (h) 1. Before the compilation of program.
+   
+    (i) 1. Before the compilation of program.
    
 ## [B]
 
-   (a) 2
-   (b) 9 49
-   (c)  
+    (a) 2
+    
+    (b) 9 49
+    
+    (c)  
         
         a = 43.14
         
@@ -37,9 +43,11 @@ looks for the file in the default set of directories.
 
 ## [C]
     
-   (a) Before compilation, our source code is expanded and stored in
-the file FILENAME.I, so we can open this file and check how our program
-is getting expand.
+   (a) 
+   
+   	Before compilation, our source code is expanded and stored in
+	the file FILENAME.I, so we can open this file and check how our program
+	is getting expand.
 
    (b) 
    
@@ -49,9 +57,10 @@ is getting expand.
         #define LOWER (alpha>=97 && alpha<=122)
         #define YES (UPPER || LOWER)
      4. #define MAX(a,b) ((a>b)?a:b)
-  (c) Code for header file areaperi.h
+   
+   (c) Code for header file areaperi.h
       
-      #include<math.h>
+    #include<math.h>
     #define PI 3.14
     #define S(a,b,c) ((a+b+c)/2.0)
     #define TRI_AREA(a,b,c) (sqrt((S(a,b,c))*((S(a,b,c))-a)*((S(a,b,c))-b)*((S(a,b,c))-c)))
@@ -100,6 +109,7 @@ is getting expand.
 	getch();
 	return 0;
     }
+
  (d)    
   
     (1) #define MEAN(x,y) ((x+y)/2.0)
@@ -114,7 +124,7 @@ is getting expand.
         
    Actual file code
       
-      #include<stdio.h>
+    #include<stdio.h>
     #include<conio.h>
     #include "interest.h"
 
