@@ -1,14 +1,17 @@
 # [Chapter 15: Strings] Solutions
 
 ## [A]
+    
     (a)
         A
         A
+   
     (b)
             t organised! learn C!!
             Get organised! learn C!!
             Get organised! learn C!!
             t
+    
     (c) 
    
     N N
@@ -77,9 +80,12 @@
     
     Hello[garbage characters because NULL character is missing]
     Hello
+   
     (f)
     Morning
+    
     (g) e
+    
     (h) 1 2 4
 
 ## [B]
@@ -89,26 +95,39 @@
     Error: As the str3 is declared but not defined, so it is only
     void pointer, so without allocating memory to it, we cannot
     store anything to it.
+   
     (b) No Error
+   
     (c) Error: In arr++ statement. As you can see that arr[8] is initilized
         at the time of declaration. So in that case we cannot assign anything 
         to arr, and statement arr++ is execute as arr = arr + 1, which is 
     illegal.
+
 ## [C]
     
     (a) string,character
+   
     (b) NULL,'\0'
+   
     (c) 9 characters, and 10th character space is for \0 character.
+   
     (d) contiguous.
+
 ## [D]
-    (a)
-    gets() is more appropriate for reading a multi-word string.
     
-    (b) str1 : Alice
+   (a)
+    
+     gets() is more appropriate for reading a multi-word string.
+    
+   (b)
+       
+        str1 : Alice
         str2 : in
         str3 : wonder
         str4 : land
-    (c) #include<stdio.h>
+   (c) 
+    
+    #include<stdio.h>
     #include<conio.h>
     #include<string.h>
     int main()
@@ -126,7 +145,9 @@
 	_getch();
 	return 0;
     }
-    (d)
+  
+  (d)
+ 
     #include<stdio.h>
     #include<conio.h>
     int main()
@@ -144,7 +165,10 @@
 	_getch();
 	return 0;
     }
-    (e) #include<stdio.h>
+ 
+ (e)
+   
+    #include<stdio.h>
     #include<conio.h>
     #include<string.h>
     int main()
@@ -162,7 +186,10 @@
 	_getch();
 	return 0;
     }
-    (f) #include<stdio.h>
+   
+   (f)
+   
+    #include<stdio.h>
     #include<conio.h>
     int main()
     {
@@ -182,7 +209,9 @@
 	_getch();
 	return 0;
     }
-    (g)
+  
+  (g)
+   
     #include<stdio.h>
     #include<conio.h>
     int main()
