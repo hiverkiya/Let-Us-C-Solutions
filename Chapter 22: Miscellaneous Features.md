@@ -3,15 +3,19 @@
 ## [A]
   
     (a) 0 1 2
+   
     (b) 1.0
+    
     (c) 4
 
 ## [B]
 
     (a) No Error
+   
     (b) There are two methods to invoke a function,
 	(*func)();
 	func();
+    
     (c) No Error
 
 ## [C]
