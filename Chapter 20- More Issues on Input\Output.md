@@ -2,8 +2,9 @@
 
 ## [A]
   
-      (a)	
-        Let the file name is �prog.c� so its executable file will be �prog.exe�. Now,
+   (a)	
+       
+       Let the file name is �prog.c� so its executable file will be �prog.exe�. Now,
 	type this command in the command prompt
 	(1) - To copy the content of one file into another.
 	prog.exe > File1.txt < File2.txt
@@ -18,12 +19,17 @@
 	prog.exe > File1.txt
 	Input from the file1 and output in the screen
     
-    (b) False,True,True
+   (b) 
+   
+   	False,True,True
     
-    (c) Syntax error in second argument
+   (c) 
+   	
+	Syntax error in second argument
 
 ## [B]
-    (a)
+    
+   (a)
     
  	#include<stdio.h>
 	#include<conio.h>
