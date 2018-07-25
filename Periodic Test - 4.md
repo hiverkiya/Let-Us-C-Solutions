@@ -2,18 +2,26 @@
 
 ## [A]
    
-     (1) Hexadecimal values
-     (2) Integers
-     (3) Signal Handler
-     (4) sigprocmask;
-     (5) Complement
+    (1) Hexadecimal values
+    
+    (2) Integers
+     
+    (3) Signal Handler
+    
+    (4) sigprocmask;
+    
+    (5) Complement
    
 ## [B]
     
     (1) False
+   
     (2) True
+   
     (3) False
+    
     (4) True
+  
     (5) True
     
     
