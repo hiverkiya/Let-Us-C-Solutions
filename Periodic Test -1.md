@@ -3,33 +3,49 @@
 ## [A]
   
     (1) i+1
+    
     (2) Real
+   
     (3) ; (Statement Terminator)
+    
     (4) 2 or 4 bytes
+   
     (5) Do-while
 
 ## [B]
    
     (1) True
+   
     (2) True
+   
     (3) False
+   
     (4) True
+   
     (5) False
 
 ## [C]
 
     (a) 5 5 6
+   
     (b) 65 A
+  
     (c) 2 1
+   
     (d) 21525
+   
     (e) 0 1
  
 ## [D] 
 
     (a) Syntax of logical connectives is incorrect.
+    
     (b) "then" is not any type of syntax in C language.
+    
     (c) Parentheses should be used in conditional operators to specify the associativity of operations.
+    
     (d) NO ERROR
+    
     (e) NO ERROR
 
 ## [E]
@@ -92,7 +108,8 @@
     printf("Number of Zeroes = %d\n",cz);
     return 0;
      }
-  (3)
+ 
+ (3)
 
     #include<stdio.h>
     int main()
