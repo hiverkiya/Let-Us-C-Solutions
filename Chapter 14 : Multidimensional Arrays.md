@@ -1,7 +1,9 @@
 # Chapter-14 Multidimensional Arrays
+
 ## [A]
 
         (a)  [Address of 1st 1d Array] [Garbage Value] 1
+	
 	(b)  2
              4
 	     3
@@ -11,6 +13,7 @@
 	     3
 	     5
 	     1
+	
 	(c)  2 2
 	     4 4
 	     3 3
@@ -24,6 +27,7 @@
 ## [B]
 
         (a)  missing subscript in initialization.
+	
 	(b)  missing subscript in initialization.
 	
 ## [C]
@@ -534,6 +538,7 @@
 	_getch();
 	return 0;
 	}
+
 (l)
 	
 	#include<conio.h>
@@ -643,6 +648,7 @@
 	_getch();
 	return 0;
 	}
+
 (o)
 
 	#include<stdio.h>
@@ -684,6 +690,7 @@
 	return 0;
 
 	}
+
 (p)
 
 	#include<stdio.h>
@@ -726,6 +733,7 @@
 	_getch();
 	return 0;
 	}
+
 (q)
 
 	#include<stdio.h>
@@ -789,6 +797,7 @@
 	_getch();
 	return 0;
 	}
+
 (r)
 
 	#include<stdio.h>
@@ -903,6 +912,7 @@
 	(*rside)--;
 	return item;
 	}
+
 (s)
 
 	#include<stdio.h>
