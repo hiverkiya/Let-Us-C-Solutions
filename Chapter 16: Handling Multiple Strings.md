@@ -97,6 +97,7 @@
 	_getch();
 	return 0;
 	}
+
 (b)
 
 	#include<stdio.h>
@@ -152,6 +153,7 @@
 	_getch();
 	return 0;
 	}
+
 (c)
 
 	#include<stdio.h>
@@ -190,6 +192,7 @@
 	_getch();
 	return 0;
 	}
+
 (d)
 
 	#include<stdio.h>
@@ -325,6 +328,7 @@
 	_getch();
 	return 0;
 	}
+
 (e)
 
 	#include<stdio.h>
@@ -780,6 +784,7 @@
 
 	return days;
 	}
+
 (f)
 
 	#include<stdio.h>
@@ -970,6 +975,7 @@
 	_getch();
 	return 0;
 	}
+
 (g)
 
 	#include<stdio.h>
@@ -998,6 +1004,7 @@
 	_getch();
 	return 0;
 	}
+
 (h)
 
 	#include<stdio.h>
@@ -1028,6 +1035,7 @@
 	_getch();
 	return 0;
 	}
+
 (i)
 
 	#include<stdio.h>
@@ -1095,6 +1103,7 @@
 	_getch();
 	return 0;
 	}
+
 (j) 
 
 	#include<stdio.h>
@@ -1132,6 +1141,7 @@
 	_getch();
 	return 0;
 	}
+
 (k)
 
 	#include<stdio.h>
@@ -1272,6 +1282,7 @@
 	_getch();
 	return 0;
 	}
+
 (l)
 
 	#include<stdio.h>
