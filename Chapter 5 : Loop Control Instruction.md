@@ -1,21 +1,26 @@
 # Chapter-5 Loop Control Instruction
 ## [A]
 
-       (a)   1
-             2
-             3
-             4
-             5
-             6
-             7
-             8
-             9
-             10
-       (b)   2 3 3
-       (c)   3 3 1
-       (d)   prints it infnite times.
-       (e)   prints 10 infinite times.
-       (f)   prints nothing.
+      (a)   1
+            2
+            3
+            4
+            5
+            6
+            7
+            8
+            9
+            10
+      
+      (b)   2 3 3
+      
+      (c)   3 3 1
+      
+      (d)   prints it infnite times.
+      
+      (e)   prints 10 infinite times.
+      
+      (f)   prints nothing.
        
 ## [B]
 
@@ -259,7 +264,8 @@
     printf("Octal equivalent is %o",number);
     return 0;
 	}
-   (i)
+  
+  (i)
    
         #include<stdio.h>
         int main()
