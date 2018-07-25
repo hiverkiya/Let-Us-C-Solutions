@@ -2,7 +2,7 @@
 
 # [A] 
   
-    (a) 
+  (a) 
     
       #include<stdio.h>
       #include<conio.h>
@@ -54,6 +54,7 @@
 	_getch();
 	return 0;
     }
+
 (b)
 
     #include<stdio.h>
@@ -178,6 +179,7 @@
 	*information = bintodec(info);
 	system("cls");
       }
+
 (c)
 
     #include<stdio.h>
@@ -240,6 +242,7 @@
 		scanf("%d", &info[i]);
 	*game = bintodec(info);
     }
+
 (d)
 
     18 = (10010)binary
@@ -253,6 +256,7 @@
     4th bit = Herbivorous or carnivorous.
 
     This is an "herbivorous" animal of "feline" family.
+
 (e)
 
     #include<stdio.h>
@@ -296,6 +300,7 @@
 	}
 
     }
+
 (f)
 
     #include<stdio.h>
