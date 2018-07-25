@@ -3,17 +3,25 @@
 ## [A]
  
     (1) clrscr()
+   
     (2) Pointers
+    
     (3) & (Ampersand)
+    
     (4) Macro Expansion 
+    
     (5) Address
     
 ## [B]
 
     (1) False
+    
     (2) True
+    
     (3) True
+    
     (4) True
+   
     (5) False
 
 ## [C]
@@ -60,7 +68,8 @@
     printf("Average is %f.\n",(float)(a+b+c+d)/4.0);
     return 0;
     }
-   (2)
+  
+  (2)
   
     int func(int);
     #include <stdio.h>
