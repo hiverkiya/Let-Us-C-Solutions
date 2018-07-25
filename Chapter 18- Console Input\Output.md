@@ -6,8 +6,11 @@
        If upper case letter is entered so lower case of it will 
       be printed otherwise is lower case is entered so uppercase will 
       be printed.
+   
     (b) 2    2.537   Life is like that
+   
     (c) the person who  wins is the one who thinks he can!
+   
     (d) The sixth sick sheikh's sixth ship is sick
 
 ## [B]
@@ -15,14 +18,18 @@
     (a)'a' is an array of characters, which is initialized
 	at the time of declaration, so it cannot be modified.
 	i.e. writing 'a++' is illegal.
+   
     (b)Wrong format specifier used, in scanf()
 
+   
     (c)n is undefined in scanf().
+   
     (d)1. i is undefined.
 	2. We cannot save string in a char type pointer 
 	from scanf() function.
 
     (e)No error
+    
     (f)sprintf() first argument should be of array of characters char*,
 	instead of char type. 
 
@@ -32,9 +39,12 @@
 ## [C]
 
   	(a)2. gets(str);
-  	(b)2. getche()
-  	(c) 1. scanf()
-  	(d)1. getch() : This is a function defined in file conio.h
+  	
+	(b)2. getche()
+  	
+	(c) 1. scanf()
+  	
+	(d)1. getch() : This is a function defined in file conio.h
 	and used to get a single character from keyboard, without 
 	displaying it on screen, and no need to press enter after 
 	you entered the character.
@@ -53,11 +63,13 @@
 	4. fgetchar() : fgetchar() is same as getchar(), the only difference 
 	between them is that fgetchar() is a function while getchar() is the 
 	macro, both are present in the same file stdio.h
-	  (e)1. Characters, format specifications and escape sequences
+	
+	(e)1. Characters, format specifications and escape sequences
 	Because : format specifications manage the space that a number 
 	or float will take and escape sequences move the cursor and do 
 	many formatting in an array of characters i.e. strings.
-	  (f)4. Specifies how many columns will be used to print the
+	
+	(f)4. Specifies how many columns will be used to print the
 	number.
 
 ## [D]
@@ -75,6 +87,7 @@
 	{
 	printf("%s\n", str);
 	}
+  
   (b)
   
   	#include<stdio.h>
@@ -99,6 +112,7 @@
 	sscanf(number, "%d", &num);
 	return num;
 	}
+  
   (c)
   
   	#include<stdio.h>
@@ -123,6 +137,7 @@
 	sscanf(number, "%lf", &num);
 	return num;
 	}
+  
   (d)
   
   	For first column : %26s
