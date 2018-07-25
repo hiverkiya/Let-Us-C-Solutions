@@ -82,7 +82,8 @@
     }
     return 0;
     }
-   (c)
+  
+  (c)
    
       #include<stdio.h>
     #include<conio.h>
@@ -107,6 +108,7 @@
 	printf("%d, ", num);
 	fs(fis, sec, term - 1);
     }
+   
    (d)
    
    (1) Without Recursion  
@@ -156,7 +158,8 @@
 
     return 0;
     }
-   (e)
+  
+  (e)
    
     int sum(int);
      int main()
