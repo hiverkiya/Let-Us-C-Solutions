@@ -17,11 +17,15 @@
 ## [C]
 
     (a)  An array is a collection of the same data type placed next to each other in memory.
+   
     (b)  No: Array index is comes inside [ ].
          No: Array index must have a constant, here size is a variable.
          No: c is an int, and it cannot contain an array
+   
     (c)  Third Element.
+   
     (d)  first is array size, second is particular element.
+   
     (e)  
       (1)  True.
       (2)  False.
@@ -216,43 +220,60 @@
 	   
 ## [E]
 
-      (a)  Error: There will be a comma before variable in printf function.
-      (b)  Error: There will be a comma before variable in printf function.
-      (c)  7
+     (a)  Error: There will be a comma before variable in printf function.
+     
+     (b)  Error: There will be a comma before variable in printf function.
+     
+     (c)  7
            9
            11
            13
            15
+      
       (d)  0
            0
 	   0
 	   0
 	   0
+      
       (e)  3 2 15
       
 ## [F]
 
-      (a)  No Error.
-      (b)  No Error.
-      (c)  j is not an pointer. It cannot save address.
-      (d)  No Error.
-      (e)  i is undeclared.
+     (a)  No Error.
+      
+     (b)  No Error.
+     
+     (c)  j is not an pointer. It cannot save address.
+     
+     (d)  No Error.
+     
+     (e)  i is undeclared.
       
 ## [G]
 
       (a)  Other data maybe overwritten.
+      
       (b)  Address of 0th element or base address.
+      
       (c)  Unused elements will be filled with zero's or garbage value.
+     
       (d)  Other data maybe overwritten.
+      
       (e)  Address of the first element of the array.
+     
       (f)  To manipulate parts of an array.
+     
       (g)  0
       
 ## [H]
 
       (a)  True.
+      
       (b)  float *ptr;
+      
       (c)  j=*ptr;
+      
       (d)  *( s + 2 )
       
 ## [I]
