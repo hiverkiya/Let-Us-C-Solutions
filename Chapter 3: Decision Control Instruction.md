@@ -3,20 +3,31 @@
 ## [A]
     
     (a) 0 200
+   
     (b) 300 200
+    
     (c) 10 20
+   
     (d) x and y are equal
+   
     (e) x=10 y=10 z=0 
+   
     (f) C is WOW
 
 ## [B]
 
     (a) NO ERROR.
+    
     (b) NO ERROR.
+   
     (c) NO ERROR.
+    
     (d) There is no keyword "then" related to if in C Programmming Language & no variable defined here in program as well.
+   
     (e) lvalue required as left operand of assignment.
+   
     (f) There should be a space between else and if, as there is no "elseif" syntax in C,"else if" exists.
+   
     (g) "&" Operator is missing before variables "a" and "b".
     
 ##  [C]
@@ -39,6 +50,7 @@
          }
     return 0;
     }
+    
   (b)
     
     #include<stdio.h>
@@ -74,6 +86,7 @@
 	getch();
 	return 0;
     }
+
 (c)
 
     #include <stdio.h>
@@ -286,6 +299,7 @@
     }
     return 0;
     }
+
 (h)
 
     #include<math.h>
