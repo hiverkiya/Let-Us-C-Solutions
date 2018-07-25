@@ -28,14 +28,23 @@
 ## [C] 
 
     (a) NO ERROR.
+    
     (b) NO ERROR.
+   
     (c) Wrong use of "&&" Operators.
+   
     (d) NO ERROR.
+   
     (e) "else" used without previous "if" as first "if" is terminated with ";"
+   
     (f) NO ERROR.
+   
     (g) NO ERROR.However,result will be j>=65?9: 
+    
     (h) lvalue required as left operand of assignment
+   
     (i) Wrong use of ternary operator "? then :".
+   
     (j) There is no use of ";" after printf().
 
 ## [D]
@@ -194,7 +203,7 @@
 	
 	printf("\nC : %f\nM : %f\nY : %f\nK : %f", c,m,y,k);
 	return 0;
-}
+	}
 
 (h)
 
