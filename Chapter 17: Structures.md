@@ -2,35 +2,48 @@
 
 ## [A] 
       
-       (a) 1004 1008 1058
-       (b)
+      (a) 1004 1008 1058
+      
+      (b)
              CrankShaft 102133
              CrankShaft 102133
              CrankShaft 102133
+      
       (c) 2 If you are driven by success make sure that it is a quality drive
   
 ## [B]
  
       (a)age cannot be used without any object reference.
+      
       (b) book is not any structure name. 
             b do not belong to any structure.
-      (c) variable v in printf statement, should have some index,
+     
+     (c) variable v in printf statement, should have some index,
       as it is an array of strcuture.
-      (d)
-       1. In f() function, structure is passed by value, so "." operator
+     
+     (d)
+      
+      1. In f() function, structure is passed by value, so "." operator
        should be used.
+     
       2. In g() function, structure is passed by its address, so "->"
       operator should be used.
+      
       (e)   NO ERROR
 
 ## [C]
       
       (a) Array
+      
       (b) 1 & 2 are true.
+     
       (c) True,False,False.
+     
       (d) 2 & 4
+     
       (e)   
-            1.  =  g. 25
+     
+      1.  =  g. 25
 
 
       2.  =  h. 8
@@ -82,10 +95,12 @@
       10. =  d. 7
       i[6] = 6,
       ++6 = 7
+
 ## [D] 
       
-      (a) 
-      #include<stdio.h>
+   (a) 
+     
+     #include<stdio.h>
 	#include<conio.h>
 	#include<Windows.h>
 	struct studata
@@ -147,6 +162,7 @@
 	_getch();
 	return 0;
 	}
+
 (b)
 
 	#include<stdio.h>
@@ -236,6 +252,7 @@
 	}
 
 	}
+
 (c)
 
 	#include<stdio.h>
@@ -298,6 +315,7 @@
 		}
 	}
 	}
+
 (d)
 
 	#include<stdio.h>
@@ -401,6 +419,7 @@
 	printf("\nName : %s", e.name);
 	printf("\nDate of joining : %d-%d-%d\n", e.doj[0], e.doj[1], e.doj[2]);
 	}
+
 (f)
 
 	#include<stdio.h>
@@ -576,6 +595,7 @@
 		i++;
 	}
 	}
+
 (g)
 
 	#include<stdio.h>
@@ -611,6 +631,7 @@
 	_getch();
 	return 0;
 	}
+
 (h)
 
 	#include<stdio.h>
@@ -737,6 +758,7 @@
 	for (i = start; i != NULL; i = i->next)
 		printf("%d\t", i->data);
 	}
+
 (i)
 
 	#include<stdio.h>
@@ -843,6 +865,7 @@
 	free(temp);
 	return num;
 	}
+
 (j)
 
 	#include<stdio.h>
@@ -964,7 +987,9 @@
 		a = a->next;
 	}
 	}
+
 (k)
+	
 	#include<stdio.h>
 	#include<conio.h>
 	#include<malloc.h>
@@ -1128,6 +1153,7 @@
 	_getch();
 	return 0;
 	}
+
 (m)
 
 	#include<stdio.h>
