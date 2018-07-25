@@ -2,10 +2,13 @@
 
 ## [A] 
   
-    (a) 58
+  (a) 
+   	
+	58
     
-    (b) 
-      An array of strings can never collect string from keyboard directly,
+  (b) 
+     
+     An array of strings can never collect string from keyboard directly,
     it can only be initialized at the time of declaration. But still we can
     store strings from the keyboard in the array of characters indirectly, by 
     storing the string in the simple string variable and then allocate memory
@@ -14,7 +17,7 @@
     
 ## [B] 
     
-    (a) 
+ (a) 
     	
 	#include<stdio.h>
 	#include<conio.h>
