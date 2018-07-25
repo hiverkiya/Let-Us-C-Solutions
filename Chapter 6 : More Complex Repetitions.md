@@ -1,24 +1,36 @@
 # Chapter-6 More Complex Repetitions
+
 ## [A]
 
-      (a)  prints nothing.
-      (b)  1 (infinite times).
-      (c)  2
+     
+     (a)  prints nothing.
+     
+     (b)  1 (infinite times).
+     
+     (c)  2
            5
 ## [B]
 
-      (a)  the initialization expression.
+     (a)  the initialization expression.
            the testing expression.
            the increasing/decreasing expression.
-      (b)  a for loop.
-      (c)  At least once.
-      (d)  Initialization, execution of body, testing.
-      (e)  3.
-      (f)  Continue;
-      (g)  Infinite times.
-      (h)  The program will produce the output x = 10 y = 10.
+      
+     (b)  a for loop.
+      
+     (c)  At least once.
+     
+     (d)  Initialization, execution of body, testing.
+     
+     (e)  3.
+     
+     (f)  Continue;
+     
+     (g)  Infinite times.
+     
+     (h)  The program will produce the output x = 10 y = 10.
            The ; after the if (x != y) would NOT produce an error.
-      (i)  All things that can be done using a for loop can also be done using a while loop.
+    
+     (i)  All things that can be done using a for loop can also be done using a while loop.
            for(; ;) implements an infinite loop.
            
 ## [C]
