@@ -2,38 +2,57 @@
 
 ## [A]
 
-     (a)
-       If upper case letter is entered so lower case of it will 
+   (a)
+      
+      If upper case letter is entered so lower case of it will 
       be printed otherwise is lower case is entered so uppercase will 
       be printed.
    
-    (b) 2    2.537   Life is like that
+   (b)
+    
+    	2    2.537   Life is like that
    
-    (c) the person who  wins is the one who thinks he can!
+   (c) 
    
-    (d) The sixth sick sheikh's sixth ship is sick
+   	the person who  wins is the one who thinks he can!
+   
+   (d) 
+   
+   	The sixth sick sheikh's sixth ship is sick
 
 ## [B]
     
-    (a)'a' is an array of characters, which is initialized
+   (a)
+    
+    	'a' is an array of characters, which is initialized
 	at the time of declaration, so it cannot be modified.
 	i.e. writing 'a++' is illegal.
    
-    (b)Wrong format specifier used, in scanf()
+   (b)
+   
+   	Wrong format specifier used, in scanf()
 
    
-    (c)n is undefined in scanf().
+   (c)
    
-    (d)1. i is undefined.
+   	n is undefined in scanf().
+   
+   (d)
+   
+   	1. i is undefined.
 	2. We cannot save string in a char type pointer 
 	from scanf() function.
 
-    (e)No error
+   (e) No error
     
-    (f)sprintf() first argument should be of array of characters char*,
+   (f)
+   
+   	sprintf() first argument should be of array of characters char*,
 	instead of char type. 
 
-    (g)No error but the warning, "format specifier" should
+    (g)
+    
+    	No error but the warning, "format specifier" should
 	not be used in scanf() or sscanf() functions.
 
 ## [C]
