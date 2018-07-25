@@ -111,7 +111,7 @@
     "wb+".
 # [C]
 
-	(a)
+(a)
 	
 		#include<stdio.h>
 		#include<conio.h>
@@ -151,7 +151,7 @@
 	_getch();
 	return 0;
 		}
-	(b)
+(b)
 	
 		#include<stdio.h>
 		#include<conio.h>
@@ -197,7 +197,7 @@
 	_getch();
 	return 0;
 		}
-	(c)
+(c)
 	
 		#include<stdio.h>
 		#include<conio.h>
@@ -276,7 +276,7 @@
 		}
 	}
 		}
-	(d)
+(d)
 	
 		#include<stdio.h>
 		#include<conio.h>
@@ -295,7 +295,7 @@
 	_getch();
 	return 0;
 		}
-	(e)
+(e)
 	
 		#include<stdio.h>
 		#include<conio.h>
@@ -457,7 +457,7 @@
 		printf("%c", 179); //This will make right side of the box
 	}
 		}
-	(g)
+(g)
 	
 		#include<stdio.h>
 		#include<conio.h>
@@ -837,7 +837,7 @@
 	puts("\n\n");
 	_getch();
 	}
-	(h)
+(h)
 	
 		#include<stdio.h>
 	#include<Windows.h>
@@ -948,7 +948,7 @@
 	remove("customer.dat");
 	rename("temp.dat", "customer.dat");
 	}
-	(i)
+(i)
 	
 		#include<stdio.h>
 		#include<conio.h>
@@ -1090,7 +1090,7 @@
 
 	}
 	}
-	(j)
+(j)
 	
 			#include<stdio.h>
 	#include<conio.h>
@@ -1155,7 +1155,7 @@
 	}
 	fclose(fp);
 	}
-	(k)
+(k)
 	
 		#include<stdio.h>
 	#include<conio.h>
@@ -1246,7 +1246,7 @@
 			puts(name);
 	fclose(fp);
 	}
-	(l)
+(l)
 	
 		#include<stdio.h>
 	#include<conio.h>
