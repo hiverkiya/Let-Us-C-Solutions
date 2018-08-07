@@ -6,5 +6,6 @@ Read [CONTRIBUTING.md](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)](https://github.com/Verkiya/Let-Us-C-Solutions)
 [![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=plastic)](https://github.com/Verkiya/Let-Us-C-Solutions)
-[![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg?style=plastic)](https://github.com/Verkiya/Let-Us-C-Solutions)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/badges/shields.svg?style=plastic)](https://github.com/Verkiya/Let-Us-C-Solutions)
+
 
