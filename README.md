@@ -5,3 +5,6 @@ In case of any legal issue or any error,please mail to himanshuverkiya@gmail.com
 Read [CONTRIBUTING.md](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master/CONTRIBUTING.md) for any further contributions.
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)](https://github.com/Verkiya/Let-Us-C-Solutions)
+[![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg?style=plastic)](https://github.com/Verkiya/Let-Us-C-Solutions)
+[![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg?style=plastic)](https://github.com/Verkiya/Let-Us-C-Solutions)
+
