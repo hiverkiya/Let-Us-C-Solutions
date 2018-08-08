@@ -2,11 +2,11 @@
 
 ## [A]
 
-  (a) 5 2
+    (a) 5 2
   
-  (b) 25 4
+    (b) 25 4
   
-  (c) 
+    (c) 
   
   	1006 1006 1006
   
@@ -33,11 +33,11 @@
   
    (a)
        
-       #include<stdio.h>
-         #include<conio.h>
-       #include<math.h>
+    #include<stdio.h>
+    #include<conio.h>
+    #include<math.h>
 
-      void calc(int, int, int, int, int, int*, int*, float*);
+    void calc(int, int, int, int, int, int*, int*, float*);
 
     int main()
     {
@@ -62,6 +62,7 @@
 	*sd = pow(a - *av, 2) + pow(b - *av, 2) + pow(c - *av, 2) + pow(d - *av, 2) + pow(e - *av, 2);
 	*sd = sqrt(*sd / 5);
     }
+   
    (b)
    
     #include<stdio.h>
@@ -87,6 +88,7 @@
 	*av = (a + b + c) / 3;
 	*pr = *av / 3;
     }
+   
    (c)
    
     #include<stdio.h>
@@ -125,6 +127,7 @@
 	}
 	return ans;
     }
+   
    (d)
    
     #include<stdio.h>
@@ -154,9 +157,10 @@
 	*b = *a;
 	*a = x;
     }
+   
    (e)
    
-      #include<stdio.h>
+    #include<stdio.h>
     #include<conio.h>
     #include<math.h>
 
@@ -183,9 +187,10 @@
 	area = sqrt(S*(S - a)*(S - b)*(S - c));
 	return (area);
     }
+   
    (f)
    
-      #include<stdio.h>
+    #include<stdio.h>
     #include<conio.h>
     #include<math.h>
 
@@ -236,12 +241,13 @@
 	area = sqrt(S*(S - a)*(S - b)*(S - c));
 	return (area);
     }
+   
    (g)
    
-      #include<stdio.h>
+    #include<stdio.h>
     #include<conio.h>
 
-      int gcd(int, int);
+    int gcd(int, int);
 
     int main()
     {
