@@ -2,11 +2,11 @@
 
 ## [A]
     
-    (a) 0 200
+    (a) garbage 200
    
     (b) 300 200
     
-    (c) 10 20
+    (c) no output
    
     (d) x and y are equal
    
