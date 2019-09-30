@@ -7,6 +7,10 @@ Read [CONTRIBUTING.md](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master
 [![GitHub license](https://img.shields.io/github/license/Verkiya/Let-Us-C-Solutions.svg?style=for-the-badge)](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Verkiya/Let-Us-C-Solutions.svg?style=for-the-badge)](https://github.com/Verkiya/Let-Us-C-Solutions/stargazers)
 
+#### NOTE
+Solutions are in .md format.Download/Clone them and open in any text editor.
+
+
 
 
 
