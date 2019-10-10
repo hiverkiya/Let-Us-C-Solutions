@@ -15,8 +15,10 @@
     
     1. REASON:- No special symbol other than underscore is allowed in variable naming.
 	        B'day $hello  #HASH _main() total% %name% stack-queue	
+   
     2. REASON:- Keyword cannot be used as a variable.
     	int
+    
     3. REASON:- Variable name should start with an alphabet.
     	1st
 
@@ -94,7 +96,7 @@
   	  float bs,gs;
   	  printf("Enter basic salary of Rakesh.\n");
   	  scanf("%f",&bs);
-   	 printf("Gross salary of Rakesh is %f.\n",(bs+(0.4*bs)+(0.2*bs)));
+          printf("Gross salary of Rakesh is %f.\n",(bs+(0.4*bs)+(0.2*bs)));
   	  return 0;
 	}
 	
@@ -104,18 +106,18 @@
 	#include<conio.h>
 	int main()
 	{
-	int sal;
-	float gros_sal;
-	printf("Enter the basic salary of Ramesh : ");
-	scanf("%d", &sal);
+	 int sal;
+	 float gros_sal;
+	 printf("Enter the basic salary of Ramesh : ");
+	 scanf("%d", &sal);
 	
-	//salary calculated
-	gros_sal=sal+(sal*40/100)+(sal*20/100);
+	 //salary calculated
+	 gros_sal=sal+(sal*40/100)+(sal*20/100);
 	
-	printf("%f is the gross salary of Ramesh.", gros_sal);
+	 printf("%f is the gross salary of Ramesh.", gros_sal);
 	
-	getch();
-	return 0;
+	 getch();
+	 return 0;
 	}
    	
 
@@ -143,18 +145,15 @@
 	#include<conio.h>
 	int main()
 	{
-	float dis;
-	
-	printf("Enter the distance between cities in kilo metres : ");
-	scanf("%f", &dis);
-	
-	printf("\n%f is the distance between them in meters.", dis*1000);
-	printf("\n%f is the distance between them in feet.", dis*3280.8399);
-	printf("\n%f is the distance between them in inches.", dis*39370.0788);
-	printf("\n%f is the distnace between them in centimeters", dis*100000);
-    
-	getch();
-	return 0;
+  	 float dis;
+	 printf("Enter the distance between cities in kilo metres : ");
+	 scanf("%f", &dis);
+	 printf("\n%f is the distance between them in meters.", dis*1000);
+	 printf("\n%f is the distance between them in feet.", dis*3280.8399);
+	 printf("\n%f is the distance between them in inches.", dis*39370.0788);
+	 printf("\n%f is the distnace between them in centimeters", dis*100000);
+    	 getch();
+	 return 0;
 	}
   
   (c) 
@@ -230,17 +229,17 @@
 	#include<conio.h>
 	int main()
 	{
-	float f,c;
-	printf("Enter the temperature in Fahrenheit : ");
-	scanf("%f", &f);
+	 float f,c;
+	 printf("Enter the temperature in Fahrenheit : ");
+	 scanf("%f", &f);
 	
-	//conversion of temperature
-	c=(f-32)*100/180;
+	 //conversion of temperature
+	 c=(f-32)*100/180;
 	
-	printf("\n%f is that temperature in celcius.", c);
+	 printf("\n%f is that temperature in celcius.", c);
 	
-	getch();
-	return 0;
+	 getch();
+	 return 0;
 	}
  
  (e) 
@@ -360,7 +359,7 @@
 	printf("\nA8 : %dmm x %dmm", A8_a, A8_b);
 	
 	getch();
-    return 0;
+    	return 0;
 	}
 	
 	
