@@ -1,7 +1,7 @@
-# Chapter-1 Getting Started
+# Chapter-1 : Getting Started
 
-## [A]
-	
+### [A]
+
    REASON:- A character constant is a constant which uses single quotation around characters.
        
     Invalid:- '3.15' eLearning' 'Quest'
@@ -12,13 +12,16 @@
    
   
 ## [B] 
+REASON:- No special symbol except underscore allowed in variable naming
     
-    1. REASON:- No special symbol other than underscore is allowed in variable naming.
-	        B'day $hello  #HASH _main() total% %name% stack-queue	
-    2. REASON:- Keyword cannot be used as a variable.
+       B'day $hello  #HASH _main() total% %name% stack-queue	
+    
+REASON:- Keyword cannot be used as a variable.
+
     	int
-    3. REASON:- Variable name should start with an alphabet.
-    	1st
+REASON:- Variable name should start with an alphabet.
+    	
+    	Same as 1st
 
 ## [C]
     
@@ -75,7 +78,6 @@
     (m) Input Function
     
 ## [E] 
-
     (a) Statement Terminator is missing, and it couldn't be figured out whether the expression is (a+b)*(b-35) or a+(b*b)-35 because of unavailability of parentheses.
     
     (b) Nesting of comments is not allowed.
@@ -94,7 +96,7 @@
   	  float bs,gs;
   	  printf("Enter basic salary of Rakesh.\n");
   	  scanf("%f",&bs);
-   	 printf("Gross salary of Rakesh is %f.\n",(bs+(0.4*bs)+(0.2*bs)));
+      printf("Gross salary of Rakesh is %f.\n",(bs+(0.4*bs)+(0.2*bs)));
   	  return 0;
 	}
 	
@@ -104,18 +106,15 @@
 	#include<conio.h>
 	int main()
 	{
-	int sal;
-	float gros_sal;
-	printf("Enter the basic salary of Ramesh : ");
-	scanf("%d", &sal);
-	
-	//salary calculated
-	gros_sal=sal+(sal*40/100)+(sal*20/100);
-	
-	printf("%f is the gross salary of Ramesh.", gros_sal);
-	
-	getch();
-	return 0;
+	 int sal;
+	 float gros_sal;
+  	 printf("Enter the basic salary of Ramesh : ");
+	 scanf("%d", &sal);
+		//salary calculated
+	 gros_sal=sal+(sal*40/100)+(sal*20/100);
+	 printf("%f is the gross salary of Ramesh.", gros_sal);
+	 getch();
+	 return 0;
 	}
    	
 
@@ -123,7 +122,8 @@
    
    	#include<stdio.h>
 	int main()
-	{ float meters,feet,inches,centi_m,km;
+	{ 
+	  float meters,feet,inches,centi_m,km;
   	  printf("Enter the distance in km\n");
    	  scanf("%f",&km);
    	  meters=km*1000;
@@ -135,7 +135,7 @@
    	  printf("The distance in feet = %f\n",feet);
    	  printf("The distance in inches = %f\n",inches);
    	  return 0;
-        }
+     }
 
    OR
    
@@ -143,53 +143,35 @@
 	#include<conio.h>
 	int main()
 	{
-	float dis;
-	
-	printf("Enter the distance between cities in kilo metres : ");
-	scanf("%f", &dis);
-	
-	printf("\n%f is the distance between them in meters.", dis*1000);
-	printf("\n%f is the distance between them in feet.", dis*3280.8399);
-	printf("\n%f is the distance between them in inches.", dis*39370.0788);
-	printf("\n%f is the distnace between them in centimeters", dis*100000);
-    
-	getch();
-	return 0;
-	}
+ 	 float dis;
+	 printf("Enter the distance between cities in kilo metres : ");
+	 scanf("%f", &dis);
+	 printf("\n%f is the distance between them in meters.", dis*1000);
+	 printf("\n%f is the distance between them in feet.", dis*3280.8399);
+	 printf("\n%f is the distance between them in inches.", dis*39370.0788);
+	 printf("\n%f is the distnace between them in centimeters", dis*100000);
+     getch();
+	 return 0;
+    }
   
   (c) 
     
     #include<stdio.h>
-   
     int main()
-   
     {
-  
-    printf("Enter marks of student\n");
-   
-    float array[5],aggregate=0,percentage;
-   
-    int i;
-    
-    for(i=0;i<5;i++)
-    
-    {
-    
-    scanf("%f",&array[i]);
-    
-    aggregate+=array[i];
-    
-    }
-    
-    printf("Aggregate Marks of Student are :- %f.\n",aggregate);
-    
-    percentage=aggregate/500*100;
-    
-    printf("Percentage of Students is %f.\n",percentage);
-    
-    return 0;
-    
-    }
+      printf("Enter marks of student\n");
+      float array[5],aggregate=0,percentage;
+      int i;
+      for(i=0;i<5;i++)
+      {
+      scanf("%f",&array[i]);
+      aggregate+=array[i];
+      }
+       printf("Aggregate Marks of Student are :- %f.\n",aggregate);
+       percentage=aggregate/500*100;
+       printf("Percentage of Students is %f.\n",percentage);
+       return 0;
+     }
     
    OR
    
