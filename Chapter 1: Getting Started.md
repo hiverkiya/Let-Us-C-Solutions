@@ -110,7 +110,7 @@ REASON:- Variable name should start with an alphabet.
 	 float gros_sal;
   	 printf("Enter the basic salary of Ramesh : ");
 	 scanf("%d", &sal);
-		//salary calculated
+	 //salary calculated
 	 gros_sal=sal+(sal*40/100)+(sal*20/100);
 	 printf("%f is the gross salary of Ramesh.", gros_sal);
 	 getch();
@@ -164,8 +164,8 @@ REASON:- Variable name should start with an alphabet.
       int i;
       for(i=0;i<5;i++)
       {
-      scanf("%f",&array[i]);
-      aggregate+=array[i];
+       scanf("%f",&array[i]);
+       aggregate+=array[i];
       }
        printf("Aggregate Marks of Student are :- %f.\n",aggregate);
        percentage=aggregate/500*100;
@@ -179,19 +179,15 @@ REASON:- Variable name should start with an alphabet.
 	#include<conio.h>
 	int main()
 	{
-	float a,b,c,d,e;
-    
-	printf("Enter the marks out of 100 in five subjects of the student : ");
-	scanf("%f%f%f%f%f", &a,&b,&c,&d,&e);
-	
-	//his total marks
-	printf("\n%f is the aggregate marks obtained by him.", a+b+c+d+e);
-    
-	//his percentage marks
-	printf("\n%f is the percentage marks obtained by him.", (a+b+c+d+e)/5);
-	
-	getch();
-	return 0;
+	 float a,b,c,d,e;
+     printf("Enter the marks out of 100 in five subjects of the student : ");
+	 scanf("%f%f%f%f%f", &a,&b,&c,&d,&e);
+	 //his total marks
+	 printf("\n%f is the aggregate marks obtained by him.", a+b+c+d+e);
+     //his percentage marks
+     printf("\n%f is the percentage marks obtained by him.", (a+b+c+d+e)/5);
+	 getch();
+	 return 0;
 	}
   
   (d)
@@ -212,47 +208,31 @@ REASON:- Variable name should start with an alphabet.
 	#include<conio.h>
 	int main()
 	{
-	float f,c;
-	printf("Enter the temperature in Fahrenheit : ");
-	scanf("%f", &f);
-	
-	//conversion of temperature
-	c=(f-32)*100/180;
-	
-	printf("\n%f is that temperature in celcius.", c);
-	
-	getch();
-	return 0;
+	 float f,c;
+ 	 printf("Enter the temperature in Fahrenheit : ");
+	 scanf("%f", &f);
+	 //conversion of temperature
+	 c=(f-32)*100/180;
+	 printf("\n%f is that temperature in celcius.", c);
+	 getch();
+	 return 0;
 	}
  
  (e) 
    
     #define PI 3.14159265
-    
     #include<stdio.h>
-    
     int main()
-    
     {
-
-    printf("Enter the length and breadth of rectangle\n");
-	
-    float length,breadth;
-	
-    scanf("%f %f",&length,&breadth);
-	
-    printf("Enter the radius of circle\n");
-	
-    float radius,area=0;
-	
-    scanf("%f",&radius);
-    
-    printf("Area of Rectangle is %f and Perimeter is %f.\n",length*breadth,2*(length+breadth));
-    
-    printf("Area of Circle is %f and Circumference is %f.\n",PI*radius*radius,2*PI*radius);
-	
-    return 0;
-    
+     printf("Enter the length and breadth of rectangle\n");
+	 float length,breadth;
+	 scanf("%f %f",&length,&breadth);
+	 printf("Enter the radius of circle\n");
+	 float radius,area=0;
+	 scanf("%f",&radius);
+     printf("Area of Rectangle is %f and Perimeter is %f.\n",length*breadth,2*(length+breadth));
+     printf("Area of Circle is %f and Circumference is %f.\n",PI*radius*radius,2*PI*radius);
+	 return 0;
     }
     
    OR
@@ -261,23 +241,19 @@ REASON:- Variable name should start with an alphabet.
 	#include<conio.h>
 	int main()
 	{
-	float l,b,r;
-	
-	printf("Enter the length and breadth of the rectangle : ");
-	scanf("%f%f", &l,&b);
-	
-	//rectangle calculations
-	printf("\n%f is the area of the rectangle.", l*b);
-	printf("\n%f is the perimeter of the rectangle.", l+b);
-	
-	//circle calculations
-	printf("\n\nEnter the radius of the circle : ");
-	scanf("%f", &r);
-	printf("\n%f is the area of the circle.", 3.14*r*r);
-	printf("\n%f is the perimeter of the circle.", 2*3.14*r);
-	
-	getch();
-	return 0;
+	 float l,b,r;
+	 printf("Enter the length and breadth of the rectangle : ");
+  	 scanf("%f%f", &l,&b);
+	 //rectangle calculations
+	 printf("\n%f is the area of the rectangle.", l*b);
+	 printf("\n%f is the perimeter of the rectangle.", l+b);
+	 //circle calculations
+	 printf("\n\nEnter the radius of the circle : ");
+	 scanf("%f", &r);
+	 printf("\n%f is the area of the circle.", 3.14*r*r);
+	 printf("\n%f is the perimeter of the circle.", 2*3.14*r);
+	 getch();
+	 return 0;
 	}
 	
    (f)
@@ -300,49 +276,38 @@ REASON:- Variable name should start with an alphabet.
    
    	#include<stdio.h>
 	#include<conio.h>
-
 	int main()
 	{
-	int A0_a, A0_b, A1_a, A1_b, A2_a, A2_b, A3_a, A3_b, A4_a, A4_b, A5_a, A5_b, A6_a, A6_b, A7_a, A7_b, A8_a, A8_b;
-	
-	A0_a = 1189;
-	A0_b = 841;
-	printf("\nA0 : %dmm x %dmm ", A0_a, A0_b);
-	
-	A1_a = A0_b;
-	A1_b = A0_a/2;
-	printf("\nA1 : %dmm x %dmm ", A1_a, A1_b);
-	
-	A2_a = A1_b;
-	A2_b = A1_a/2;
-	printf("\nA2 : %dmm x %dmm", A2_a, A2_b);
-	
-	A3_a = A2_b;
-	A3_b = A2_a/2;
-	printf("\nA3 : %dmm x %dmm", A3_a, A3_b);
-	
-	A4_a = A3_b;
-	A4_b = A3_a/2;
-	printf("\nA4 : %dmm x %dmm", A4_a, A4_b);
-	
-	A5_a = A4_b;
-	A5_b = A4_a/2;
-	printf("\nA5 : %dmm x %dmm", A5_a, A5_b);
-	
-	A6_a = A5_b;
-	A6_b = A5_a/2;
-	printf("\nA6 : %dmm x %dmm", A6_a, A6_b);
-	
-	A7_a = A6_b;
-	A7_b = A6_a/2;
-	printf("\nA7 : %dmm x %dmm", A7_a, A7_b);
-	
-	A8_a = A7_b;
-	A8_b = A7_a/2;
-	printf("\nA8 : %dmm x %dmm", A8_a, A8_b);
-	
-	getch();
-    return 0;
+	 int A0_a, A0_b, A1_a, A1_b, A2_a, A2_b, A3_a, A3_b, A4_a, A4_b, A5_a, A5_b, A6_a, A6_b, A7_a, A7_b, A8_a, A8_b;
+	 A0_a = 1189;
+	 A0_b = 841;
+	 printf("\nA0 : %dmm x %dmm ", A0_a, A0_b);
+	 A1_a = A0_b;
+	 A1_b = A0_a/2;
+	 printf("\nA1 : %dmm x %dmm ", A1_a, A1_b);
+	 A2_a = A1_b;
+	 A2_b = A1_a/2;
+	 printf("\nA2 : %dmm x %dmm", A2_a, A2_b);
+	 A3_a = A2_b;
+	 A3_b = A2_a/2;
+	 printf("\nA3 : %dmm x %dmm", A3_a, A3_b);
+	 A4_a = A3_b;
+	 A4_b = A3_a/2;
+	 printf("\nA4 : %dmm x %dmm", A4_a, A4_b);
+	 A5_a = A4_b;
+	 A5_b = A4_a/2;
+	 printf("\nA5 : %dmm x %dmm", A5_a, A5_b);
+	 A6_a = A5_b;
+	 A6_b = A5_a/2;
+	 printf("\nA6 : %dmm x %dmm", A6_a, A6_b);
+	 A7_a = A6_b;
+	 A7_b = A6_a/2;
+	 printf("\nA7 : %dmm x %dmm", A7_a, A7_b);
+	 A8_a = A7_b;
+	 A8_b = A7_a/2;
+	 printf("\nA8 : %dmm x %dmm", A8_a, A8_b);
+	 getch();
+     return 0;
 	}
 	
 	
