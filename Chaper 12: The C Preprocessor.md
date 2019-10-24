@@ -7,8 +7,7 @@
     (b) #define SQR(X) ( X * X ) 
    
     (c)
-   
-        1. False
+   	1. False
         2. False
         3. True
         4. False
