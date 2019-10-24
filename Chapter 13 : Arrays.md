@@ -27,6 +27,7 @@
     (d)  first is array size, second is particular element.
    
     (e)  
+    
       (1)  True.
       (2)  False.
       (3)  False.
