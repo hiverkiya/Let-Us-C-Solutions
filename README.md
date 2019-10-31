@@ -1,4 +1,5 @@
 ## Let-Us-C-Solutions :notebook: :smile:
+Do star it if you like it :smile:
 Solutions to Let Us C 15th Edition by Yashwant Kanetkar.
 In case of any legal issue or any error,please mail to himanshuverkiya@gmail.com or akshtgupta7@gmail.com.
 
