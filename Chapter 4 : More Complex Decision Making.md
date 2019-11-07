@@ -381,7 +381,7 @@
     printf("Enter three numbers : ");
     scanf("%d %d %d", &a,&b,&c);
 	
-    a>b&&a>c?printf("%d is the greatest.", a):(b>a&&b>c?printf("%d is the greatest.", b):printf("%d is the greatest.", c));
+    a>b&&a>c?printf("%d is greatest", a):(b>a&&b>c?printf("%d is greatest", b):printf("%d is greatest.",c));
     return 0;
     }
 	  
@@ -416,7 +416,7 @@
     float sal;
     printf("Enter the salary");
     scanf("%d",&sal);
-    sal>=25000 && sal<=40000 ?printf("Manager\n"):(sal>=15000 && sal<25000?printf("Accountant\n");:printf("Clerk"));
+    sal>=25000 && sal<=40000?printf("Manager\n"):(sal>=15000 && sal<25000?printf("Accountant\n");:printf("Clerk"));
     return 0;
     }
 
