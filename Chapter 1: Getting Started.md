@@ -78,7 +78,10 @@ REASON:- Variable name should start with an alphabet.
     (m) Input Function
     
 ## [E] 
-    (a) Statement Terminator is missing, and it couldn't be figured out whether the expression is (a+b)*(b-35) or a+(b*b)-35 because of unavailability of parentheses.
+    
+    (a) Statement Terminator is missing, and it couldn't be figured out whether the expression is (a+b)*(b-35)
+    
+       or a+(b*b)-35 because of unavailability of parentheses.
     
     (b) Nesting of comments is not allowed.
     
