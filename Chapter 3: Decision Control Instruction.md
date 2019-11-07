@@ -22,7 +22,7 @@
    
     (c) NO ERROR.
     
-    (d) There is no keyword "then" related to if in C Programmming Language & no variable defined here in program as well.
+    (d) There is no keyword "then" related to if in C & no variable defined here in program as well.
    
     (e) lvalue required as left operand of assignment.
    
