@@ -99,7 +99,9 @@
            printf("Grade is 8");
            else if(hard>50 && carbon>=0.7 && tensile>5600)
            printf("Grade is 7");
-           else if(hard>50 && carbon>=0.7 && tensile<=5600 || hard<=50 && carbon<0.7 && tensile<=5600 || hard<=50 && carbon>=0.7          &&tensile>5600)
+           else 
+	   if(hard>50 && carbon>=0.7 && tensile<=5600 || hard<=50 && carbon<0.7
+	   && tensile<=5600 || hard<=50 && carbon>=0.7          &&tensile>5600)
           printf("Grade is 6");
           else
           printf("Grade is 5");
@@ -371,17 +373,17 @@
 	}
 (c)
    
-        #include<stdio.h>
-          int main()
-          {
-	int a,b,c;
+    #include<stdio.h>
+    int main()
+    {
+    int a,b,c;
 	
-	printf("Enter three numbers : ");
-	scanf("%d %d %d", &a,&b,&c);
+    printf("Enter three numbers : ");
+    scanf("%d %d %d", &a,&b,&c);
 	
-	a>b&&a>c?printf("%d is the greatest.", a):(b>a&&b>c?printf("%d is the greatest.", b):printf("%d is the greatest.", c));
-	return 0;
-          }
+    a>b&&a>c?printf("%d is the greatest.", a):(b>a&&b>c?printf("%d is the greatest.", b):printf("%d is the greatest.", c));
+    return 0;
+    }
 	  
 (d)	
 
@@ -408,13 +410,13 @@
 
 (e)
 
-      #include<stdio.h>
-      int main()
-      {
-       float sal;
-       printf("Enter the salary");
-       scanf("%d",&sal);
-       sal>=25000 && sal<=40000 ?printf("Manager\n"):(sal>=15000 && sal<25000?printf("Accountant\n");:printf("Clerk"));
-       return 0;
-       }
+    #include<stdio.h>
+    int main()
+    {
+    float sal;
+    printf("Enter the salary");
+    scanf("%d",&sal);
+    sal>=25000 && sal<=40000 ?printf("Manager\n"):(sal>=15000 && sal<25000?printf("Accountant\n");:printf("Clerk"));
+    return 0;
+    }
 
