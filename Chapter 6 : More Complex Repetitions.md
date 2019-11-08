@@ -260,22 +260,22 @@
 		{
 			if (num < i*i*i)
 				break;
-			for (j = i + 1; j < num; j++)
+		or (j = i + 1; j < num; j++)
 			{
 				if (num < j*j*j)
 					break;
-				for (k = i + 1; k < num; k++)
+		for (k = i + 1; k < num; k++)
 				{
 					if (k*k*k > i*i*i + j*j*j)
-						break;
-					for (l = k + 1; l < num; l++)
+					break;
+			for (l = k + 1; l < num; l++)
 					{
-						if (num < k*k*k + l*l*l)
+				if (num < k*k*k + l*l*l)
 							break;
-						if ((num == i*i*i + j*j*j) && (num == k*k*k + l*l*l))
-						{
-							printf("\n%d^3 + %d^3 = %d^3 + %d^3 = num : %d",i, j, k, l, num);
-							break;
+			if ((num == i*i*i + j*j*j) && (num == k*k*k + l*l*l))
+		{
+			printf("\n%d^3 + %d^3 = %d^3 + %d^3 = num : %d",i, j, k, l, num);
+				break;
 						}
 					}
 				}
