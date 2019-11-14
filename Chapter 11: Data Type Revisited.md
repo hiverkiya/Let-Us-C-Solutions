@@ -7,8 +7,7 @@
    
     (b) 13.500000 13.500000 
    
-    (c) main's i=0                                                                                                                     val's i=100 
-        main's i= 101                                                                                                                   val's i=100
+    (c) main's i=0  val's i=100    main's i= 101   val's i=100
    
     (d) 6 5 6
    
