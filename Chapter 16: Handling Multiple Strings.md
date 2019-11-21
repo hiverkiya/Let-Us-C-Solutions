@@ -1122,15 +1122,15 @@
 	printf("\nVowels in successions : ");
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (VowelisOccur)/*If first vowel is occur*/
-		{
-			i++;/*To check next vowel*/
-			if (VowelisOccur)/*If second vowel after first if occur*/
-			{
-				printf("%c%c ", str[i - 1], str[i]);/*Printing two simultaneous vowels*/
-				count++;/*Counting Two simultaneous vowels*/
-			}
+	if (VowelisOccur)/*If first vowel is occur*/
+	{
+	i++;/*To check next vowel*/
+	if (VowelisOccur)/*If second vowel after first if occur*/
+	{
+	printf("%c%c ", str[i - 1], str[i]);/*Printing two simultaneous vowels*/
+	count++;/*Counting Two simultaneous vowels*/
 		}
+	}
 	}
 	return count;
 	}
@@ -1183,15 +1183,15 @@
 	arr[i] = EndofNumber;/*Terminating array*/
 
 	rev_arr(arr);/*The numebrs in the array are saving in the  reverse mode
-				 as the saperation of the digits are takes place from last,
-				 so we will reverse the numbers of the array but EndofNumber will have the same
-				 position*/
+		 as the saperation of the digits are takes place from last,
+		 so we will reverse the numbers of the array but EndofNumber will have the same
+		 position*/
 
 	printf("\n\n\nNumber in words : ");
 
 	for (i = 0; arr[i] != EndofNumber; i++)/*Traversing the whole array.*/
 	{
-		if (arr[i + 5] == EndofNumber || arr[i + 7] == EndofNumber || arr[i + 9] == EndofNumber || arr[i + 2] == EndofNumber)
+	if (arr[i + 5] == EndofNumber || arr[i + 7] == EndofNumber || arr[i + 9] == EndofNumber || arr[i + 2] == EndofNumber)
 		{
 			if (arr[i] == 1)
 			{
@@ -1216,7 +1216,7 @@
 				if (arr[i + 1] == 0)
 					printf("Ten ");
 
-				i++;/*If we continue so these below words will not print as the loop is continueing from here.*/
+		i++;/*If we continue so these below words will not print as the loop is continueing from here.*/
 
 				if (arr[i + 10] == EndofNumber)
 					printf("Arab ");
@@ -1299,8 +1299,8 @@
 
 	#define EndofNumber 13/*For Terminating the array just like strings do*/
 
-	int arr[10], x = 0, one_i = 0, two_i = 0, three_i = 0, four_i = 0, five_i = 0, six_i = 0, seven_i = 0, eight_i = 0, nine_i = 0, zero_i = 0;
-	/*These variales are used in the multiple functions so I defined them globally*/
+	int arr[10], x=0,one_i=0,two_i=0,three_i=0,four_i=0,five_i=0,six_i=0,seven_i=0,eight_i=0,nine_i=0,zero_i=0;
+	/*These variables are used in the multiple functions so I defined them globally*/
 
 	/*These functions contains the pattern of # makes numbers*/
 	void one();
@@ -1355,25 +1355,23 @@
 	if (arr[x] == EndofNumber)
 	{
 
-		/*First it will print the first line of the each number,
-		then by increamenting these in loops of individual number will
-		print the next line*/
-
-		one_i++;
-		two_i++;
-		three_i++;
-		four_i++;
-		five_i++;
-		six_i++;
-		seven_i++;
-		eight_i++;
-		nine_i++;
-		zero_i++;
-
-		x = 0;/*When the first line of all the numbers has been printed then array
-			  will initializes again so that we traverse the whole array again for printing the */
-		printf("\n");/*Jump to next line*/
-		jumpto();
+	/*First it will print the first line of the each number,
+	then by increamenting these in loops of individual number will
+	print the next line*/
+	one_i++;
+	two_i++;
+	three_i++;
+	four_i++;
+	five_i++;
+	six_i++;
+	seven_i++;
+	eight_i++;
+	nine_i++;
+	zero_i++;
+	x = 0;/*When the first line of all the numbers has been printed then array
+	  will initializes again so that we traverse the whole array again for printing the */
+	printf("\n");/*Jump to next line*/
+	jumpto();
 
 	}
 	return;
