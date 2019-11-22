@@ -823,32 +823,32 @@
 	int yr, m, mon, curr, next = 0;
 	for (yr = 1900; yr <= year; yr++)/*Traversing years*/
 	{
-		if (yr < year)
-			m = 12; /*It will traverse the all months if the year is not what user entered*/
-		else
-			m = month;/*It will traverse till the month user want if the wanted year is encountered.*/
-		for (mon = 1; mon <= m; mon++)//traversing all months of the year
+	if (yr < year)
+		m = 12; /*It will traverse the all months if the year is not what user entered*/
+	else
+		m = month;/*It will traverse till the month user want if the wanted year is encountered.*/
+	for (mon = 1; mon <= m; mon++)//traversing all months of the year
+	{
+		if (mon == 2)/*If the feb is encountered*/
 		{
-			if (mon == 2)/*If the feb is encountered*/
-			{
-				if (LEAP)
-					nod = 29;
-				else
-					nod = 28;
-			}
-			else if (mon == 4 || mon == 6 || mon == 9 || mon == 11)/*Months with 30 days*/
-				nod = 30;
-			else/*Months with 31 days*/
-				nod = 31;
-			int i = 1;
-			curr = next;/*Current month starts from this day*/
-			while (i <= nod)/*This will find the day from which next month will start*/
-			{
-				next++;
-				i++;
-				if (next == 7)
-					next = 0;
-			}
+			if (LEAP)
+				nod = 29;
+			else
+				nod = 28;
+		}
+		else if (mon == 4 || mon == 6 || mon == 9 || mon == 11)/*Months with 30 days*/
+			nod = 30;
+		else/*Months with 31 days*/
+			nod = 31;
+		int i = 1;
+		curr = next;/*Current month starts from this day*/
+		while (i <= nod)/*This will find the day from which next month will start*/
+		{
+			next++;
+			i++;
+			if (next == 7)
+			next = 0;
+		}
 		}
 	}
 
@@ -890,21 +890,20 @@
 		printf("\t\t\t");
 		for (j = 1; j <= 7; j++, curr--)
 		{
-			if (x>9)//maintaining the structure of the calender
-				printf("    ");
-			else
-				printf("     ");
-
-			if (curr>0)//spacing for start the calender from the given day
+		if (x>9)//maintaining the structure of the calender
+			printf("    ");
+		else
+		printf("     ");
+		if (curr>0)//spacing for start the calender from the given day
 				printf(" ");
-			else//printing of dates begin.
-			{
-				printf("%d", x);
-				if (x <= nod)
-					x++;
-				if (x>nod)
-					break;
-			}
+		else//printing of dates begin.
+		{
+			printf("%d", x);
+			if (x <= nod)
+				x++;
+			if (x>nod)
+				break;
+		}
 		}
 		printf("\n\n");//next week
 
@@ -918,8 +917,10 @@
 	int year, month, key = 0;
 
 
-	/*yr is for traversing the year, andn year is the year given by the user. mon is for traversing
-	the months and month is the month given by user. curr contains the starting day of the current
+	/*yr is for traversing the year, andn year is the year given by the user.
+	mon is for traversing
+	the months and month is the month given by user.
+	curr contains the starting day of the current
 	month and next conatains the starting day of the next month.*/
 
 
@@ -1293,7 +1294,8 @@
 	#include<Windows.h>
 
 
-	#define VisualStudio //If using Visual Studio so delete its comment and make above two macro comments
+	#define VisualStudio
+	//If using Visual Studio so delete its comment and make above two macro comments
 	//#define TurboC //If using Turbo C so delete its comment and make above two macro comments
 	//#define DevC //If using Dev C so delete its comment and make above two macro comments
 
@@ -1321,8 +1323,11 @@
 	void rev_arr(int *array)
 	{
 	int temp[12], i, max, j;
-	for (i = 0; array[i] != EndofNumber; i++);/*Counting the total number of elemeents excpet the last EndofNumber*/
-	max = i - 1;/*Max is the total number of elements, as the counting starts from 0 so we subtract 1 from it*/
+	for (i = 0; array[i] != EndofNumber; i++);
+	/*Counting the total number of elemeents excpet the last EndofNumber*/
+	max = i - 1;
+	/*Max is the total number of elements,
+	as the counting starts from 0 so we subtract 1 from it*/
 	i = 0;
 	for (j = max; j >= 0; j--, i++)
 		temp[j] = array[i];/*temp starting from the last*/
@@ -1568,7 +1573,8 @@
 		num /= 10;
 	}
 	arr[i] = EndofNumber;/*Terminating the number*/
-	rev_arr(arr);/*Reversing the array again as the number saved in it is already in reverse mode*/
+	rev_arr(arr);
+	/*Reversing the array again as the number saved in it is already in reverse mode*/
 
 
 	#ifdef TurboC
