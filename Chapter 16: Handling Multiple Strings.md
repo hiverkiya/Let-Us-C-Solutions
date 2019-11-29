@@ -1056,14 +1056,15 @@
 	int i, j, l = 0;
 	for (i = j = 0; line[i] != '\0'; i++)
 	{
-		if (line[i] == Space)/*If Sace if encounter so the first letter of the word will saved in the temp*/
-		{
-			temp[l] = line[j];
-			l++;
-			temp[l] = Space;/*after first leter we are giving a space*/
-			l++;
-			j = i + 1;
-		}
+	if (line[i] == Space)
+	/*If Sace if encounter so the first letter of the word will saved in the temp*/
+	{
+		temp[l] = line[j];
+		l++;
+		temp[l] = Space;/*after first leter we are giving a space*/
+		l++;
+		j = i + 1;
+	}
 	}
 	if (line[i] == '\0')
 	{
@@ -1071,11 +1072,13 @@
 			temp[l] = line[j];
 		temp[l] = line[j];
 	}
-	/*As if a pointer string cannot be assigned to a simple char variable so, a pointer
+	/*As if a pointer string cannot be assigned to a simple char variable so,
+	a pointer
      of char is made and then assign peration if performed*/
 	p = (char*)malloc(sizeof(strlen(temp) + 1));/*p getting size*/
 	strcpy(p, temp);/*ading content on p*/
-	return p;/*assigning p to the name[i] in man function as this function returns char pointer*/
+	return p;
+	/*assigning p to the name[i] in man function as this function returns char pointer*/
 	}
 
 	int main()
@@ -1094,7 +1097,9 @@
 		printf("\nWant to enter another name (y/n) : ");
 		scanf("%c", &ans);
 		i++;
-		while (getchar() != '\n');/*So that we can get the next name, otherwise \n will be saved in the buffer. (fflush(stdin) don't woirk)*/
+		while (getchar() != '\n');
+		/*So that we can get the next name, otherwise 
+		\n will be saved in the buffer. (fflush(stdin) don't woirk)*/
 		if (i > 9)/*Names cannot be more than 10*/
 			break;
 	}
@@ -1113,8 +1118,8 @@
 	#include<stdio.h>
 	#include<conio.h>
 
-	#define VowelisOccur str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E' \
-	|| str[i] == 'i' || str[i] == 'I' || str[i] == 'o' || str[i] == 'O' || str[i] == 'u' \
+	#define VowelisOccur str[i]=='a'||str[i]=='A'||str[i]=='e'||str[i]=='E'\
+	||str[i]=='i'||str[i]=='I'||str[i]=='o'||str[i]== 'O' || str[i] == 'u' \
 	|| str[i] == 'U'
 
 	int find_vows(char * str)
@@ -1160,8 +1165,11 @@
 	void rev_arr(int *arr)
 	{
 	int temp[12], i, max, j;
-	for (i = 0; arr[i] != EndofNumber; i++);/*Counting the total number of elemeents excpet the last EndofNumber*/
-	max = i - 1;/*Max is the total number of elements, as the counting starts from 0 so we subtract 1 from it*/
+	for (i = 0; arr[i] != EndofNumber; i++);
+	/*Counting the total number of elemeents excpet the last EndofNumber*/
+	max = i - 1;
+	/*Max is the total number of elements,
+	as the counting starts from 0 so we subtract 1 from it*/
 	i = 0;
 	for (j = max; j >= 0; j--, i++)
 		temp[j] = arr[i];/*temp starting from the last*/
@@ -1179,20 +1187,21 @@
 	{
 		arr[i] = num % 10;
 		num /= 10;
-	}/*Saperating the digits and saving the number in array*/
+	}
+	/*Seperating the digits and saving the number in array*/
 
 	arr[i] = EndofNumber;/*Terminating array*/
 
 	rev_arr(arr);/*The numebrs in the array are saving in the  reverse mode
-		 as the saperation of the digits are takes place from last,
-		 so we will reverse the numbers of the array but EndofNumber will have the same
-		 position*/
+	 as the saperation of the digits are takes place from last,
+	 so we will reverse the numbers of the array but EndofNumber will have the same
+	 position*/
 
 	printf("\n\n\nNumber in words : ");
 
 	for (i = 0; arr[i] != EndofNumber; i++)/*Traversing the whole array.*/
 	{
-	if (arr[i + 5] == EndofNumber || arr[i + 7] == EndofNumber || arr[i + 9] == EndofNumber || arr[i + 2] == EndofNumber)
+	if(arr[i+5]==EndofNumber||arr[i+7]==EndofNumber||arr[i+9]==EndofNumber||arr[i+2]==EndofNumber)
 		{
 			if (arr[i] == 1)
 			{
@@ -1217,7 +1226,8 @@
 				if (arr[i + 1] == 0)
 					printf("Ten ");
 
-		i++;/*If we continue so these below words will not print as the loop is continueing from here.*/
+		i++;
+	/*If we continue so these below words will not print as the loop is continueing from here.*/
 
 				if (arr[i + 10] == EndofNumber)
 					printf("Arab ");
