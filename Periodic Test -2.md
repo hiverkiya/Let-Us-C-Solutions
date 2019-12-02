@@ -29,7 +29,7 @@
    (1) 
      
       The stack can be easily allocated as well as freed again, so it is a natural choice.
-      All the variable addresses are relative to the stack pointer that is incremented at each function call or return.
+      All the variable addresses are relative to the stack pointer that's incremented at each call or return.
       Fast easy way to allocate and cleanup memory used by these variables.
       
    (2) 
