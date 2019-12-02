@@ -28,24 +28,34 @@
 
    (1) 
      
-      The stack can be easily allocated as well as freed again, so it is a natural choice. All the variable addresses are           relative to the stack pointer that is incremented at each function call or return. Fast easy way to allocate and             cleanup memory used by these variables.
+      The stack can be easily allocated as well as freed again, so it is a natural choice.
+      All the variable addresses are relative to the stack pointer that is incremented at each function call or return.
+      Fast easy way to allocate and cleanup memory used by these variables.
       
    (2) 
       
-      When we want to make changes to original value's we use "call by reference" ,other way if we want to work on some             temporary copy of original values we use "call by value".
+      When we want to make changes to original value's we use "call by reference" ,
+      other way if we want to work on some temporary copy of original values we use "call by value".
 
    (3)
    
-      Sizeof a pointer is independent of type of the variables because the type of every pointer variable is implicitly             unsigned integer.
+      Sizeof a pointer is independent of type of the variables because the type of
+      every pointer variable is implicitly unsigned integer.
       
    (4)
    
-      Hole concept is found in the structures in c language where the compiler leaves certain holes in the memory alignment         when it allocates memory on the page boundaries.Thats the reason u get the sizeof structure some times greater than           the sum of all the fields in the structure . 
-         Also called structure padding ,structure paddding can be avoided by using a preprocessor directive #pragma 1 the              compiler will alocate memory in multiples of one.
+      Hole concept is found in the structures in c language where the compiler leaves certain holes 
+      in the memory alignment when it allocates memory on the page boundaries.
+      Thats the reason u get the sizeof structure some times greater than
+      the sum of all the fields in the structure . 
+         Also called structure padding ,structure paddding can be avoided by using a preprocessor
+         directive #pragma 1 the compiler will alocate memory in multiples of one.
    
    (5)  
       
-       Stopping condition can be any conditional statement (most cases), or it can be exception depending upon the                  implementation.Any recursive function without stoppage condition goes to infinite loop and blow up the stack.
+       Stopping condition can be any conditional statement (most cases), 
+       or it can be exception depending upon the implementation.
+       Any recursive function without stoppage condition goes to infinite loop and blow up the stack.
 
 ## [D]
 
