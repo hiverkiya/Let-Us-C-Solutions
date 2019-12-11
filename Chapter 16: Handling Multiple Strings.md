@@ -343,7 +343,7 @@
 	/*********************************/
 
 	getkey() {
-
+	//what is this some one please tell me
 	union REGS i,o;
 
 	while(!kbhit());
