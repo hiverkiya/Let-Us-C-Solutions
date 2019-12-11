@@ -2,8 +2,8 @@
 
 ## [A]
 
-(a) 58   
- (b)   
+(a) 58
+ (b)
  An array of strings can never collect string from keyboard directly, it can
 only be initialized at the time of declaration. But still we can store strings
 from the keyboard in the array of characters indirectly, by storing the string
