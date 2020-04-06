@@ -460,47 +460,56 @@
 		  }
 		  
 (j)
+#include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
+#include<stddef.h>
+#include<string.h>
+#include<math.h>
 
-            #include<stdio.h>
-	    int main()
-	    {
-	      int i,j,k;
-	      int a[3][3],b[3][3],c[3][3];
-	      for(i=0;i<3;i++)
-	      {
-	       for(j=0;j<3;i++)
-	       {
-	         scanf("%d",&a[i][j]);
-		}
-	       }
-	        for(i=0;i<3;i++)
-	      {
-	       for(j=0;j<3;i++)
-	       {
-	         scanf("%d",&b[i][j]);
-		}
-	       }
-	       	for (i = 0; i<3; i++)
-	       {
-	     	for (j = 0; j<3; j++)
+
+    void main()
+    {
+      int i,j,k;
+      int a[3][3],b[3][3],c[3][3];
+      for(i=0;i<3;i++)
+       {
+       for(j=0;j<3;j++)
+       {
+           printf("\na[%d][%d]=",i,j);
+         scanf("%d",&a[i][j]);
+	   }
+       }
+        for(i=0;i<3;i++)
+      {
+       for(j=0;j<3;j++)
+       {
+            printf("\nb[%d][%d]=",i,j);
+         scanf("%d",&b[i][j]);
+	}
+       }
+       	for (i = 0; i<3; i++)
+       {
+     	for (j = 0; j<3; j++)
+	{
+		c[i][j] = 0;
+		for (k = 0; k<3; k++)
 		{
-			c[i][j] = 0;
-			for (k = 0; k<3; k++)
-			{
-				c[i][j] = ans[i][j] + a[i][k] * b[k][j];
-			}
+			c[i][j] = c[i][j] + a[i][k] * b[k][j];
 		}
-	       }
-	       for(i=0;i<3;i++)
-	       {
-	        for(j=0;j<3;j++)
-		{
-		 printf("%d ",c[i][j]);
-		}
-		printf("\n");
-	     }
-	     return 0;
-	     }
+	}
+       }
+       for(i=0;i<3;i++)
+       {
+        for(j=0;j<3;j++)
+	{
+	 printf("%d ",c[i][j]);
+	}
+	printf("\n");
+     }
+
+     }
+           
 		
 (k)
 
