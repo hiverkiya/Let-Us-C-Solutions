@@ -35,7 +35,7 @@
       
       (a) Array
       
-      (b) 1 & 2 are true.
+      (b) 2 is true.
      
       (c) True,False,False.
      
