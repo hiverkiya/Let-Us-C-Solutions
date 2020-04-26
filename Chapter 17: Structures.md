@@ -98,7 +98,7 @@
 
 ## [D]
 
-(a)   
+(a)
  #include<stdio.h> #include<conio.h> #include<Windows.h> struct studata { int roll;
 char name[50]; char depart[50]; char course[20]; int yoj; }nos[450] = { 03, "Kishor",
 "IT", "B.tech", 2014, 10, "Mohammad Siraj Alam", "Computer Science", "B.Tech", 2014,
