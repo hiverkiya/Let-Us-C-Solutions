@@ -37,7 +37,7 @@
       
       (b) 1 & 2 are true.
      
-      (c) True,False,False.
+      (c) True,False,True.
      
       (d) 2 & 4
      
