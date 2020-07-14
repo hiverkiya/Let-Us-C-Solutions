@@ -15,7 +15,10 @@ Read [CONTRIBUTING.md](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master
 
 ## NOTE
 Solutions are in markdown format. Please Download/Clone them and open in any text editor.
+or 
+[Download PDF](https://github.com/hiverkiya/Let-Us-C-Solutions/raw/master/Let%20us%20C%20Solutions.pdf)
 
+PDF is not Perfect but you can work around :P
 
 
 
