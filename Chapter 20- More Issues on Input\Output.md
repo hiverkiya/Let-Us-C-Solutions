@@ -21,7 +21,7 @@
     
    (b) 
    
-   	False,True,True
+   	False,True,False
     
    (c) 
    	
