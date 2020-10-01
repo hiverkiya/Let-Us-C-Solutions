@@ -7,7 +7,7 @@
        Let the file name is �prog.c� so its executable file will be �prog.exe�. Now,
 	type this command in the command prompt
 	(1) - To copy the content of one file into another.
-	prog.exe > File1.txt < File2.txt
+	prog.exe < File1.txt > File2.txt
 	Input from file1 and put output in file 2
 
 	(2)
