@@ -8,7 +8,6 @@
      (b)  1 (infinite times).
      
      (c)  2
-           5
 ## [B]
 
      (a)  the initialization expression.
