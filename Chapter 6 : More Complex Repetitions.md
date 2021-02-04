@@ -328,7 +328,7 @@
     	 for(r=1; r<=num; r++)
 
 { for(sp=1; sp<=num-r; sp++) printf(" "); for(c=1; c<=r; c++,i++) printf("%d
-",i);  
+",i);
  printf("\n"); } return 0; }
 
 (o) void main() { int i,j,k; for(i=7;i>=1;i--) { for(j=1;j<=7;j++) { if(j<=i)
@@ -366,8 +366,3 @@ Pascal’s triangle is a triangular array of the binomial coefficients.
 
     return 0;
     }
-
-
-
-
-
