@@ -1151,7 +1151,7 @@
 	return 0;
 	}
 
-(k)
+(k)    <b>[Correction](https://github.com/hiverkiya/Let-Us-C-Solutions/issues/61) </b>
 
 	#include<stdio.h>
 	#include<conio.h>
