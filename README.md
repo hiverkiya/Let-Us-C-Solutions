@@ -5,7 +5,7 @@ Do star it if you like it :smile:
 
 Solutions to Let Us C 15th Edition by Yashwant Kanetkar.
 
-(You can refer to [Let us Solutions for 13th Edition here](https://garbagevalue.com/books-solutions/let-us-c).)
+(You can refer to [Let us Solutions for 13th Edition here](https://garbagevalue.com/bs/let-us-c-solutions).)
 
 In case of any legal issue or any error,please mail to himanshuverkiya@gmail.com or akshtgupta7@gmail.com.
 
