@@ -276,5 +276,3 @@ scanf("%d",&number); printf("Octal equivalent is %o",number); return 0; }
     printf("\n%d is the range of the data.", range);
     return 0;
      }
-
-
