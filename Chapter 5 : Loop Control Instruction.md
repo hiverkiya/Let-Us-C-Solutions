@@ -1,16 +1,7 @@
 # Chapter-5 Loop Control Instruction
 ## [A]
 
-      (a)   1
-            2
-            3
-            4
-            5
-            6
-            7
-            8
-            9
-            10
+      (a)   No Output since ';' is used after while 
       
       (b)   2 3 3
       
