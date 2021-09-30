@@ -16,7 +16,7 @@
 
 ## [B]
 
-    (a)ERROR == MISSING
+    (a)ERROR == MISSING in this code
     
     (b) NO ERROR.
    
