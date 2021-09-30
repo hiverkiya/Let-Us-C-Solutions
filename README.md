@@ -1,8 +1,6 @@
 ## Let-Us-C-Solutions :notebook: :smile:
 ![let-us-c-solution](https://github.com/hiverkiya/Let-Us-C-Solutions/blob/master/let-us-c-15-edition.jpg)
 
-Do star it if you like it :smile:
-
 Solutions to Let Us C 15th Edition by Yashwant Kanetkar.
 
 (You can refer to [Let us Solutions for 13th Edition here](https://garbagevalue.com/bs/let-us-c-solutions).)
