@@ -14,6 +14,9 @@ Read [CONTRIBUTING.md](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master
 ![Github forks](https://img.shields.io/github/forks/hiverkiya/Let-Us-C-Solutions?style=for-the-badge)
 
 ## NOTE
+
+**Open for Hacktoberfest 2021 contributions**
+
 Solutions are in markdown format. Please Download/Clone them and open in any text editor.
 or 
 [Download PDF](https://github.com/hiverkiya/Let-Us-C-Solutions/raw/master/Let%20us%20C%20Solutions.pdf)
