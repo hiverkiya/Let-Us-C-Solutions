@@ -16,7 +16,7 @@
 
 ## [B]
 
-    (a) NO ERROR.
+    (a)ERROR == MISSING
     
     (b) NO ERROR.
    
