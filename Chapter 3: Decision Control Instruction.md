@@ -16,7 +16,7 @@
 
 ## [B]
 
-    (a)ERROR == MISSING in this code
+    (a)ERROR == this is missing in if statement
     
     (b) NO ERROR.
    
