@@ -52,7 +52,7 @@ Operators are performed from LHS in the given expressions.
 
     (e) = % / * +
 
-(f) = = % / +
+    (f) = = % / +
 
 ## [D]
 
