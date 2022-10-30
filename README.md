@@ -5,7 +5,7 @@ Solutions to Let Us C 15th Edition by Yashwant Kanetkar.
 
 (You can refer to [Let us Solutions for 13th Edition here](https://garbagevalue.com/bs/let-us-c-solutions).)
 
-In case of any legal issue or any error,please mail to himanshuverkiya@gmail.com or akshtgupta7@gmail.com.
+In case of any legal issue or error, please mail to himanshuverkiya@gmail.com or akshtgupta7@gmail.com.
 
 Read [CONTRIBUTING.md](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master/CONTRIBUTING.md) for any further contributions.
 
@@ -15,13 +15,13 @@ Read [CONTRIBUTING.md](https://github.com/Verkiya/Let-Us-C-Solutions/blob/master
 
 ## NOTE
 
-**Open for Hacktoberfest 2021 contributions**
+**Open to Hacktoberfest contributions**
 
-Solutions are in markdown format. Please Download/Clone them and open in any text editor.
+Solutions are in markdown format. Please Download/Clone them and open them in any text editor.
 or 
 [Download PDF](https://github.com/hiverkiya/Let-Us-C-Solutions/raw/master/Let%20us%20C%20Solutions.pdf)
 
-PDF is not Perfect but you can work around :P
+PDF is not perfect, but you can work around :P
 
 
 
