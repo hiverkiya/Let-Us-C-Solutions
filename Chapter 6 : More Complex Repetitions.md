@@ -259,7 +259,7 @@
 		{
 			if (num < i*i*i)
 				break;
-		or (j = i + 1; j < num; j++)
+		for (j = i + 1; j < num; j++)
 			{
 				if (num < j*j*j)
 					break;
