@@ -21,7 +21,7 @@
   
     (d) -1 1
    
-    (e) 1
+    (e) 0
   
     (f) Compile error
   
