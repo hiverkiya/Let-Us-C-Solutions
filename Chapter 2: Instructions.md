@@ -46,7 +46,7 @@ Operators are performed from LHS in the given expressions.
 
     (b) / * / +
 
-    (c) = = = +
+    (c) + = = =
 
     (d) = - + * / %
 
