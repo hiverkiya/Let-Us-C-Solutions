@@ -36,6 +36,7 @@
       (a) Array
       
       (b) 2 is true.
+          bolts is a int member of engine structure nested in maruti structure 
      
       (c) True,False,True.
      
