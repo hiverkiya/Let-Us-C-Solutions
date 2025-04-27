@@ -30,58 +30,98 @@
       
 ## [C]
 
-       #include<stdio.h>
-       int main()
-       {
-         int choice,num,i,j,fact=1,isPrime=0;
-         printf("Enter your choice = ");
-         printf("press 1 for factorial of a number");
-         printf("press 2 to check prime or not");
-         printf("press 3 to check odd or even");
-         scanf("%d",&choice);
-         switch(choice)
-         {
-           case 1:
-              printf("Enter a number = ");
-              scanf("%d",&num);
-              for(i=1;i<=num;i++)
-              fact*=num;
-              printf("Factorial of a number is %d",fact);
-              break;
-           case 2:
-               printf("Enter a number = ");
-               scanf("%d",&num);
-               for(i=2; i<=num/2; ++i)
-                {
-                if(num%i==0)
-                {
-                   isPrime=1;
-                   break;
-                }
-               }
+#include <stdio.h>
+#include <math.h>
 
-              if (isPrime==0)
-               printf("%d is a prime number.",num);
-                  else
-              printf("%d is not a prime number.",num);
-                   break;
-            case:3
-               printf("Enter a number = ");
-               scanf("%d",&num);
-               if(num%2==0)
-               printf("%d is odd",num);
-               else
-               printf("%d is even",num);
-                  break;
-            case:4
-                 printf("Thanks for using");
-                 exit(1);
-                 break;
-               }
-               if(choice!=1 || choice!=2 || choice!=3 || choice!=4)
-               printf("You entered a wrong choice. Try Again!!");
-               return 0;
-               }
+int main()
+{
+    int num, choice;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    do
+    {
+
+        printf("Please select what you want to do with this number: \n");
+        printf("1. Factorial of this number\n");
+        printf("2. Check if the number is Prime or not\n");
+        printf("3. Check if the number is Even or Odd\n");
+        printf("4. Exit\n\n");
+        printf("Enter what you want to do (Enter number 1 - 4): ");
+        scanf("%d", &choice);
+
+        if ((choice != 1) && (choice != 2) && (choice != 3) && (choice != 4))
+        {
+            printf("\nYou entered wrong choice\n\n");
+            continue;
+        }
+
+        switch (choice)
+        {
+        case 1:
+        {
+
+            int temp = 1;
+            for (int i = 1; i <= num; i++)
+            {
+                temp = temp * i;
+            }
+            printf("\nFactorial of %d is %d\n\n", num, temp);
+            break;
+        }
+
+        case 2:
+        {
+            if (num <= 1)
+            {
+                printf("\nNumber is not Prime\n\n");
+            }
+            else
+            {
+                int isPrime = 1;
+                for (int j = 2; j <= sqrt(num); j++)
+                {
+                    if (num % j == 0)
+                    {
+                        isPrime = 0;
+                        break;
+                    }
+                }
+                if (isPrime)
+                    printf("\nNumber is Prime\n\n");
+                else
+                    printf("\nNumber is not Prime\n\n");
+            }
+            break;
+        }
+
+        case 3:
+        {
+            if (num % 2 == 0)
+            {
+                printf("\nNumber is Even\n\n");
+            }
+            else
+            {
+                printf("\nNumber is Odd\n\n");
+            }
+            break;
+        }
+
+        case 4:
+            printf("\nExiting program...\nThank you for using this program\n");
+            break;
+
+        default:
+            printf("\nInvalid choice, please select between 1 and 4.\n\n");
+            break;
+        }
+
+    } while (choice != 4);
+
+    return 0;
+}
+
          
    OR
    
